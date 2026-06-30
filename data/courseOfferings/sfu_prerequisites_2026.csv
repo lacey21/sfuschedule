@@ -1,0 +1,1187 @@
+course,term,year,prereqs
+als 603,summer,2026,
+als 612,summer,2026,
+apma 995,summer,2026,Applied Mathematics PhD stream students only. Must be completed within first six terms of the program.
+arch 100,summer,2026,
+arch 101,summer,2026,
+arch 131,summer,2026,
+arch 226,summer,2026,
+arch 252,summer,2026,
+arch 286,summer,2026,"30 units including one of ARCH 100, ARCH 101, ARCH 201, EVSC 100, GEOG 100, or REM 100."
+arch 301,summer,2026,45 credit hours.
+arch 434,summer,2026,ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 435.
+arch 435,summer,2026,ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 434.
+arch 452,summer,2026,"ARCH 373 or HSCI 321, HSCI 324, BPK 303, BPK 324, BPK 325, BPK 326. ARCH 373 is recommended."
+arch 479,summer,2026,"45 units, including ARCH 282 or 372, and permission of the department."
+arch 480,summer,2026,"45 units, including ARCH 282 or 372, and permission of the department."
+arch 498,summer,2026,Permission of the department.
+arch 499,summer,2026,Permission of the department.
+arch 874,summer,2026,Only available to students in the Archaeology PhD program.
+arch 875,summer,2026,Only available to students in the Archaeology PhD program.
+arch 892,summer,2026,
+arch 893,summer,2026,
+arch 896,summer,2026,
+arch 898,summer,2026,
+arch 899,summer,2026,
+bisc 101,summer,2026,"Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+); and Chemistry 12 (or equivalent) with a minimum grade of C (or CHEM 111 with a minimum grade of C-)."
+bisc 102,summer,2026,"Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+)."
+bisc 113,summer,2026,
+bisc 202,summer,2026,"BISC 101 and 102, both with a minimum grade of C-."
+bisc 212,summer,2026,"BISC 101 and 102, both with a minimum grade of C-, and completion of less than 60 units; or permission of the instructor."
+bisc 298,summer,2026,
+bisc 300,summer,2026,BISC 202 with a minimum grade of C-. Recommended: BISC 204.
+bisc 303,summer,2026,"BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-."
+bisc 305,summer,2026,"(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-."
+bisc 316,summer,2026,"BISC 101 and 102, both with a minimum grade of C-."
+bisc 333,summer,2026,"BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-."
+bisc 341,summer,2026,Acceptance in the Biological Sciences Co-operative Education Program.
+bisc 342,summer,2026,BISC 341 and readmission to the Science Co-op Education Program.
+bisc 410,summer,2026,"BISC 102 and (BISC 204 or GEOG 215 or REM 211), both with a minimum grade of C-."
+bisc 443,summer,2026,BISC 342 and readmission to the Science Co-op Education Program.
+bisc 444,summer,2026,BISC 443 and re-admission to the science co-operative education program.
+bisc 446,summer,2026,BISC 444 and readmission to the Science Co-op Education Program.
+bisc 490,summer,2026,"Completion of all lower division biological sciences courses, plus upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee; completion of all physics, chemistry and mathematics requirements for the major or honours program."
+bisc 491,summer,2026,"Completion of all lower division biological sciences courses, plus upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee; completion of all physics, chemistry and mathematics requirements for the major or honours program; at the time of application, students will normally have a CGPA of 3.00 (B standing). Corequisite: BISC 490 and 492."
+bisc 492w,summer,2026,"Completion of all lower division biological sciences courses, plus upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee; completion of all physics, chemistry and mathematics requirements for the major or honours program; at the time of application, students will normally have a CGPA of 3.00 (B standing). Corequisite: BISC 490 and BISC 491."
+bisc 497w,summer,2026,"Completion of lower division course
+requirements."
+bisc 498,summer,2026,Completion of lower division course requirements.
+bisc 499,summer,2026,Completion of lower division course requirements.
+bisc 656,summer,2026,Acceptance into the environmental toxicology program.
+bisc 849,summer,2026,
+bisc 888,summer,2026,
+bisc 889,summer,2026,
+bisc 890,summer,2026,
+bisc 892,summer,2026,
+bisc 898,summer,2026,
+bisc 899,summer,2026,
+bpk 105,summer,2026,"Recommended: Grade 11 Biology, Chemistry and Physics."
+bpk 110,summer,2026,
+bpk 140,summer,2026,
+bpk 142,summer,2026,"One of Grade 12 Anatomy and Physiology, Biology, Chemistry or Physics with a grade of B or better; or one of BPK 105, BPK 110, BPK 143, BISC 100, BISC 113 or HSCI 100 with a grade of C or better."
+bpk 241,summer,2026,BPK 142.
+bpk 304w,summer,2026,"BPK 142, STAT 201 and two of BPK 201, 205 and 207."
+bpk 326,summer,2026,"Admission to the major or honours program in behavioural neuroscience or biomedical physiology or kinesiology. BPK 142, 201, 205 and at least 60 units. Behavioural neuroscience major and honours students require BPK 142, 205, PSYC 280 and at least 60 units."
+bpk 340,summer,2026,"BPK 142, STAT 201 (or PSYC 201). Recommended: BPK 140."
+bpk 343,summer,2026,"BPK 142, 143 and 205; STAT 201 or an equivalent statistics course, BPK 340 (may be taken concurrently). Students must successfully complete a Criminal Record Check prior to enrolling."
+bpk 351,summer,2026,"Students must complete Bridging Online (visit www.sfu.ca/coop/bol for further details) at least two terms before co-op placement. Students must then apply to the BPK co-op program by Week 1 of the term prior; a minimum of 45 units, BPK 142, plus at least two other BPK courses and have a minimum GPA of 2.50."
+bpk 352,summer,2026,BPK 351.
+bpk 375,summer,2026,"BPK 105 or 205, and 142."
+bpk 407,summer,2026,"BPK 304W, 305 and 306."
+bpk 451,summer,2026,BPK 352.
+bpk 451w,summer,2026,BPK 352.
+bpk 452,summer,2026,BPK 451.
+bpk 453,summer,2026,BPK 452.
+bpk 457,summer,2026,"75 units, with a minimum CGPA of 3.00, PSYC 301 or BPK 304W with a minimum grade of B, and permission from one of the Co-chairs of the Behavioural Neuroscience Program Committee."
+bpk 459,summer,2026,A minimum grade of B in BPK 457. Corequisite: Must be enrolled in the Honours Program of the B.Sc. in Behavioural Neuroscience. Students must seek permission from their honours project supervisor to enroll in additional courses at the same time.
+bpk 481,summer,2026,BPK 303 and 326.
+bpk 491,summer,2026,"90 units, BPK 304W (may be taken concurrently) and permission of the chair of the undergraduate program committee. A minimum grade of B in this course is needed to register in BPK 495 or BPK 499."
+bpk 495,summer,2026,BPK 491 (minimum grade of B). Corequisite: BPK 499. Only students in the honours program may enroll in BPK 495.
+bpk 496,summer,2026,"BPK 304W (may be taken concurrently) or PSYC 210, and permission from the chair of the undergraduate program committee. Usually, upper level standing with at least 75 units in the Biomedical Physiology and Kinesiology program will be required."
+bpk 498,summer,2026,"BPK 304W (may be taken concurrently) or PSYC 210, and permission from the chair of the undergraduate program committee. Usually, upper level standing with at least 75 units in the Biomedical Physiology and Kinesiology program will be required."
+bpk 499,summer,2026,BPK 491 (minimum grade of B). Corequisite: BPK 495. Only students in the honours program may enroll in BPK 499.
+bpk 805,summer,2026,
+bpk 895,summer,2026,
+bpk 896,summer,2026,
+bpk 897,summer,2026,
+bpk 898,summer,2026,
+bpk 899,summer,2026,
+bus 200,summer,2026,
+bus 207,summer,2026,"ECON 103 or ECON 113, ECON 105 or ECON 115, MATH 157, all with a minimum grade of C-; 15 units."
+bus 217w,summer,2026,"BUS 201 with a minimum grade of C- and 15 units; OR 45 units and corequisite: BUS 202; OR business administration joint major, joint honours, or double degree students with 45 units; OR data science students with 15 units; OR actuarial science students with 15 units."
+bus 225,summer,2026,
+bus 232,summer,2026,
+bus 233,summer,2026,12 units.
+bus 237,summer,2026,12 units.
+bus 238,summer,2026,12 units.
+bus 240,summer,2026,12 units.
+bus 251,summer,2026,12 units.
+bus 254,summer,2026,BUS 251 with a minimum grade of C-; 15 units.
+bus 272,summer,2026,12 units.
+bus 275,summer,2026,12 units.
+bus 300,summer,2026,"This course is only open to approved business administration majors admitted to the faculty in Fall 2022 and onward. BUS 100 or BUS 203, with a P grade and BUS 217W with a minimum grade of C-; 45 units. Recommendation to take with BUS 360W."
+bus 303,summer,2026,45 units.
+bus 311,summer,2026,"This course is only open to students admitted to the business administration minor between Fall 2012 - Summer 2016 and who have credit for BUS 251 with a minimum grade of C- and 45 units, OR to students admitted to the business administration minor Fall 2016 - onwards and who have credit for BUS 251 with a minimum grade of C-, 45 units, and corequisite: BUS 200."
+bus 312,summer,2026,"BUS 254 and (BUS 232 or ECON 233 or STAT 270 or STAT 271), both with a minimum grade of C- and 45 units; OR actuarial science students with BUS 254 and (BUS 232 or ECON 233 or STAT 270 or STAT 271), both with a minimum grade of C- and 45 units. Recommended: BUS 207 or ECON 201."
+bus 313,summer,2026,"BUS 312, BUS 207 or ECON 201, all with a minimum grade of C- and 45 units."
+bus 315,summer,2026,"BUS 312 and (BUS 207 or ECON 201), both with a minimum grade of C- and 45 units; OR actuarial science students with STAT 285 and (BUS 312 or ACMA 201 or RISK 201), both with a minimum grade of C- and 45 units."
+bus 320,summer,2026,BUS 251 with a minimum grade of C-; 45 units.
+bus 321,summer,2026,BUS 320 with a minimum grade of C-; 45 units.
+bus 322,summer,2026,"BUS 254 with a minimum grade of C-, 45 units."
+bus 325,summer,2026,
+bus 326,summer,2026,
+bus 327,summer,2026,
+bus 330,summer,2026,
+bus 331,summer,2026,"BUS 330 (or BUS 329) with a minimum grade of C-, 45 units."
+bus 336,summer,2026,"MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-; BUS 232, ECON 233, STAT 270, or STAT 271, with a minimum grade of C-; 45 units."
+bus 340,summer,2026,"This course is only open to students admitted to the business administration minor between Fall 2012 - Summer 2016 and who have 45 units, OR to students admitted to the business administration minor Fall 2016 - onwards and who have 45 units, and corequisite: BUS 200."
+bus 341,summer,2026,"This course is only open to students admitted to the business administration minor between Fall 2012 - Summer 2016 and who have 45 units, OR to students admitted to the business administration minor Fall 2016 - onwards and who have 45 units, and corequisite: BUS 200."
+bus 343,summer,2026,45 units.
+bus 345,summer,2026,"BUS 232 or ECON 233 or STAT 270 or STAT 271, and BUS 343, both with a minimum grade of C- and 45 units; OR data science majors with BUS 343 with a minimum grade of C- and 45 units."
+bus 346,summer,2026,45 units.
+bus 347,summer,2026,BUS 343 with a minimum grade of C- and 45 units; OR business administration minor students admitted Fall 2025 - onwards with BUS 341 with a minimum grade of C- and 45 units.
+bus 360w,summer,2026,"This course is open to students admitted to the business administration major, honours, or second degree program and who have 45 units and BUS 130 or (BUS 201 or BUS 202) or BUS 301, and BUS 217W, both with a minimum grade of C-, OR to students admitted Fall 2022 onwards to the business administration major, honours, or second degree program, and who have 45 units; BUS 217W and (BUS 201 or BUS 202), both with a minimum grade of C-; and BUS 300, OR to business administration joint major or joint honours students with BUS 217W with a minimum grade of C- and 45 units, OR to business and economics joint major students with ECON 220W with a minimum grade of C- and 45 units, OR to mechatronic systems engineering and business administration double degree students with 45 units, OR to data science major with BUS 217W with a minimum grade of C- and 45 units."
+bus 361,summer,2026,45 units OR business administration minor students admitted Fall 2025 - onwards with 45 units.
+bus 362,summer,2026,BUS 237 with a minimum grade of C-; 45 units; OR Data Science majors with 45 units.
+bus 373,summer,2026,"BUS 232, ECON 233, STAT 270, or STAT 271, with a minimum grade of C-; 45 units."
+bus 381,summer,2026,BUS 272 with a minimum grade of C- and 45 units; OR business administration minor students admitted Fall 2025 - onwards with BUS 272 with a minimum grade of C- and 45 units.
+bus 393,summer,2026,45 units.
+bus 401,summer,2026,"BUS 311 (or BUS 254 and BUS 312), BUS 341, and corequisite BUS 340, all with a minimum grade of C-; 60 units. The course is only open to students in the business minor program."
+bus 410,summer,2026,"BUS 315 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 411,summer,2026,"BUS 315 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 417,summer,2026,"BUS 315, 360W, both with a minimum grade of C-; 60 units."
+bus 418,summer,2026,"BUS 315 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 420,summer,2026,"BUS 321, 360W, both with a minimum grade of C-; 60 units."
+bus 421,summer,2026,"BUS 321 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 424,summer,2026,"BUS 322 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 425,summer,2026,
+bus 426,summer,2026,"BUS 321, 360W, both with a minimum grade of C-; 60 units."
+bus 430,summer,2026,BUS 360W with a minimum grade of C-; 60 units. Recommended: BUS 346.
+bus 434,summer,2026,BUS 360W with a minimum grade of C-; 60 units. Recommended: BUS 346.
+bus 437,summer,2026,"BUS 336, 360W, both with a minimum grade of C-; 60 units; OR Data Science majors with BUS 360W with a minimum grade of C- and 60 units."
+bus 445,summer,2026,"BUS 343, 336, 360W, all with a minimum grade of C-, 60 units; OR Data Science majors with BUS 343, 360W, both with a minimum grade of C-, and 60 units."
+bus 447,summer,2026,"BUS 343, 360W, both with a minimum grade of C-; 60 units. Recommended: BUS 346."
+bus 462,summer,2026,"BUS 360W and BUS 362, both with a minimum grade of C-, 60 units, and corequisite: BUS 336; OR data science majors with BUS 360W with a minimum grade of C-, and 60 units."
+bus 464,summer,2026,"BUS 360W, 362, both with a minimum grade of C-; 60 units."
+bus 466,summer,2026,"BUS 237, BUS 360W, BUS 362, all with a minimum grade of C-; 60 units."
+bus 468,summer,2026,"BUS 237, BUS 360W, BUS 362, all with a minimum grade of C-; 90 units."
+bus 473,summer,2026,"Students admitted prior to Fall 2023 with (BUS 373 or BUS 336) and BUS 360W, or students admitted Fall 2023 onward with BUS 373 and BUS 360W; both with a minimum grade of C-; 60 units."
+bus 474,summer,2026,"Students admitted prior to Fall 2023 with (BUS 373 or BUS 336) and BUS 360W, or students admitted Fall 2023 onward with BUS 373 and BUS 360W; both with a minimum grade of C-; 60 units."
+bus 475,summer,2026,"BUS 360W or corporate environmental and social sustainability certificate students with an upper division Writing (W) course, with a minimum grade of C-; 60 units."
+bus 478,summer,2026,"BUS 207 (or ECON 201 or ECON 301), BUS 312, 343, 360W and either BUS 374 or 381, all with a minimum grade of C-; 90 units."
+bus 481,summer,2026,"BUS 381 and 360W, with a minimum grade of C-; 60 units."
+bus 489,summer,2026,"(BUS 374 or BUS 381) and BUS 360W, or corporate environmental and social sustainability certificate students with an upper division Writing (W) course, all with a minimum grade of C-; 60 units."
+bus 492,summer,2026,As stated by the faculty at the time of offering and BUS 360W with a minimum grade of C-; 60 units.
+bus 493,summer,2026,As stated by the faculty at the time of offering and BUS 360W with a minimum grade of C-; 60 units.
+bus 496,summer,2026,"This course is only open to approved business administration majors admitted to the faculty in Fall 2022 and onward, BUS 300 with a P grade and BUS 360W with a minimum grade of C-; 95 units."
+bus 568,summer,2026,BUS 741.
+bus 576,summer,2026,BUS 714 and BUS 716.
+bus 577,summer,2026,BUS 714.
+bus 578,summer,2026,BUS 714.
+bus 579,summer,2026,
+bus 588,summer,2026,
+bus 603,summer,2026,
+bus 607,summer,2026,
+bus 613,summer,2026,
+bus 620,summer,2026,
+bus 621,summer,2026,
+bus 630,summer,2026,Only for students in the IBL EMBA program.
+bus 632,summer,2026,
+bus 655,summer,2026,
+bus 668,summer,2026,Only for students in the IBL EMBA program.
+bus 675,summer,2026,Only for students in Indigenous Business Leadership.
+bus 687,summer,2026,Only for students in the IBL EMBA program.
+bus 697,summer,2026,Only for students in the IBL EMBA program.
+bus 702,summer,2026,
+bus 705,summer,2026,
+bus 706,summer,2026,
+bus 708,summer,2026,BUS 705.
+bus 709,summer,2026,
+bus 714,summer,2026,
+bus 715,summer,2026,
+bus 716,summer,2026,
+bus 718,summer,2026,30 units of course work in the MBA program.
+bus 719,summer,2026,
+bus 725,summer,2026,
+bus 727,summer,2026,
+bus 730,summer,2026,BUS 741.
+bus 733,summer,2026,
+bus 741,summer,2026,
+bus 759,summer,2026,
+bus 774,summer,2026,
+bus 783,summer,2026,
+bus 785,summer,2026,BUS 706.
+bus 786,summer,2026,
+bus 787,summer,2026,
+bus 788,summer,2026,
+bus 794,summer,2026,
+bus 795,summer,2026,Bus 792 Financial Literacy for Entrepreneurs.
+bus 796,summer,2026,"BUS 790 Lab to Market, BUS 791 Opportunity Identification and Assessment"
+bus 797,summer,2026,BUS 790 Lab to Market; BUS 791 Opportunity Identification & Assessment; BUS 792 Financial Literacy for Entrepreneurs; BUS 793 Business Models; BUS 796 Business Plan I.
+bus 829,summer,2026,
+bus 840,summer,2026,
+bus 841,summer,2026,BUS 831.
+bus 842,summer,2026,BUS 832.
+bus 844,summer,2026,
+bus 880,summer,2026,BUS 881 or Academic Director approval.
+bus 888,summer,2026,
+bus 890,summer,2026,Students need permission from academic unit.
+bus 965,summer,2026,BUS 890 or equivalent.
+bus 983,summer,2026,Enrollment in PhD program.
+bus 984,summer,2026,Enrollment in PhD program.
+bus 986,summer,2026,Enrollment in PhD program.
+bus 990,summer,2026,Enrollment in PhD program.
+bus 991,summer,2026,Enrollment in PhD program.
+bus 992,summer,2026,Enrollment in PhD program.
+bus 993,summer,2026,
+ca 105,summer,2026,
+ca 135,summer,2026,
+ca 140,summer,2026,
+ca 142,summer,2026,
+ca 149,summer,2026,
+ca 269,summer,2026,CA 160. A course materials fee is required.
+ca 304,summer,2026,30 units in Contemporary Arts.
+ca 305,summer,2026,30 units in CA.
+ca 306,summer,2026,45 units including CA 304 and permission of Internship Coordinator.
+ca 307,summer,2026,45 units including CA 304 and permission of Internship Coordinator.
+ca 308,summer,2026,A minimum of 30 units and approval of Field School Director.
+ca 309,summer,2026,A minimum of 30 units and permission of Field School Director.
+ca 369,summer,2026,CA 160. A course materials fee is required.
+ca 386,summer,2026,60 units.
+ca 400,summer,2026,"60 units plus a minimum standing of completion of second year in any of the programs offered in the School for the Contemporary Arts, and prior approval."
+ca 401,summer,2026,"60 units plus a minimum standing of completion of second year in any of the programs offered in the School for the Contemporary Arts, and prior approval."
+ca 405,summer,2026,30 units in CA.
+ca 406,summer,2026,60 units including CA 304 and permission of Internship Coordinator.
+ca 407,summer,2026,60 units including CA 304 and permission of Internship Coordinator.
+ca 408,summer,2026,A minimum of 30 units and approval of Field School Director.
+ca 409,summer,2026,A minimum of 30 units and approval of Field School Director.
+ca 827,summer,2026,
+ca 829,summer,2026,Permission of the graduate program committee.
+ca 830,summer,2026,
+ca 889,summer,2026,
+ca 892,summer,2026,
+ca 895,summer,2026,CA 892.
+ca 898,summer,2026,
+ca 899,summer,2026,CA 895.
+cenv 302,summer,2026,Admission into Environment Co-operative Education Program.
+cenv 303,summer,2026,Readmission into Environment Co-operative Education Program.
+cenv 402,summer,2026,Readmission into Environment Co-operative Education Program.
+cenv 403,summer,2026,Readmission into Environment Co-operative Education Program.
+cenv 404,summer,2026,Readmission into Environment Co-operative Education Program.
+cenv 690,summer,2026,
+cenv 691,summer,2026,Students must have completed at least one term's courses and permission of REM's co-op co-ordinator.
+chem 110,summer,2026,"Pre-Calculus 12 (or equivalent), MATH 100 (may be taken concurrently), or permission of the department. No previous training in chemistry is required for this course."
+chem 115,summer,2026,"Pre-Calculus 12 (or equivalent), MATH 100 or MATH 110 (either may be taken concurrently), or permission of the department. Corequisite: CHEM 110."
+chem 120,summer,2026,"Chemistry 12 with a minimum grade of B, or CHEM 110 or 111 with a minimum grade of C-."
+chem 121,summer,2026,"Chemistry 12 with a minimum grade of B, or CHEM 109 or 111 with a minimum grade of C- or CHEM 110 and 115, both with a minimum grade of C-."
+chem 122,summer,2026,CHEM 120 or 121 with a minimum grade of C-.
+chem 125,summer,2026,"Chemistry 12 with a minimum grade of C, or CHEM 109 or CHEM 111 with a minimum grade of C-. Corequisite: CHEM 120."
+chem 126,summer,2026,CHEM 121 with a minimum grade of C-. Corequisite: CHEM 122.
+chem 210,summer,2026,CHEM 122 with a minimum grade of C-.
+chem 216,summer,2026,"CHEM 122 and CHEM 126, both with a minimum grade of C-. Corequisite: CHEM 210."
+chem 281,summer,2026,CHEM 121 with a minimum grade of C-. Corequisite: CHEM 122.
+chem 282,summer,2026,CHEM 281 with a minimum grade of C-.
+chem 283,summer,2026,CHEM 281 with a minimum grade of C-.
+chem 284,summer,2026,"CHEM 282 with a minimum of C+, or permission of the Department."
+chem 285,summer,2026,"CHEM 120 and CHEM 125, both with a minimum grade of C-, or CHEM 121 with a minimum grade of C-. Corequisite: CHEM 122 and CHEM 280."
+chem 286,summer,2026,CHEM 281 with a minimum grade of C-. Corequisite: CHEM 282 or 283.
+chem 296,summer,2026,"30 units, including five units of 2nd year CHEM courses. A student may enroll in this course only with prior written agreement of a faculty member to act as a research supervisor."
+chem 306,summer,2026,"Completion of 28 units in a science program, including first-year calculus, chemistry and physics. Minimum CGPA 2.67 (or permission of co-op co-ordinator)."
+chem 307,summer,2026,CHEM 306 and completion of 42 units toward a BSc degree. Minimum CGPA 2.67 (or permission of co-op co-ordinator).
+chem 360,summer,2026,CHEM 260 with a minimum grade of C-. Recommended: MATH 251.
+chem 366w,summer,2026,CHEM 266 with a minimum grade of C-. Corequisite: CHEM 360.
+chem 396,summer,2026,"50 units, including one 3rd year CHEM core course (CHEM 316, 332, 336, 360, 366, 380 or NUSC 341). A student may enroll in this course only with prior written agreement of a faculty member to act as a research supervisor."
+chem 406,summer,2026,CHEM 307 and completion of 56 units toward a BSc degree. Minimum CGPA of 2.67 (or permission of co-op co-ordinator).
+chem 407,summer,2026,CHEM 406. Minimum CGPA of 2.67 (or permission of co-op co-ordinator).
+chem 408,summer,2026,CHEM 407.
+chem 481,summer,2026,Permission of the department; knowledge of chemistry at an advanced level. Normally taken after completion of 300-level course requirements.
+chem 482,summer,2026,Permission of the Department. Normally taken during the fourth year of study.
+chem 483,summer,2026,CHEM 481 and permission of the Department. This course cannot be counted towards the 400-level CHEM unit requirement for the Chemistry Majors program.
+chem 484,summer,2026,Permission of the department; knowledge of chemistry at an advanced level. Normally taken after completion of 300-level course requirements.
+chem 898,summer,2026,
+chem 899,summer,2026,
+chin 100,summer,2026,
+chin 460,summer,2026,"CHIN 330, CHIN 390 or equivalent."
+cmns 110,summer,2026,
+cmns 130,summer,2026,
+cmns 221,summer,2026,"CMNS 110 or 130, with a minimum grade of C-."
+cmns 311,summer,2026,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 312,summer,2026,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 313,summer,2026,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 353,summer,2026,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 395,summer,2026,Acceptance in the co-operative education program.
+cmns 396,summer,2026,CMNS 395.
+cmns 425,summer,2026,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 432,summer,2026,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 446,summer,2026,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 458,summer,2026,CMNS 258 and two upper division CMNS courses with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 479,summer,2026,Two upper division CMNS courses with a minimum grade of C- and permission of the instructor.
+cmns 480,summer,2026,Two upper division CMNS courses with a minimum grade of C- and consent of instructor.
+cmns 494,summer,2026,CMNS 396.
+cmns 495,summer,2026,CMNS 494.
+cmns 496,summer,2026,CMNS 495.
+cmns 497,summer,2026,Students accepted into honours program only.
+cmns 498,summer,2026,Successful completion of CMNS 497 with grade of B or higher.
+cmns 850,summer,2026,
+cmns 851,summer,2026,
+cmns 858,summer,2026,
+cmns 880,summer,2026,
+cmns 881,summer,2026,
+cmns 891,summer,2026,
+cmns 892,summer,2026,
+cmns 893,summer,2026,"CMNS 801 and one of CMNS 800, CMNS 802 or CMNS 804."
+cmns 895,summer,2026,
+cmns 896,summer,2026,"CMNS 801 and one of CMNS 800, 802, or 804."
+cmns 897,summer,2026,
+cmns 898,summer,2026,
+cmns 899,summer,2026,
+cmpt 105w,summer,2026,
+cmpt 120,summer,2026,BC Math 12 or equivalent is recommended.
+cmpt 125,summer,2026,"CMPT 120 or CMPT 130, with a minimum grade of C-."
+cmpt 201,summer,2026,"(CMPT 125 or CMPT 135) and MACM 101, both with a minimum grade of C-."
+cmpt 210,summer,2026,"MACM 101, MATH 152, CMPT 125 or CMPT 135, and (MATH 240 or MATH 232), all with a minimum grade of C-."
+cmpt 213,summer,2026,CMPT 225 with a minimum grade of C-.
+cmpt 225,summer,2026,"(MACM 101 and (CMPT 125, CMPT 129 or CMPT 135)) or (ENSC 251 and ENSC 252), all with a minimum grade of C-."
+cmpt 263,summer,2026,"CMPT 125 or CMPT 135, with a minimum grade of C-."
+cmpt 276,summer,2026,"One W course, CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (MATH 151 or MATH 150), all with a minimum grade of C-. MATH 154 or MATH 157 with at least a B+ may be substituted for MATH 151 or MATH 150."
+cmpt 295,summer,2026,"Either (MACM 101 and (CMPT 125 or CMPT 135)) or (MATH 151 and CMPT 102 for students in an Applied Physics program), all with a minimum grade of C-."
+cmpt 307,summer,2026,"CMPT 225, (MACM 201 or CMPT 210), (MATH 150 or MATH 151), and (MATH 232 or MATH 240), all with a minimum grade of C-. MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 150 or MATH 151."
+cmpt 310,summer,2026,"CMPT 225 and STAT 271, all with a minimum grade of C-. Recommended: MATH 251."
+cmpt 353,summer,2026,"CMPT 225 and (BUS 232, STAT 201, STAT 203, STAT 205, STAT 270, STAT 271, ENSC 280, MSE 210, or SEE 241), with a minimum grade of C-."
+cmpt 354,summer,2026,"CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+cmpt 371,summer,2026,"CMPT 225 and (MATH 151 or MATH 150), with a minimum grade of C-. MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 151 (MATH 150)."
+cmpt 372,summer,2026,"CMPT 272 and CMPT 225, both with a minimum grade of C-."
+cmpt 376w,summer,2026,"CMPT 105W and (CMPT 275 or CMPT 276), with a minimum grade of C-."
+cmpt 383,summer,2026,"CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+cmpt 403,summer,2026,"CMPT 201 or CMPT 300 or ENSC 351, with a minimum grade of C-."
+cmpt 409,summer,2026,CMPT 307 with a minimum grade of C-.
+cmpt 415,summer,2026,Permission of Instructor and School.
+cmpt 416,summer,2026,Permission of the department.
+cmpt 419,summer,2026,
+cmpt 426,summer,2026,"Students must complete Bridging Online (visit www.sfu.ca/coop/bol for further details) at least two terms before their anticipated co-op placement. Students must then enroll with the co-op program by the second week of the term preceding the work term. Normally, students will have completed a minimum of 45 units by the end of the term of application, CMPT 275 or 276, and have a minimum CGPA of 2.50."
+cmpt 427,summer,2026,"CMPT 426, CGPA of 2.50."
+cmpt 428,summer,2026,"CMPT 427, CGPA of 2.50."
+cmpt 429,summer,2026,"CMPT 428, CGPA of 2.50."
+cmpt 430,summer,2026,"CMPT 429, CGPA of 2.50."
+cmpt 471,summer,2026,"(CMPT 201 or CMPT 300 or ENSC 351) and CMPT 371, both with a minimum grade of C-."
+cmpt 479,summer,2026,"CMPT 201 or CMPT 300 or ENSC 351, with a minimum grade of C-."
+cmpt 493,summer,2026,"CMPT 275 or CMPT 276, at least 80 units, CGPA and UDGPA over 3.0, enrolled in any CS major program. Participation in the practicum is competitive and an application must be submitted to the Undergraduate Chair by a defined due date announced each term."
+cmpt 494,summer,2026,Students must have completed at least 15 units of upper division CMPT courses. Successful Capstone Project Proposal.
+cmpt 495,summer,2026,CMPT 494 with a minimum grade of C-. CMPT 495 must be taken in the term immediately following the successful completion of CMPT 494 and must be for the same project and faculty supervisor.
+cmpt 496,summer,2026,"Students must have completed 90 units, including 15 units of upper division CMPT courses, and have a GPA of at least 3.00. The proposal must be submitted to the undergraduate chair at least 15 days in advance of the term. The proposal must be signed by the supervisor(s) and the undergraduate chair."
+cmpt 497,summer,2026,Submission of a satisfactory capstone project proposal.
+cmpt 498,summer,2026,"Students must have completed 90 units, including 15 units of upper division CMPT courses, and have a GPA of at least 3.00. The proposal must be submitted to the Undergraduate Chair at least 15 days in advance of the term. The proposal must be signed by the supervisor(s) and the undergraduate chair."
+cmpt 626,summer,2026,12 units of CMPT coursework at the 700-level or higher with a CGPA of at least 3.0. Department Consent is required for enrollment.
+cmpt 627,summer,2026,CMPT 626 and a CGPA of at least 3.0. Department Consent is required for enrollment.
+cmpt 628,summer,2026,CMPT 627 and a CGPA of at least 3.0. Department Consent is required for enrollment.
+cmpt 629,summer,2026,Permission of the Graduate Program Chair.
+cmpt 631,summer,2026,"12 units of CMPT course work with an SFU CGPA of at least 3.0. Approval of supervisor and a GPC representative is required prior to applying for, or accepting an internship."
+cmpt 894,summer,2026,Permission of the department.
+cmpt 895,summer,2026,
+cmpt 896,summer,2026,
+cmpt 897,summer,2026,
+cmpt 898,summer,2026,
+cmpt 899,summer,2026,
+cmpt 980,summer,2026,
+cmpt 981,summer,2026,
+cmpt 982,summer,2026,
+cmpt 983,summer,2026,
+cogs 100,summer,2026,Open to all students.
+cogs 490,summer,2026,Approval of cognitive science steering committee after completion of at least 7 upper division courses within the Cognitive Science Honours program requirements.
+crim 101,summer,2026,
+crim 320,summer,2026,"CRIM 101; one of CRIM 120 or 220; one of STAT 201, 203, 205, BUS 232, or PSYC 210. CRIM 320 may be taken concurrently with CRIM 321."
+crim 346,summer,2026,CRIM 101. Recommended: CRIM 241
+crim 370,summer,2026,"CRIM 320 and 330, and written application to the school no later than the last day of classes of the preceding term. CRIM 370 and 470 may not be taken concurrently."
+crim 380,summer,2026,CRIM 101.
+crim 416,summer,2026,CRIM 101.
+crim 470,summer,2026,"CRIM 320, 321 and 330. Written application to the school no later than the last day of classes of the preceding term. Reserved for criminology honours and majors. Recommended: CRIM 370."
+crim 486,summer,2026,"Permission of the school, and minimum 90 units and CGPA of 2.75. Applicants must be declared criminology majors and must be enrolled in or have completed CRIM 320, 321 and 485. Corequisite: CRIM 488. A criminal record check may be required dependent on agency."
+crim 487,summer,2026,"CRIM 485, a minimum of 90 units and CGPA of 2.75, and/or permission of the school. Applicants must be declared criminology majors. Corequisite: CRIM 489. A criminal record check may be required dependent on agency."
+crim 488,summer,2026,"Permission of the school, CRIM 485, a minimum of 90 units and CGPA of 2.75. Applicants must be declared criminology majors. Corequisite: CRIM 486. A criminal record check may be required dependent on agency."
+crim 489,summer,2026,"CRIM 485, a minimum of 90 units and CGPA of 2.75, and/or permission of the school. Applicants must be declared criminology majors. Corequisite: CRIM 487. A criminal record check may be required dependent on agency."
+crim 815,summer,2026,
+crim 870,summer,2026,
+crim 890,summer,2026,CRIM 897.
+crim 897,summer,2026,Completion of all course work within the PhD program.
+crim 898,summer,2026,
+crim 899,summer,2026,
+dmed 522,summer,2026,DMED 521 with a grade of B or higher.
+dmed 540,summer,2026,
+easc 101,summer,2026,
+easc 103,summer,2026,
+easc 306,summer,2026,"Prerequisite/Corequisite: EASC 201, 204, 205, and 206. All with a grade of C- or better."
+easc 308,summer,2026,"EASC 201, 206 and 209W. Recommended: EASC 207. All with a grade of C- or better."
+easc 493,summer,2026,75 units including 30 units in earth sciences courses and permission of the department.
+easc 498,summer,2026,Permission of the department. Normally taken after completion of 300-level program requirements.
+easc 810,summer,2026,Enrollment in MSc program.
+easc 898,summer,2026,Enrollment in MSc program.
+easc 910,summer,2026,Enrollment in PhD program.
+easc 998,summer,2026,Enrollment in PhD Program.
+econ 103,summer,2026,
+econ 105,summer,2026,
+econ 201,summer,2026,"ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of B-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of B-; MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-."
+econ 280,summer,2026,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of B-.
+econ 302,summer,2026,ECON 201 with a minimum grade of C-; 45 units.
+econ 305,summer,2026,ECON 201 with a minimum grade of C-; 45 units. Students with a minimum grade of A- in ECON 103 and 105 at Simon Fraser University at their first attempt can complete ECON 305 concurrently with ECON 201 after 30 units. Students seeking permission to enroll on this basis must contact the undergraduate advisor in economics.
+econ 342,summer,2026,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of B-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of B-; 45 units or permission of the department.
+econ 355w,summer,2026,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of B-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of B-; 45 units.
+econ 455w,summer,2026,ECON 333 with a minimum grade of C-.
+econ 480,summer,2026,ECON (or BUEC) 333 with a minimum grade of C-.
+econ 484,summer,2026,To be determined by the instructor subject to approval by the department chair.
+econ 750,summer,2026,"Completion of core MA degree requirements of ECON 802, 807 (or 808), 835, and 836 with a minimum GPA of 3.0."
+econ 751,summer,2026,ECON 750.
+econ 752,summer,2026,ECON 751 and department approval.
+econ 811,summer,2026,
+econ 899,summer,2026,"ECON 802, 807 (or 808), 835, and 836 (or 837)."
+econ 900,summer,2026,
+econ 912,summer,2026,
+econ 921,summer,2026,
+econ 984,summer,2026,ECON 838.
+econ 985,summer,2026,"ECON 803, ECON 804."
+econ 986,summer,2026,"ECON 808, ECON 809."
+econ 987,summer,2026,
+econ 990,summer,2026,
+econ 991,summer,2026,
+econ 999,summer,2026,
+educ 100w,summer,2026,
+educ 199,summer,2026,
+educ 220,summer,2026,
+educ 230,summer,2026,
+educ 240,summer,2026,
+educ 250,summer,2026,
+educ 252,summer,2026,
+educ 311,summer,2026,60 units.
+educ 313,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 315,summer,2026,EDUC 220 or PSYC 250 or LING 100. Students may be required to successfully complete a Criminal Record Check.
+educ 322,summer,2026,EDUC 220 or PSYC 250.
+educ 323,summer,2026,60 units including EDUC 220.
+educ 324,summer,2026,EDUC 220 or PSYC 250 and 60 units.
+educ 325,summer,2026,EDUC 220.
+educ 326,summer,2026,"One of EDUC 100, 220, 230, or 240; or EDUC 401/402, or corequisite EDUC 403."
+educ 341,summer,2026,60 units including three units in EDUC courses.
+educ 352w,summer,2026,EDUC 252.
+educ 370,summer,2026,"Completion of at least 60 units, including 3 units in Education."
+educ 371w,summer,2026,60 units; or permission of instructor.
+educ 375,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 376,summer,2026,
+educ 382,summer,2026,60 units.
+educ 404,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 411,summer,2026,"One of MATH 152, 155 or 158. Corequisite: EDUC 415 or appropriate math background and permission of instructor."
+educ 412w,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 414,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 415,summer,2026,"One of MATH 152, 155, or 158, and either EDUC 401/402 or corequisite EDUC 403."
+educ 416,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 422,summer,2026,PSYC 250 or corequisite of EDUC 315 or 473. Students may be required to successfully complete a Criminal Record Check.
+educ 423,summer,2026,Or corequisite: EDUC 323.
+educ 424,summer,2026,Prerequisite or corequisite: EDUC 422. Students must successfully complete a Criminal Record Check.
+educ 426,summer,2026,"Students may be required to successfully complete a Criminal Record Check. 60 units including EDUC 220 or PSYC 250, or EDUC 401/402 or Corequsite: EDUC 403."
+educ 437,summer,2026,60 units including 3 units in Education.
+educ 448,summer,2026,60 units including six in education courses. Teaching experience is recommended.
+educ 452,summer,2026,EDUC 401W/402W or Corequisite: EDUC 403. Students may be required to successfully complete a Criminal Record Check.
+educ 454,summer,2026,EDUC 401 and EDUC 402 or Corequisite: EDUC 403.
+educ 457,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 459,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 464,summer,2026,EDUC 401/402 or PSYC 250 or corequisite EDUC 403.
+educ 465,summer,2026,60 units.
+educ 466,summer,2026,Corequisite: EDUC 464.
+educ 467,summer,2026,"60 units plus one of the following: six units of EDUC course work; or completion of EDUC 401/402; or admission to the Certificate in Teaching ESL program, or co-requisite EDUC 403."
+educ 471,summer,2026,60 units.
+educ 472,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 473w,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 474,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 475,summer,2026,EDUC 401/402 or corequisite EDUC 403. Students must successfully complete an SFU criminal records check.
+educ 476,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 477,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 478,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 480,summer,2026,EDUC 401/402 or corequisite EDUC 403.
+educ 481,summer,2026,EDUC 401/402 (French Immersion) or corequisite EDUC 403.
+educ 482,summer,2026,60 units.
+educ 490,summer,2026,"60 units, consent of supervising faculty member, and approval of the director of undergraduate programs."
+educ 493,summer,2026,"60 units and a CGPA of 3.0, EDUC 452, consent of supervising faculty member, and approval of the director of undergraduate programs. Applications are available in the undergraduate programs office."
+educ 702,summer,2026,
+educ 703,summer,2026,
+educ 704,summer,2026,
+educ 705,summer,2026,
+educ 811,summer,2026,
+educ 816,summer,2026,
+educ 820,summer,2026,
+educ 830,summer,2026,
+educ 856,summer,2026,
+educ 861,summer,2026,
+educ 864,summer,2026,
+educ 869,summer,2026,
+educ 871,summer,2026,EDUC 870.
+educ 873,summer,2026,
+educ 877,summer,2026,
+educ 883,summer,2026,
+educ 885,summer,2026,
+educ 886,summer,2026,
+educ 888,summer,2026,
+educ 889,summer,2026,EDUC 719.
+educ 891,summer,2026,
+educ 898,summer,2026,
+educ 899,summer,2026,
+educ 904,summer,2026,
+educ 910,summer,2026,
+educ 924,summer,2026,
+educ 927,summer,2026,
+educ 934,summer,2026,"EDUC 864, EDUC 890, EDUC 891, EDUC 892, EDUC 893. Corequisite: EDUC 935."
+educ 935,summer,2026,"EDUC 864, EDUC 890, EDUC 891, EDUC 892, EDUC 893. Corequisite: EDUC 934."
+educ 983,summer,2026,
+educ 984,summer,2026,
+engl 112w,summer,2026,
+engl 114w,summer,2026,
+engl 199w,summer,2026,12 units.
+engl 210,summer,2026,12 units or one 100-division English course.
+engl 371,summer,2026,"30 units or two 200-division English courses. Recommended: One of English 199, 199W, or 214."
+engl 437w,summer,2026,45 units or two 300-division English courses.
+engl 474w,summer,2026,45 units or two 300-division English courses.
+engl 490,summer,2026,"Two 100-division English courses, two 200-division English courses and two 300-division English courses. Reserved for English honours, major, joint major and minor students. Admission is by permission of the instructor and the department."
+engl 496,summer,2026,"Lower division requirements for the English major. Open only to students who have been accepted into the English honours program, and who have completed ENGL 494."
+engl 821,summer,2026,
+engl 875,summer,2026,
+engl 882,summer,2026,
+engl 891,summer,2026,
+engl 892,summer,2026,
+engl 893,summer,2026,
+engl 894,summer,2026,ENGL 892 and ENGL 893.
+engl 899,summer,2026,
+ensc 194,summer,2026,
+ensc 195,summer,2026,
+ensc 196,summer,2026,
+ensc 220,summer,2026,"(PHYS 121 or PHYS 126 or PHYS 141), ENSC 120, MATH 232 and (MATH 260 or MATH 310), all with a minimum grade of C-. MATH 260 may be taken concurrently."
+ensc 225,summer,2026,"(ENSC 220 or MSE 250 or SEE 230), MATH 232, and (MATH 260 or MATH 310), all with a minimum grade of C-."
+ensc 251,summer,2026,"ENSC 151 or CMPT 135 or (CMPT 125 and CMPT 127), all with a minimum grade of C-."
+ensc 252,summer,2026,"ENSC 151 or CMPT 125 or CMPT 126 or CMPT 135, with a minimum grade of C-. ENSC 252 is a required course for all engineering science majors and honours students (no course substitutions are permitted)."
+ensc 254,summer,2026,"ENSC 251 and ENSC 252, both with a minimum grade of C-."
+ensc 280,summer,2026,"((PHYS 121 and ENSC 120) or PHYS 141) and (MATH 251 and MATH 232), all with a minimum grade of C-. MATH 251 and/or MATH 232 may be taken concurrently with ENSC 280. Engineering Science Majors and Honours students are required to take ENSC 280 (no course substitutions will be accepted)."
+ensc 295,summer,2026,ENSC 195 or 196.
+ensc 296,summer,2026,ENSC 195 or 196 and approval of internship co-ordinator required.
+ensc 320,summer,2026,"(ENSC 220 or MSE 250), MATH 232, and (MATH 260 or MATH 310), all with a minimum grade of C-."
+ensc 395,summer,2026,ENSC 295 or 296 and a minimum of 75 units.
+ensc 396,summer,2026,"ENSC 295 or 296, a minimum of 75 units and approval of internship co-ordinator required."
+ensc 405w,summer,2026,"(ENSC 105W or MSE 101W), ENSC 204, all with a minimum grade of C-, completion of a minimum of 22 units of required upper division ENSC courses, and completion of (or concurrent enrollment in) two upper division technical electives meeting the requirements of the program. Students are required to complete at least two co-ops before enrolling in ENSC 440 Capstone B. Capstone B must be taken in the term immediately following Capstone A. Enrollment into Capstone A is by approval of the department via Capstone application form."
+ensc 406,summer,2026,"100 units including one of ENSC 100, ENSC 106, CMPT 106, or MSE 102, with a minimum grade of C-."
+ensc 425,summer,2026,"ENSC 320, ENSC 325, (ENSC 380 or MSE 280), all with a minimum grade of C- and a minimum of 80 units."
+ensc 426,summer,2026,"Completion of 80 units including (ENSC 416 or PHYS 421) and ENSC 325, with a minimum grade of C-."
+ensc 428,summer,2026,"(ENSC 380 or MSE 280 or SEE 341) and ENSC 280, all with a minimum grade of C-. Students who completed STAT 270 prior to Spring 2015 may use STAT 270 instead of ENSC 280."
+ensc 429,summer,2026,"(ENSC 327 or ENSC 328), (ENSC 380 or MSE 280), all with a minimum grade of C- and a minimum of 80 units."
+ensc 440,summer,2026,ENSC 405W with a minimum grade of C-. Students will be automatically enrolled in ENSC 440 in the term immediately following successful completion of ENSC 405W.
+ensc 476,summer,2026,"Completion of 80 units including PHYS 121 or 102 or 141, with a minimum grade of C-. Recommended: ENSC 376 or 470."
+ensc 477,summer,2026,(ENSC 380 or MSE 280) with a minimum grade of C- and a minimum of 80 units.
+ensc 482,summer,2026,"MATH 232, MACM 316, (ENSC 280 or MSE 210 or PHYS 231), all with a minimum grade of C- and a minimum of 80 units."
+ensc 483,summer,2026,"ENSC 383 or MSE 381, with a minimum grade of C- and a minimum of 80 units."
+ensc 498,summer,2026,At least 115 units or permission of the academic supervisor.
+ensc 499,summer,2026,ENSC 498 with a minimum grade of P.
+ensc 704,summer,2026,"12 units of ENSC course work at the 800-level or higher with an SFU CGPA of at least 3.0. Approval of supervisor and a GPC representative is required prior to applying for, and accepting an internship."
+ensc 803,summer,2026,
+ensc 805,summer,2026,"Recommended: ENSC 380 or equivalent, ENSC 280 or equivalent."
+ensc 820,summer,2026,
+ensc 870,summer,2026,Students may only register for the ENSC 870-0 during their final term.
+ensc 880,summer,2026,ENSC PhD student.
+ensc 891,summer,2026,
+ensc 892,summer,2026,
+ensc 895,summer,2026,
+ensc 896,summer,2026,
+ensc 897,summer,2026,
+ensc 898,summer,2026,
+ensc 899,summer,2026,
+evsc 100,summer,2026,
+evsc 195,summer,2026,
+evsc 391,summer,2026,"60 units, 3.0 cumulative grade point average."
+evsc 489,summer,2026,"EVSC 305, 90 units and consent of EVSC Director."
+evsc 490w,summer,2026,"EVSC 305, EVSC 489, 90 units and consent of EVSC Director."
+evsc 491,summer,2026,"60 units, 3.0 cumulative grade point average."
+evsc 691,summer,2026,
+evsc 698,summer,2026,Enrolled in the master of science in environmental science program.
+evsc 898,summer,2026,
+fal x99,summer,2026,
+fan x99,summer,2026,
+fass 201,summer,2026,Open only to students accepted to the FASS Co-op Program.
+fass 222,summer,2026,
+fass 223,summer,2026,
+fass 224,summer,2026,
+fass 301,summer,2026,Open only to students accepted to the FASS Co-op Program.
+fass 302,summer,2026,Open only to students accepted to the FASS Co-op Program.
+fass 305,summer,2026,
+fass 401,summer,2026,Open only to students accepted to the FASS Co-op Program.
+fass 402,summer,2026,Open only to students accepted to the FASS Co-op Program.
+fass 805,summer,2026,
+fep 200,summer,2026,
+fep 201,summer,2026,
+fep 202,summer,2026,
+fep 203,summer,2026,
+fep 204,summer,2026,
+fep 205,summer,2026,
+fep 206,summer,2026,
+fep 209,summer,2026,
+fep 221,summer,2026,
+fep 222,summer,2026,
+fep 224,summer,2026,
+fep 225,summer,2026,
+fren 101,summer,2026,
+fren 102,summer,2026,"FREN 101, FREN 120, or FREN 121 or consult with a French advisor."
+fren 201,summer,2026,Grade 12 French or FREN 102 or FREN 122 or permission of the Department of French.
+fren 340,summer,2026,FREN 245 and FREN 301W.
+fren 452,summer,2026,Two 300-level FREN courses.
+fren 891,summer,2026,
+fren 896,summer,2026,
+fren 898,summer,2026,
+fren 998,summer,2026,
+ga 202,summer,2026,15 units.
+geog 100,summer,2026,
+geog 104,summer,2026,
+geog 150,summer,2026,
+geog 255,summer,2026,
+geog 312,summer,2026,"One of GEOG 100, 104 or 111 or one of EASC 101 or 104."
+geog 327,summer,2026,"At least 45 units, including GEOG 100 or REM 100."
+geog 363,summer,2026,"At least 45 units, including GEOG 100."
+geog 404,summer,2026,"Permission to enter directed readings courses requires written consent of both the faculty member willing to supervise the research, and the chair of the department."
+geog 405,summer,2026,"Permission to enter directed readings courses requires written consent of both the faculty member willing to supervise the research, and the chair of the department."
+geog 491,summer,2026,105 units and consent of supervisor. See a departmental academic advisor for details.
+geog 671,summer,2026,GEOG 600.
+geog 677,summer,2026,"GEOG 600, GEOG 601 and GEOG 606."
+geog 678,summer,2026,"GEOG 600, GEOG 601 and GEOG 603."
+geog 679,summer,2026,GEOG 600 and GEOG 671.
+geog 691,summer,2026,
+geog 697,summer,2026,
+geog 698,summer,2026,
+geog 699,summer,2026,
+gero 300,summer,2026,60 units.
+gero 420,summer,2026,60 units. Recommended: GERO 300.
+gero 850,summer,2026,MA in Gerontology students in good academic standing who have successfully completed a Criminal Record Check.
+gero 889,summer,2026,
+gero 896,summer,2026,
+gero 897,summer,2026,
+gero 898,summer,2026,
+gero 899,summer,2026,
+gero 994,summer,2026,All coursework towards the PhD in Gerontology.
+gero 995,summer,2026,All coursework towards the PhD in Gerontology.
+gero 996,summer,2026,GERO 994 and GERO 995.
+gero 998,summer,2026,
+grad 700,summer,2026,
+grad 800,summer,2026,
+grad 850,summer,2026,
+gsws 101,summer,2026,
+gsws 320,summer,2026,15 units.
+gsws 333,summer,2026,30 units including three units in GSWS or WS or GDST.
+gsws 399,summer,2026,30 units.
+gsws 401,summer,2026,Nine units in GSWS including GSWS 101 (or WS 101) and/or GSWS 102 (or WS 102) and approval of the course proposal by the department.
+gsws 402,summer,2026,Nine units in GSWS including GSWS 101 (or WS 101) and/or GSWS 102 (or WS 102) and approval of course proposal by Dept.
+gsws 403,summer,2026,nine units in GSWS including GSWS 101 (or WS 101) or GSWS 102 (or WS 102) and approval of course proposal by Dept.
+gsws 826,summer,2026,
+gsws 830,summer,2026,
+gsws 840,summer,2026,
+gsws 844,summer,2026,GSWS 822.
+gsws 898,summer,2026,
+gsws 997,summer,2026,
+gsws 998,summer,2026,
+gsws 999,summer,2026,GSWS 822 and five graduate courses.
+hist 106,summer,2026,
+hist 111,summer,2026,
+hist 180,summer,2026,
+hist 252,summer,2026,
+hist 285,summer,2026,
+hist 334,summer,2026,"45 units, including six units of lower division history. Recommended: HIST 106."
+hist 358,summer,2026,"45 units, including six units of lower division history."
+hist 366,summer,2026,"45 units, including six units of lower division history. HIST 255 is recommended."
+hist 401,summer,2026,"45 units, including nine units of lower division history and one of HIST 224, 225, 332 or permission of the department."
+hist 416,summer,2026,"45 units including nine units of lower division history. Recommended: HIST 223, 224."
+hist 463w,summer,2026,45 units including nine units of lower division history.
+hist 472w,summer,2026,45 units including nine units of lower division history.
+hist 489,summer,2026,45 units including nine units of lower division history. Recommended: at least three upper division courses in history.
+hist 490,summer,2026,45 units including nine units of lower division history. Recommended: at least three upper division courses in history.
+hist 800,summer,2026,23 units of graduate coursework.
+hist 860,summer,2026,
+hist 861,summer,2026,
+hist 862,summer,2026,
+hist 897,summer,2026,
+hist 898,summer,2026,
+hist 899,summer,2026,
+hsci 130,summer,2026,
+hsci 199,summer,2026,Will vary according to topic. Corequisite: Will vary according to topic.
+hsci 206,summer,2026,HSCI 130 with a minimum grade of C-.
+hsci 207,summer,2026,HSCI 130 with a minimum grade of C-. Corequisite: STAT 201 or 203 or 205.
+hsci 230,summer,2026,"30 units, including HSCI 130 with a minimum grade of C-, or permission of the instructor."
+hsci 305,summer,2026,"60 units, including nine HSCI units with a minimum grade of C-."
+hsci 308,summer,2026,45 units. Recommended: HSCI 130.
+hsci 310,summer,2026,60 units including HSCI 130 with a minimum grade of C-.
+hsci 319w,summer,2026,"75 units including nine HSCI units with a minimum grade of C-, one of which must be a 200-division course."
+hsci 326,summer,2026,MBB 231 with a minimum grade of C.
+hsci 350,summer,2026,Students must be accepted into the health sciences co-op program.
+hsci 351,summer,2026,Completion of HSCI 350 Co-op Practicum I.
+hsci 450,summer,2026,Completion of HSCI 351 Co-op Practicum II.
+hsci 451,summer,2026,Completion of HSCI 450 Co-op Practicum III.
+hsci 452,summer,2026,Completion of HSCI 451 Co-op Practicum IV.
+hsci 462,summer,2026,HSCI 216 with a minimum grade of C-.
+hsci 471,summer,2026,Will vary according to topic.
+hsci 481,summer,2026,"90 units, including at least 15 upper division HSCI units with a minimum grade of C-. Other prerequisites may vary according to topic."
+hsci 485,summer,2026,"90 units, including at least 15 upper division HSCI units with a minimum grade of C-. Other prerequisites may vary according to topic."
+hsci 486,summer,2026,"90 units, including at least 15 upper division HSCI units with a minimum grade of C-. Other prerequisites may vary according to topic."
+hsci 488,summer,2026,
+hsci 489,summer,2026,
+hsci 490,summer,2026,
+hsci 491,summer,2026,HSCI 490 with a minimum grade of C-.
+hsci 492,summer,2026,"One of HSCI 491, HSCI 493, HSCI 494, with a minimum grade of C-."
+hsci 493,summer,2026,HSCI 490 with a minimum grade of C-.
+hsci 494,summer,2026,HSCI 490 with a minimum grade of C-.
+hsci 496,summer,2026,"HSCI 160 or equivalent, and HSCI 230 (or 330) or equivalent, all with a minimum grade of C-."
+hsci 880,summer,2026,"HSCI 801, 802, 803, 901."
+hsci 885,summer,2026,"HSCI 802, HSCI 821, HSCI 901."
+hsci 886,summer,2026,
+hsci 887,summer,2026,
+hsci 893,summer,2026,
+hsci 894,summer,2026,
+hsci 898,summer,2026,
+hsci 901,summer,2026,HSCI 900
+hsci 903,summer,2026,HSCI 902.
+hsci 983,summer,2026,
+hsci 990,summer,2026,
+hum 102w,summer,2026,
+hum 130,summer,2026,
+hum 333w,summer,2026,45 units.
+hum 340,summer,2026,45 units.
+hum 360,summer,2026,45 units.
+hum 381,summer,2026,45 units.
+hum 390,summer,2026,"Two of any 300-division global humanities courses or permission of the chair plus permission of instructor. This course may be used only once for credit towards a degree and is reserved for global humanities major, joint major, extended minor, minor and PBD students."
+hum 800,summer,2026,
+hum 801,summer,2026,
+hum 803,summer,2026,
+hum 804,summer,2026,
+iat 103w,summer,2026,
+iat 199,summer,2026,This course is only available to concurrent studies students.
+iat 201,summer,2026,"Completion of at least one lower division ""W"" course."
+iat 206w,summer,2026,IAT 103W with a minimum grade of C-.
+iat 210,summer,2026,
+iat 244,summer,2026,
+iat 265,summer,2026,"IAT 167 with a minimum grade of C- and one of MATH 130, MACM 101, MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-."
+iat 271,summer,2026,
+iat 272,summer,2026,IAT 271 (or WKTM 100).
+iat 309w,summer,2026,IAT 206W with a minimum grade of C- and completion of 48 units.
+iat 312,summer,2026,"Completion of 48 units, including IAT 265 with a minimum grade of C-."
+iat 333,summer,2026,"Completion of 48 units, including IAT 238 with a minimum grade of C- or IAT 235 with a minimum grade of C- completed before the Spring 2025 term."
+iat 339,summer,2026,"IAT 235 and IAT 265, with a minimum grade of C-."
+iat 340,summer,2026,Completion of 24 units. Recommended: IAT 202 New Media Images.
+iat 360,summer,2026,"IAT 265 or CMPT 225, with a minimum grade of C-."
+iat 373,summer,2026,IAT 272 (or WKTM 200).
+iat 374,summer,2026,IAT 373 (or WKTM 300).
+iat 375,summer,2026,IAT 374 (or WKTM 400).
+iat 387,summer,2026,"Completion of 45 units, and permission of the School and the instructor is required. No more than six units of Directed Studies may be taken."
+iat 431,summer,2026,"Completion of 60 units, including IAT 309W and IAT 333, with a minimum grade of C-."
+iat 438,summer,2026,"Completion of 75 units, including IAT 309W and 333, with a minimum grade of C-."
+iat 461,summer,2026,"IAT 355 and IAT 360, both with a minimum grade of C-."
+iat 480,summer,2026,Completion of 60 units.
+iat 488,summer,2026,"Completion of 69 units. No more than six units of Directed Studies may be taken, and permission of the instructor and school are required."
+iat 871,summer,2026,
+iat 872,summer,2026,
+iat 882,summer,2026,
+iat 884,summer,2026,
+iat 890,summer,2026,Enrollment in SIAT PhD Program and completion of Annotated Bibliography.
+iat 897,summer,2026,
+iat 898,summer,2026,
+iat 899,summer,2026,
+indg 101,summer,2026,
+indg 201w,summer,2026,
+indg 305,summer,2026,
+indg 332,summer,2026,INDG (or FNST) 101 or INDG (or FNST) 201W.
+indg 403,summer,2026,"45 units and one of INDG (or FNST) 101 or 201W, or permission of the instructor."
+indg 442,summer,2026,15 units in Indigenous (or First Nations) studies. Corequisite: Permission of an instructor and department.
+indg 447,summer,2026,15 units of INDG (or FNST) courses; permission of an instructor and department approval. Corequisite: Varies depending on topic.
+inlg 133,summer,2026,
+inlg 134,summer,2026,INLG (or FNLG) 133.
+inlg 158,summer,2026,
+inlg 233,summer,2026,INLG (or FNLG) 134.
+inlg 234,summer,2026,INLG (or FNLG) 233.
+inlg 258,summer,2026,
+inlg 300,summer,2026,"Completion of Certificate in Indigenous Language Proficiency offered in the same language as INLG (or FNLG) 300, including INLG (or FNLG) 200 or LING 220; or with permission of instructor."
+inlg 333,summer,2026,Completion of Certificate in Indigenous Language Proficiency; or with permission of instructor.
+inlg 334,summer,2026,Completion of Certificate in Indigenous Language Proficiency including INLG (or FNLG) 333 (or as corequisite); or permission of instructor.
+inlg 335,summer,2026,"INLG (or FNLG) 130, INLG (or FNLG) 133, INLG (or FNLG) 233 or permission of instructor. Recommended: LING 360."
+inlg 358,summer,2026,Completion of Certificate in Indigenous Language Proficiency including INLG (or FNLG) 258; or permission of instructor.
+inlg 433,summer,2026,INLG (or FNLG) 332 or permission of course supervisor.
+inlg 434,summer,2026,INLG (or FNLG) 433 or permission of course supervisor. Recommended: LING 431 and 432.
+inlg 435,summer,2026,"LING 220, INLG (or FNLG) 332 or permission of instructor. Recommended: LING 360, 431 and 432."
+inlg 458,summer,2026,Completion of Certificate in Indigenous Language Proficiency including INLG (or FNLG) 358; or permission of instructor.
+ins 887,summer,2026,
+ins 888,summer,2026,
+ins 890,summer,2026,Permission of the department.
+ins 891,summer,2026,
+ins 892,summer,2026,
+ins 893,summer,2026,
+ins 894,summer,2026,
+ins 895,summer,2026,
+ins 896,summer,2026,
+ins 897,summer,2026,
+ins 898,summer,2026,
+ins 899,summer,2026,
+is 101,summer,2026,
+is 315,summer,2026,45 units.
+is 325,summer,2026,45 units.
+is 423,summer,2026,45 units.
+is 428,summer,2026,75 units. International studies major or honours students and written application to the school no later than the last day of classes of the preceding term.
+is 490,summer,2026,Admission is by permission of the instructor and the School.
+is 497,summer,2026,"45 units. Available to international studies major, honours, and minor students, or those admitted to the international studies field school. A Criminal Record Check may be required."
+is 499,summer,2026,Minimum grade of B+ in IS 490.
+is 809,summer,2026,
+is 820,summer,2026,
+is 825,summer,2026,
+is 880,summer,2026,Enrollment in the MA in International Studies program.
+is 886,summer,2026,Enrollment in the MA in International Studies program.
+is 898,summer,2026,Enrollment in the MA in International Studies program.
+japn 100,summer,2026,
+japn 110,summer,2026,JAPN 100 or equivalent. Students who took Japanese courses in secondary school and/or with previous knowledge of Japanese may need to be evaluated for placement into JAPN 110 or higher level of courses and are required to contact the instructor before enrollment.
+japn 301,summer,2026,JAPN 300 or by permission of the department.
+lbrl 750,summer,2026,
+lbrl 751,summer,2026,
+lbrl 752,summer,2026,
+lbst 100,summer,2026,
+lbst 201,summer,2026,Strongly Recommended: LBST 101.
+lbst 310,summer,2026,30 units. Strongly Recommended: LBST 101.
+ling 100,summer,2026,
+ling 111,summer,2026,
+ling 160,summer,2026,
+ling 190,summer,2026,
+ling 220,summer,2026,
+ling 280,summer,2026,
+ling 282w,summer,2026,LING 220.
+ling 309w,summer,2026,LING 282W. Recommended: LING 160.
+ling 321,summer,2026,LING 220.
+ling 322,summer,2026,LING 220.
+ling 324,summer,2026,LING 220.
+ling 330,summer,2026,LING 220.
+ling 350,summer,2026,LING 220.
+ling 415,summer,2026,12 units of upper division linguistic courses.
+ling 491,summer,2026,"LING 220, 60 units, and permission of the Undergraduate Committee Chair."
+ling 800,summer,2026,
+ling 804,summer,2026,
+ling 810,summer,2026,
+ling 811,summer,2026,
+ling 832,summer,2026,
+ling 833,summer,2026,
+ling 893,summer,2026,
+ling 895,summer,2026,All PhD coursework in Linguistics.
+ling 896,summer,2026,
+ling 898,summer,2026,
+ling 899,summer,2026,
+ls 812,summer,2026,
+ls 829,summer,2026,
+ls 998,summer,2026,
+ls 999,summer,2026,
+macm 101,summer,2026,"BC Pre-Calculus 12 or BC Calculus 12 (or equivalent), or any of MATH 100, 150, 151, 154, 157."
+macm 316,summer,2026,"MATH 152 or 155 or 158, and MATH 232 or 240, and computing experience."
+masc 410,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 421,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 430,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 435,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 471,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 473,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 474,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 478,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 479,summer,2026,"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses."
+masc 501,summer,2026,
+math 150,summer,2026,"Pre-Calculus 12 (or equivalent) with a grade of at least B+, or MATH 100 with a grade of at least B-."
+math 152,summer,2026,"MATH 150 or 151 or 155, with a minimum grade of C-; or MATH 154 or 157, with a grade of at least B."
+math 155,summer,2026,"MATH 150, 151 or 154, with a minimum grade of C-; or MATH 157 with a grade of at least B."
+math 157,summer,2026,"Pre-Calculus 12 (or equivalent) with a grade of at least B, or MATH 100 with a grade of at least C, or MATH 110 with a grade of at least C."
+math 190,summer,2026,"Pre-Calculus 11 or Foundations of Mathematics 11 (or equivalent)
+with a grade of at least B, or SFU FAN X99 course with a grade of at least C, or achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test. This course may not be counted toward the Mathematics minor, major or honours degree requirements. Students who have taken, have received transfer credit for, or are currently taking MATH 150, 151, 154 or 157 may not take MATH 190 for credit without permission from the Department of Mathematics. Intended to be particularly accessible to students who are not specializing in mathematics."
+math 232,summer,2026,"MATH 150 or 151 or MACM 101, with a minimum grade of C-; or MATH 154 or 157, both with a grade of at least B."
+math 240,summer,2026,"MATH 150 or 151 or MACM 101, with a minimum grade of C-; or MATH 154 or 157, both with a grade of at least B."
+math 251,summer,2026,"MATH 152 with a minimum grade of C-; or MATH 158 with a grade of at least B. Also, for students in the life sciences, MATH 154 with a minimum grade of C- and MATH 155 with a minimum grade of A-. Recommended: It is recommended that MATH 240 or 232 be taken before or concurrently with MATH 251."
+math 254,summer,2026,"MATH 240 or 232, and 251, all with a minimum grade of C-. MATH 240 or 232 may be taken concurrently."
+math 260,summer,2026,"MATH 152 with a minimum grade of C-; or MATH 155 or 158, with a grade of at least B; MATH 232 or 240, with a minimum grade of C-."
+math 336,summer,2026,"Students must apply to and receive permission from the co-op co-ordinator at least one, preferably two, terms in advance. They will normally be required to have completed 45 units with a GPA of 2.5. This course will be graded on a pass/withdraw basis. A course fee is required."
+math 337,summer,2026,MATH 336 and permission of the co-op co-ordinator; students must apply at least one term in advance.
+math 342,summer,2026,"MATH 240 or 232, with a minimum grade of C-, and one additional 200-level MATH or MACM course."
+math 419,summer,2026,"MATH 232 or 240 and one of MATH 314, 320, 322, PHYS 384, all with a minimum grade of C-."
+math 436,summer,2026,MATH 337 and permission of the co-op co-ordinator; students must apply at least one term in advance.
+math 437,summer,2026,MATH 436 and permission of the co-op co-ordinator; students must apply at least one term in advance.
+math 486,summer,2026,MATH 437 and permission of the co-op co-ordinator. Students must apply at least one term in advance.
+math 719,summer,2026,
+math 877,summer,2026,
+math 879,summer,2026,
+math 880,summer,2026,
+math 890,summer,2026,
+math 891,summer,2026,
+math 894,summer,2026,
+math 895,summer,2026,
+math 898,summer,2026,
+math 899,summer,2026,
+mbb 151,summer,2026,Acceptance in the Science Co-operative Education Program.
+mbb 222,summer,2026,or Corequisite CHEM 281.
+mbb 229,summer,2026,or Corequisite: MBB 222 with a minimum grade of C- or better.
+mbb 231,summer,2026,"MBB 222, BISC 101, CHEM 281 with grades of C- or better. Corequisite or Prerequisite: CHEM 282 or CHEM 283."
+mbb 251,summer,2026,Acceptance in the Science Co-operative Education Program.
+mbb 309w,summer,2026,"MBB 229 and MBB 231, both with a minimum grade of C."
+mbb 321,summer,2026,"MBB 231, with a minimum grade of C."
+mbb 326,summer,2026,MBB 231 with a minimum grade of C.
+mbb 331,summer,2026,"MBB 231, and BISC 202, with a minimum grade of C."
+mbb 351,summer,2026,Acceptance in the Science Co-operative Education Program.
+mbb 443,summer,2026,"MBB 321 and MBB 322, with a minimum grade of C."
+mbb 451,summer,2026,Acceptance in the Science Co-operative Education Program.
+mbb 452,summer,2026,Acceptance in the Science Co-operative Education Program.
+mbb 463,summer,2026,"MBB 331, with a minimum grade of C."
+mbb 471,summer,2026,Permission of the instructor.
+mbb 481,summer,2026,"MBB 308, MBB 309W and MBB 331, enrollment in the MBB or Biological Physics Honours Program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the MBB department. Corequisite: MBB 482 and MBB 483."
+mbb 482,summer,2026,"MBB 308, MBB 309W and MBB 331, enrollment in the MBB or Biological Physics Honours Program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the MBB department. Corequisite: MBB 481 and MBB 483."
+mbb 483,summer,2026,"MBB 308, MBB 309W and MBB 331, enrollment in the MBB or Biological Physics Honours Program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the MBB department. Corequisite: MBB 481 and MBB 482."
+mbb 490,summer,2026,"MBB 231, with a minimum grade of C, and permission of the molecular biology and biochemistry department. Usually, upper level standing with at least 60 units in a Biochemistry major, minor or honours program will be required."
+mbb 491,summer,2026,"MBB 308 or MBB 309W and permission of the MBB department. Upper level standing in an MBB major, minor or honours program is required."
+mbb 492,summer,2026,"MBB 491, MBB 308, MBB 309W and MBB 331, enrollment in the MBB honours program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the department."
+mbb 496,summer,2026,"75 units and upper division standing in MBB-BUS or MBB-CS Joint Honours program, and MBB 308 or 309W with a minimum grade of C."
+mbb 498,summer,2026,"MBB 308 or 309W; Students may not take MBB 498 concurrently with MBB 481, 482, 483, 491 or 492 or BISC 490, 491, 492W, 498 or 499."
+mbb 743,summer,2026,
+mbb 763,summer,2026,Permission of the department. Recommended: MBB 331 or equivalent.
+mbb 806,summer,2026,Permission of the student's supervisory committee.
+mbb 861,summer,2026,BISC 331/MBB 331 or equivalent.
+mbb 871,summer,2026,
+mbb 872,summer,2026,
+mbb 873,summer,2026,
+mbb 898,summer,2026,
+mbb 899,summer,2026,
+mse 101w,summer,2026,
+mse 112,summer,2026,CMPT 130.
+mse 293,summer,2026,
+mse 294,summer,2026,
+mse 300,summer,2026,More than 65 units.
+mse 311,summer,2026,"MSE 222 (or ENSC 282), MSE 251 (or ENSC 226)."
+mse 312,summer,2026,"MSE 110 (or ENSC 182), MSE 320
+(or ENSC 382), MSE 381 (or ENSC 383). MSE 381 may be taken concurrently."
+mse 353,summer,2026,MSE 251 (previously ENSC 226).
+mse 381,summer,2026,MSE 280 (or ENSC 380).
+mse 393,summer,2026,MSE 293 or 294.
+mse 394,summer,2026,"MSE 293 or 294 and approval of
+internship co-ordinator required."
+mse 405w,summer,2026,MSE 300. MSE 300 may be taken concurrently.
+mse 411,summer,2026,MSE 410. Must not be taken concurrently with MSE 493 or MSE 494.
+mse 450,summer,2026,"MSE 352, MSE 381 (or ENSC 383), and completion of 80 units."
+mse 452,summer,2026,MSE 353.
+mse 454,summer,2026,80 units.
+mse 480,summer,2026,MSE 310 (or ENSC 387)and a minimum of 80 credits.
+mse 481,summer,2026,MSE 352 (or ENSC 252) and MSE 381 (or ENSC 383) and a minimum of 80 credits.
+mse 486,summer,2026,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee.
+mse 487,summer,2026,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee.
+mse 489,summer,2026,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee.
+mse 493,summer,2026,MSE 393 or 394 and a minimum of 75 units.
+mse 494,summer,2026,"MSE 393 or 394, a minimum of 75 units and approval of internship co-ordinator required."
+mse 496,summer,2026,"Permission of the undergraduate
+curriculum committee chair."
+mse 497,summer,2026,"Permission of the undergraduate
+curriculum committee chair."
+mse 498,summer,2026,At least 100 units or permission of the academic supervisor.
+mse 499,summer,2026,MSE 498.
+mse 711,summer,2026,
+mse 750,summer,2026,
+mse 754,summer,2026,
+mse 780,summer,2026,
+mse 795,summer,2026,12 units of MSE course work at the 700-level or higher with a minimum SFU CGPA of 3.0. Approval of supervisor and a GPC representative is required prior to applying for and accepting an internship.
+mse 890,summer,2026,PhD Students in the School of Mechatronic Systems Engineering (MSE).
+mse 891,summer,2026,
+mse 892,summer,2026,
+mse 894,summer,2026,
+mse 895,summer,2026,
+mse 898,summer,2026,
+mse 899,summer,2026,MSE 890.
+mse 924,summer,2026,MSE 923. Recommended Prerequisite: MSE 353 (or equivalent).
+nusc 481,summer,2026,Permission of the department; knowledge of nuclear science at an advanced level. Normally taken after completion of 300-level course requirements.
+nusc 482,summer,2026,Permission of the Department.
+nusc 484,summer,2026,Permission of the department; knowledge of nuclear science at an advanced level. Normally taken after completion of 300-level course requirements.
+onc 510,summer,2026,Enrollment in a participating graduate program. No specific courses are prerequisites.
+phil 100w,summer,2026,
+phil 105,summer,2026,
+phil 110,summer,2026,
+phil 120w,summer,2026,
+phil 321,summer,2026,"One of PHIL 120, 120W, 121, 220, 221, 270, SDA 270, ENV 320W, or REM 320W."
+phil 329,summer,2026,"One of PHIL 120, 120W, 121, 220, 221, 270, SDA 270, ENV 320W, or REM 320W."
+phil 342,summer,2026,"One prior philosophy course (not including PHIL 110, PHIL 105, PHIL 310, PHIL 314, or PHIL 315). (This prerequisite may be waived in some cases, at the discretion of the instructor.)"
+phil 451,summer,2026,"Nine upper division PHIL units. It is highly recommended that students in PHIL 451 have taken prior courses in the history of philosophy (e.g., PHIL 150, PHIL 322, PHIL 342, PHIL 350, PHIL 352, PHIL 356, PHIL 357, or PHIL 358)."
+phil 467w,summer,2026,"15 upper division PHIL units or permission from the instructor. Students not in a philosophy major, philosophy honours, or joint major program can take PHIL 467W only with special permission from the instructor."
+phil 479,summer,2026,Enrolled in the philosophy honours program.
+phil 822,summer,2026,
+phil 852,summer,2026,
+phil 898,summer,2026,
+phil 899,summer,2026,
+phys 100,summer,2026,"BC Pre-Calculus 12 (or equivalent) or MATH 100, with a minimum grade of C-. BC Physics 11 (or equivalent) is recommended."
+phys 101,summer,2026,"BC Principles of Physics 12 or PHYS 100 or equivalent, with a minimum grade of C-. This prerequisite may be waived, at the discretion of the department, as determined by the student's performance on a regularly scheduled PHYS 100 final exam. Please consult the physics advisor for further details. Corequisite: MATH 150 or 151 or 154 or 157; BISC 100 or 101 or 102. Recommended Corequisite: PHYS 132."
+phys 102,summer,2026,"PHYS 101 or 120 or 125 or 140; MATH 150 or 151 or 154 or 157; both with a minimum grade of C-. Corequisite: BISC 100 or 101 or 102. Recommended Corequisites: MATH 152, 155 or 158; PHYS 133."
+phys 121,summer,2026,"PHYS 120 or 125 or 140, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or 155. Recommended Corequisite: PHYS 133."
+phys 133,summer,2026,"PHYS 132 or 140 or ENSC 120 (no substitutions), with a minimum grade of C-. Corequisite: PHYS 102 or 121 or 126."
+phys 335,summer,2026,"Completion of 30 units, with a minimum GPA of 2.75 in the physics program. Students should apply to the department at least one term in advance."
+phys 336,summer,2026,PHYS 335 followed by 12 units. A minimum cumulative GPA of 2.75. Students should apply to the department at least one term in advance.
+phys 435,summer,2026,PHYS 336 and 60 units with a minimum cumulative GPA of 2.75.
+phys 436,summer,2026,PHYS 435 followed by 12 units. A minimum cumulative GPA of 2.75.
+phys 437,summer,2026,PHYS 436 and a minimum cumulative GPA of 2.75. Students should apply to the department at least one term in advance.
+phys 887,summer,2026,
+phys 898,summer,2026,
+phys 899,summer,2026,
+plan 319,summer,2026,45 units.
+plan 406,summer,2026,PLAN 100 or PLAN 200; and 60 units.
+plan 443,summer,2026,PLAN 100 or PLAN 200; and 60 units.
+plan 463,summer,2026,60 units or permission of instructor.
+plcy 809,summer,2026,Open only to students enrolled in the MPP program.
+plcy 835,summer,2026,"PLCY 802, PLCY 804, PLCY 806, PLCY 807 and approval of the department."
+plcy 850,summer,2026,
+pol 100,summer,2026,
+pol 151,summer,2026,
+pol 200w,summer,2026,
+pol 341,summer,2026,POL 141 and three lower division units in political science or permission of the department.
+pol 346,summer,2026,Six lower division units in political science or permission of the department.
+pol 432,summer,2026,POL 141 and eight upper division units in political science or permission of the department.
+pol 448,summer,2026,Eight upper division units in political science or permission of the department.
+pol 451,summer,2026,Eight upper division units in political science or permission of the department.
+pol 484,summer,2026,Completed minimum 30 units of University courses and GPA of 2.50.
+pol 496,summer,2026,90 units. By application to the undergraduate chair.
+pol 498,summer,2026,Permission of the department. Students may count only one readings course as credit towards their upper division political science requirements.
+pol 840,summer,2026,
+pol 880,summer,2026,Admitted graduate student in Canadian University Political Science Program.
+pol 890,summer,2026,
+pol 891,summer,2026,
+pol 892,summer,2026,
+pol 893,summer,2026,
+pol 894,summer,2026,
+pol 896,summer,2026,
+pol 897,summer,2026,
+pol 898,summer,2026,"To enroll in POL 898, students must have completed a minimum of four courses while in the MA program, one of which must be POL 800, and must have a minimum CGPA of 3.67."
+pol 899,summer,2026,
+psyc 100,summer,2026,
+psyc 102,summer,2026,Recommended: PSYC 100.
+psyc 201w,summer,2026,PSYC 100 or 102.
+psyc 210,summer,2026,"BC high school Math 12 with a minimum grade of C (2.0) or BC high school Math 11 with a minimum grade of B- (2.67) or any level MATH or STAT course with a C- (1.67) or FAN X99 taken at SFU with a minimum grade of C (2.00) or achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test. Corequisite: PSYC 201W, but prior completion recommended."
+psyc 241,summer,2026,PSYC 102.
+psyc 260,summer,2026,PSYC 102.
+psyc 268,summer,2026,PSYC 102.
+psyc 280,summer,2026,PSYC 100. Recommended: BISC 101.
+psyc 300w,summer,2026,PSYC 201W.
+psyc 356,summer,2026,"PSYC 201, 241 and 250."
+psyc 359,summer,2026,PSYC 201 and PSYC 250 (or PSYC 241).
+psyc 361,summer,2026,"PSYC 201, 260."
+psyc 366,summer,2026,PSYC 201 and PSYC 260.
+psyc 367,summer,2026,"PSYC 201, PSYC 260, PSYC 362."
+psyc 371,summer,2026,PSYC 201 and 241.
+psyc 388,summer,2026,PSYC 201 and 280.
+psyc 391,summer,2026,PSYC 201. Other prerequisites vary by topic offering.
+psyc 393,summer,2026,"PSYC 201, 60 units, a UDGPA of at least 2.5, and permission of the department. Tri-council ethics certificate."
+psyc 461,summer,2026,"PSYC 201, 210, 260, 60 units, and a CGPA of 3.0. Other prerequisites vary by topic offering."
+psyc 476,summer,2026,"PSYC 201, 210, 268, 60 units, and a CGPA of 3.0. Other prerequisites vary by topic offering."
+psyc 493,summer,2026,"PSYC 201, 210, 60 units, a UDGPA of at least 3.0, and permission of the department."
+psyc 494,summer,2026,"PSYC 201, 210, 60 units, a UDGPA of at least 3.0, and permission of the department."
+psyc 495,summer,2026,"PSYC 201, 210, 60 units, a UDGPA of at least 3.0, and permission of the department."
+psyc 770,summer,2026,
+psyc 809,summer,2026,"PSYC 820B, 821B, 822, 823, 824, or permission of the instructor. Other prerequisites vary by topic offering."
+psyc 825,summer,2026,Admission to Clinical Psychology Graduate Program. Students must successfully complete a Criminal Record Check.
+psyc 880,summer,2026,"PSYC 744, 820B, 821B, 910, 911. Students must successfully complete a Criminal Record Check."
+psyc 881,summer,2026,Admission to the doctoral clinical program. Students must successfully complete a Criminal Record Check.
+psyc 882,summer,2026,Admission to the clinical program with a specialization in neuropsychology. Students must successfully complete a Criminal Record Check.
+psyc 886,summer,2026,"Equivalent of the MA clinical program, three PhD level courses, successful completion of the PhD comprehensive examinations, and successful defense of the PhD research proposal. Students must successfully complete a Criminal Record Check."
+psyc 890,summer,2026,"PSYC 790 or PSYC 791, and PSYC 836. Students must successfully complete a Criminal Record Check."
+psyc 892,summer,2026,PSYC 790 or PSYC 791. Students must successfully complete a Criminal Record Check.
+psyc 895,summer,2026,
+psyc 896,summer,2026,
+psyc 897,summer,2026,PSYC 790 or PSYC 791.
+psyc 898,summer,2026,
+psyc 899,summer,2026,
+psyc 990,summer,2026,PSYC 790 or PSYC 791.
+psyc 991,summer,2026,
+psyc 992,summer,2026,
+psyc 993,summer,2026,
+psyc 997,summer,2026,
+psyc 998,summer,2026,Admission to the masters or doctoral program.
+psyc 999,summer,2026,Admission to Clinical Psychology Graduate Program.
+pub 231,summer,2026,PUB 131 or equivalent. IAT 102 is recommended.
+pub 332,summer,2026,PUB 231.
+pub 355w,summer,2026,60 units.
+pub 605,summer,2026,
+pub 606,summer,2026,Admittance to the program.
+pub 607,summer,2026,Admittance to the program.
+pub 655,summer,2026,
+rem 100,summer,2026,
+rem 319,summer,2026,45 units.
+rem 320w,summer,2026,45 units. Philosophy Majors and Minors may not take this course for credit towards their major or minor degree.
+rem 485,summer,2026,"60 units or permission of instructor, and permission of department."
+rem 661,summer,2026,
+rem 664,summer,2026,
+rem 665,summer,2026,
+rem 667,summer,2026,
+rem 669,summer,2026,Admission to REM graduate program (MRM or PhD).
+rem 697,summer,2026,
+rem 699,summer,2026,
+rem 898,summer,2026,
+rem 899,summer,2026,
+risk 201,summer,2026,"MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B. Recommended: RISK (or ACMA) 101 or RISK 102."
+risk 336,summer,2026,Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.
+risk 337,summer,2026,RISK (or ACMA) 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+risk 436,summer,2026,RISK (or ACMA) 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+risk 437,summer,2026,RISK (or ACMA) 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+risk 438,summer,2026,RISK (or ACMA) 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+sa 101,summer,2026,
+sa 150,summer,2026,
+sa 201w,summer,2026,Recommended: SA 101.
+sa 218,summer,2026,
+sa 250,summer,2026,SA 150.
+sa 321,summer,2026,SA 101 or 150 or 201W.
+sa 322,summer,2026,SA 101 or 150 or 201W.
+sa 337,summer,2026,SA 101 or 150 or 201W.
+sa 350,summer,2026,SA 250.
+sa 355,summer,2026,SA 255.
+sa 356w,summer,2026,SA 101.
+sa 418,summer,2026,"72 units, which must include SA 101 or 150 or 201W."
+sa 442,summer,2026,Minimum of 72 units including either SA 101 or SA 150.
+sa 497,summer,2026,Minimum of 72 units including SA 101 or 150 or 201W.
+sa 499,summer,2026,"SA 495, permission from the SA department, and prior agreement from an SA faculty member who has agreed to supervise the honours essay."
+sa 853,summer,2026,
+sa 854,summer,2026,
+sa 871,summer,2026,
+sa 872,summer,2026,
+sa 887,summer,2026,
+sa 897,summer,2026,"All PhD course requirements, with the exception of SA 857 must be completed before student may enroll in SA 897."
+sa 898,summer,2026,
+sa 899,summer,2026,
+sci 140,summer,2026,
+sd 100,summer,2026,
+see 221,summer,2026,"MSE 103 or PHYS 140, and MATH 152."
+see 230,summer,2026,"PHYS 141, MATH 232. Corequisite: (MATH 260 or MATH 310)."
+see 241,summer,2026,"PHYS 141, MATH 232. Corequisite: MATH 251."
+see 290,summer,2026,
+see 294,summer,2026,
+see 300,summer,2026,A minimum of 65 units OR a minimum of 55 units plus two-term co-op work.
+see 310,summer,2026,"Completion of one co-op work term; SEE 111, 224, 242, 251."
+see 324,summer,2026,"PHYS 141, SEE 224, SEE 225."
+see 331,summer,2026,SEE 231 and SEE 251.
+see 332,summer,2026,SEE 251.
+see 341,summer,2026,"SEE 242, SEE 230."
+see 342,summer,2026,SEE 341.
+see 351,summer,2026,"MATH 260, SEE 224, and SEE 225. Corequisite: SEE 324. MSE students who completed MSE 321 can take this course upon approval of the course instructor."
+see 352,summer,2026,SEE 224.
+see 354,summer,2026,"SEE 222, SEE 331, SEE 324."
+see 390,summer,2026,SEE 290 or SEE 294.
+see 394,summer,2026,SEE 290 or SEE 294.
+see 460,summer,2026,"SEE 100, SEE 221, SEE 222."
+see 486,summer,2026,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee. The specific prerequisite courses will be identified by the course supervisor.
+see 490,summer,2026,SEE 390 or SEE 394.
+see 494,summer,2026,SEE 390 or SEE 394.
+see 498,summer,2026,"At least 115 units with a minimum 3.0 CGPA and approval of the department, or permission of the academic supervisor."
+see 499,summer,2026,SEE 498.
+see 795,summer,2026,Completion of all required coursework towards the students’ degree and satisfactory academic standing. Approval of supervisor and a GPC representative is required prior to accepting an internship.
+see 799,summer,2026,SEE 772.
+see 890,summer,2026,
+see 891,summer,2026,
+see 893,summer,2026,
+see 895,summer,2026,
+see 896,summer,2026,
+see 897,summer,2026,
+see 898,summer,2026,
+see 899,summer,2026,SEE 890. Corequisite: SEE 897.
+span 100,summer,2026,
+span 110,summer,2026,"SPAN 100 (or SPAN 102), grade 12 Spanish, or equivalent."
+stat 100,summer,2026,
+stat 201,summer,2026,Recommended: 30 units.
+stat 203,summer,2026,"Recommended: 30 units including a research methods course such as SA 255, CRIM 220, POL 200W, or equivalent."
+stat 270,summer,2026,"or Corequisite: MATH 152 or 155 or 158, with a minimum grade of C-. Students wishing an intuitive appreciation of a broad range of statistical strategies may wish to take STAT 100 first."
+stat 271,summer,2026,CMPT 210 with a minimum grade of C-.
+stat 302,summer,2026,"One of STAT 201, STAT 203, STAT 205, STAT 270, BUS 232, or ECON 233, with a minimum grade of C-."
+stat 336,summer,2026,Students must apply and receive permission from the co-op co-ordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.5 before they may take this practicum course.
+stat 337,summer,2026,STAT 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 436,summer,2026,STAT 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 437,summer,2026,STAT 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 438,summer,2026,STAT 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 604,summer,2026,Any course in Statistics. Open only to students in departments other than Statistics and Actuarial Science.
+stat 880,summer,2026,
+stat 881,summer,2026,
+stat 882,summer,2026,
+stat 894,summer,2026,
+stat 895,summer,2026,
+stat 897,summer,2026,STAT PhD students.
+stat 898,summer,2026,
+stat 899,summer,2026,
+tekx 101,summer,2026,
+urb 497,summer,2026,30 units.
+urb 614,summer,2026,
+urb 630,summer,2026,
+urb 691,summer,2026,
+urb 693,summer,2026,
+urb 694,summer,2026,
+urb 697,summer,2026,URB 696 with a grade of A- or higher. Students who receive a B+ in URB 696 may enroll for URB 697 with permission of the Graduate Program Committee.
+urb 701,summer,2026,Enrollment in the M.URB program with a CGPA of at least of 3.0.
+urb 702,summer,2026,Cooperative Education Practicum I and a CGPA of at least 3.0.
+wl 103w,summer,2026,
+wl 320,summer,2026,45 units.

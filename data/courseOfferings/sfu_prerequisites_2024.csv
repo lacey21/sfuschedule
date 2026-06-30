@@ -1,0 +1,1889 @@
+course,term,year,prereqs
+acma 101,spring,2024,
+acma 201,spring,2024,"MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B."
+acma 336,spring,2024,Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.
+acma 337,spring,2024,ACMA 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+acma 340,spring,2024,"ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285."
+acma 401,spring,2024,"ACMA 301 (or 320), with a minimum grade of C."
+acma 436,spring,2024,ACMA 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+acma 437,spring,2024,ACMA 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+acma 438,spring,2024,ACMA 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.
+acma 455,spring,2024,ACMA 355 with a minimum grade of C.
+acma 470,spring,2024,
+acma 831,spring,2024,
+acma 832,spring,2024,
+als 610,spring,2024,
+als 615,spring,2024,
+als 620,spring,2024,
+apma 905,spring,2024,
+apma 922,spring,2024,
+apma 990,spring,2024,
+apma 995,spring,2024,Applied Mathematics PhD stream students only. Must be completed within first six terms of the program.
+arch 100,spring,2024,
+arch 101,spring,2024,
+arch 131,spring,2024,
+arch 200,spring,2024,
+arch 226,spring,2024,
+arch 273,spring,2024,"Any one of the following: ARCH 100, ARCH 101, EVSC 100, GEOG 100, or REM 100."
+arch 285,spring,2024,12 units.
+arch 301,spring,2024,45 credit hours.
+arch 322,spring,2024,ARCH 131.
+arch 329,spring,2024,ARCH 101 or ARCH 201.
+arch 340,spring,2024,ARCH 101 or ARCH 201.
+arch 344,spring,2024,ARCH 131 or any lower division biology course.
+arch 350,spring,2024,Acceptance in the Environment Co-operative Education Program.
+arch 351,spring,2024,ARCH 350 and readmission to the Environment Co-operative Education Program.
+arch 363,spring,2024,"ARCH 100 or ARCH 101 or ARCH 201, and 45 units."
+arch 365,spring,2024,"ARCH 101 or ARCH 201; or any two of ARCH 100, REM 100, GEOG 100, EVSC 100; and 45 units."
+arch 373,spring,2024,"ARCH 131 or any lower division ARCH, BISC, HSCI, or BPK course."
+arch 376,spring,2024,"ARCH 101 or ARCH 201, and any one of ARCH 285, GEOG 251, PSYC 210, STAT 101, STAT 201, STAT 203, or STAT 205."
+arch 386,spring,2024,ARCH 101 or ARCH 201.
+arch 450,spring,2024,ARCH 351 and readmission to the Environment Co-operative Education Program.
+arch 451,spring,2024,ARCH 450 and readmission to the Environment Co-operative Education Program.
+arch 452,spring,2024,"ARCH 373 or HSCI 321, HSCI 324, BPK 303, BPK 324, BPK 325, BPK 326. ARCH 373 is recommended."
+arch 479,spring,2024,"45 units, including ARCH 282 or 372, and permission of the department."
+arch 480,spring,2024,"45 units, including ARCH 282 or 372, and permission of the department."
+arch 498,spring,2024,Permission of the department.
+arch 499,spring,2024,Permission of the department.
+arch 551,spring,2024,Enrollment in the MA or Certificate in HRM.
+arch 561,spring,2024,Enrollment in the MA or Certificate in HRM.
+arch 591,spring,2024,"10 units, consent of supervising faculty member, and approval of the director of the HRM program."
+arch 873,spring,2024,
+arch 874,spring,2024,Only available to students in the Archaeology PhD program.
+arch 875,spring,2024,Only available to students in the Archaeology PhD program.
+arch 876,spring,2024,
+arch 892,spring,2024,
+arch 893,spring,2024,
+arch 896,spring,2024,
+arch 898,spring,2024,
+arch 899,spring,2024,
+bisc 101,spring,2024,"Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+); and Chemistry 12 (or equivalent) with a minimum grade of C (or CHEM 111 with a minimum grade of C-)."
+bisc 102,spring,2024,"Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+)."
+bisc 113,spring,2024,
+bisc 202,spring,2024,"BISC 101 and 102, both with a minimum grade of C-."
+bisc 204,spring,2024,"BISC 101 and 102, both with a minimum grade of C-."
+bisc 205,spring,2024,"BISC 101, BISC 102, and PHYS 101, all with a minimum grade of C-."
+bisc 298,spring,2024,
+bisc 300,spring,2024,BISC 202 with a minimum grade of C-. Recommended: BISC 204.
+bisc 306,spring,2024,"BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-."
+bisc 309,spring,2024,BISC 204 with a minimum grade of C-.
+bisc 313,spring,2024,"BISC 101 and (BISC 204, or BISC 205, or GEOG 215, or MBB 231), both with a minimum grade of C-."
+bisc 318,spring,2024,"BISC 101, 102, and (BISC 204 or HSCI 212), all with a minimum grade of C-."
+bisc 333,spring,2024,"BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-."
+bisc 337,spring,2024,"BISC 101 and 102, both with a minimum grade of C-."
+bisc 341,spring,2024,Acceptance in the Biological Sciences Co-operative Education Program.
+bisc 342,spring,2024,BISC 341 and readmission to the Science Co-op Education Program.
+bisc 371,spring,2024,A minimum of 45 units.
+bisc 405,spring,2024,"Students complete one of: (BISC 205 and MBB 231), or (BPK 205 and MBB 231), or BPK 306, or HSCI 321; each with a minimum grade of C-."
+bisc 412,spring,2024,"BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-."
+bisc 413,spring,2024,BISC 204 with a minimum grade of C-.
+bisc 443,spring,2024,BISC 342 and readmission to the Science Co-op Education Program.
+bisc 444,spring,2024,BISC 443 and re-admission to the science co-operative education program.
+bisc 446,spring,2024,BISC 444 and readmission to the Science Co-op Education Program.
+bisc 457,spring,2024,"BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-."
+bisc 490,spring,2024,"Completion of all lower division biological sciences courses, plus upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee; completion of all physics, chemistry and mathematics requirements for the major or honours program."
+bisc 491,spring,2024,"Completion of all lower division biological sciences courses, plus upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee; completion of all physics, chemistry and mathematics requirements for the major or honours program; at the time of application, students will normally have a CGPA of 3.00 (B standing). Corequisite: BISC 490 and 492."
+bisc 498,spring,2024,Completion of lower division course requirements.
+bisc 499,spring,2024,Completion of lower division course requirements.
+bisc 652,spring,2024,BISC 313 or permission of the department.
+bisc 656,spring,2024,Acceptance into the environmental toxicology program.
+bisc 805,spring,2024,
+bisc 831,spring,2024,
+bisc 832,spring,2024,
+bisc 833,spring,2024,
+bisc 849,spring,2024,
+bisc 859,spring,2024,
+bisc 879,spring,2024,
+bisc 888,spring,2024,
+bisc 889,spring,2024,
+bisc 890,spring,2024,
+bisc 892,spring,2024,
+bisc 898,spring,2024,
+bisc 899,spring,2024,
+bpk 105,spring,2024,"Recommended: Grade 11 Biology, Chemistry and Physics."
+bpk 110,spring,2024,
+bpk 140,spring,2024,
+bpk 142,spring,2024,"One of Grade 12 Anatomy and Physiology, Biology, Chemistry or Physics with a grade of C or better; or one of BPK 105, BPK 110, BPK 143, BISC 100, BISC 113 or HSCI 100 with a grade of C or better."
+bpk 143,spring,2024,Recommended: Medical clearance from a personal physician.
+bpk 201,spring,2024,"MATH 150, 151 or 154, MATH 152 or 155 (may be taken concurrently), PHYS 101 (or 120 or 125 or 140), BPK 142."
+bpk 205,spring,2024,"BISC 101, CHEM 281, PHYS 101 and 102."
+bpk 207,spring,2024,BPK 142 or permission of instructor.
+bpk 208,spring,2024,
+bpk 241,spring,2024,BPK 142.
+bpk 303,spring,2024,"BPK 201, BPK 241 and STAT 201 or an equivalent statistics course."
+bpk 305,spring,2024,"BPK 205, MBB 231 (or 201), MATH 155 (or 152). Majors from outside BPK require BPK 205 (or BISC 305), MBB 231 (or 201), MATH 155 (or 152) plus permission of the instructor."
+bpk 306,spring,2024,"BPK 207. Corequisite: BPK 305. Majors from outside BPK require BPK 205 (or BISC 305), MBB 231 (or 201), MATH 155 (or 152) plus permission of the instructor."
+bpk 307,spring,2024,"BPK 305. Corequisite: BPK 306; however, students who took BPK 306 prior to Fall 2017, cannot take this course. Majors from outside BPK require BPK 205 (or BISC 305), MBB 231 (or 201), MATH 155 or 152 plus permission of the instructor."
+bpk 310,spring,2024,"BPK 205, MBB 201 (or 231). Recommended: BPK 201."
+bpk 311,spring,2024,"BPK 105 or 205, and 110."
+bpk 312,spring,2024,"BPK 105 (or 205), and 110."
+bpk 325,spring,2024,BPK 142 and either BPK 105 (with a grade of C or higher) or BPK 205.
+bpk 326,spring,2024,"Admission to the major or honours program in Behavioural Neuroscience or Biomedical Physiology or Kinesiology. BPK 142, 201, 205 and at least 60 units. Behavioral Neuroscience Major and Honours students require BPK 142, 205, PSYC 280 and at least 60 units."
+bpk 340,spring,2024,"BPK 142, STAT 201 (or PSYC 201). Recommended: BPK 140."
+bpk 342,spring,2024,"BPK 105 (or 205), 142 and 143."
+bpk 343,spring,2024,"BPK 142, 143 and 205; STAT 201 or an equivalent statistics course, BPK 340 (may be taken concurrently). Students must successfully complete a Criminal Record Check prior to enrolling."
+bpk 351,spring,2024,"Students must complete Bridging Online (visit www.sfu.ca/coop/bol for further details) at least two terms before co-op placement. Students must then apply to the BPK co-op program by Week 1 of the term prior; a minimum of 45 units, BPK 142, plus at least two other BPK courses and have a minimum GPA of 2.50."
+bpk 352,spring,2024,BPK 351.
+bpk 401,spring,2024,"90 credits, BPK 201 and 205, or BPK 208."
+bpk 407,spring,2024,BPK 305 and 306.
+bpk 417,spring,2024,"BPK 306, 340. Recommended: BPK 110."
+bpk 423,spring,2024,To be announced in the Undergraduate Schedule of Classes and Examinations found at go.sfu.ca.
+bpk 443,spring,2024,"BPK 304W, 310 and 343 (one of which may be taken as a corequisite)."
+bpk 444,spring,2024,"BPK 305. Recommended: BPK 110, 306, 310 and 343."
+bpk 446,spring,2024,BPK 306. Recommended: BPK 336 and/or BPK 415.
+bpk 448,spring,2024,"BPK 201 or 207, and BPK 306, or for biomedical engineering students, BPK 201 and 208."
+bpk 451,spring,2024,BPK 352.
+bpk 452,spring,2024,BPK 451.
+bpk 453,spring,2024,BPK 452.
+bpk 457,spring,2024,"75 units, with a minimum CGPA of 3.00, PSYC 301 or BPK 304W with a minimum grade of B, and permission from one of the Co-chairs of the Behavioural Neuroscience Program Committee."
+bpk 459,spring,2024,A minimum grade of B in BPK 457. Corequisite: Must be enrolled in the Honours Program of the B.Sc. in Behavioural Neuroscience. Students must seek permission from their honours project supervisor to enroll in additional courses at the same time.
+bpk 481,spring,2024,BPK 303 and 326.
+bpk 482,spring,2024,"BPK 180W, 201, 326, and 381. Corequisite: BPK 481. Students must successfully complete a Criminal Record Check before enrolling."
+bpk 491,spring,2024,"90 units, BPK 304W (may be taken concurrently) and permission of the chair of the undergraduate program committee. A minimum grade of B in this course is needed to register in BPK 495 or BPK 499."
+bpk 495,spring,2024,BPK 491 (minimum grade of B). Corequisite: BPK 499. Only students in the honours program may enroll in BPK 495.
+bpk 496,spring,2024,"BPK 304W (may be taken concurrently) or PSYC 210, and permission from the chair of the undergraduate program committee. Usually, upper level standing with at least 75 units in the Biomedical Physiology and Kinesiology program will be required."
+bpk 498,spring,2024,"BPK 304W (may be taken concurrently) or PSYC 210, and permission from the chair of the undergraduate program committee. Usually, upper level standing with at least 75 units in the Biomedical Physiology and Kinesiology program will be required."
+bpk 499,spring,2024,BPK 491 (minimum grade of B). Corequisite: BPK 495. Only students in the honours program may enroll in BPK 499.
+bpk 805,spring,2024,
+bpk 806,spring,2024,
+bpk 895,spring,2024,
+bpk 896,spring,2024,
+bpk 897,spring,2024,
+bpk 898,spring,2024,
+bpk 899,spring,2024,
+bus 100,spring,2024,This course is only open to approved business administration majors admitted to the faculty through the BBA major - highschool or transfer stream in Fall 2022 and onward.
+bus 200,spring,2024,
+bus 202,spring,2024,"This course is only open to approved business administration majors, joint majors, or second degree students admitted to the faculty through the Business Foundation Program - Transfer Stream. Corequisite: BUS 100 with a P grade."
+bus 207,spring,2024,"ECON 103 or ECON 113, ECON 105 or ECON 115, MATH 157, all with a minimum grade of C-; 15 units."
+bus 221,spring,2024,
+bus 225,spring,2024,
+bus 232,spring,2024,
+bus 233,spring,2024,12 units.
+bus 237,spring,2024,12 units.
+bus 238,spring,2024,12 units.
+bus 240,spring,2024,12 units.
+bus 251,spring,2024,12 units.
+bus 254,spring,2024,BUS 251 with a minimum grade of C-; 15 units.
+bus 272,spring,2024,12 units.
+bus 275,spring,2024,12 units.
+bus 300,spring,2024,"This course is only open to approved business administration majors admitted to the faculty in Fall 2022 and onward, BUS 100 with a P grade and BUS 217W with a minimum grade of C-; 45 units. Recommendation to take with BUS 360W."
+bus 303,spring,2024,45 units.
+bus 311,spring,2024,"This course is only open to students admitted to the business administration minor between Fall 2012 - Summer 2016 and who have credit for BUS 251 with a minimum grade of C- and 45 units, OR to students admitted to the business administration minor Fall 2016 - onwards and who have credit for BUS 251 with a minimum grade of C-, 45 units, and corequisite: BUS 200."
+bus 312,spring,2024,"BUS 254 (or 324) with a minimum grade of C-; 45 units. Recommended: BUS 207, ECON 201, or ECON 301."
+bus 314,spring,2024,"BUS 238 or BUS 240 or BUS 254, with a minimum grade of C-; 45 units."
+bus 315,spring,2024,"BUS 312, BUS 336 and BUS 207 or ECON 201 or ECON 301, all with a minimum grade of C-; 45 units."
+bus 316,spring,2024,"BUS 312, 336, both with a minimum grade of C-; 45 units."
+bus 320,spring,2024,BUS 251 with a minimum grade of C-; 45 units.
+bus 321,spring,2024,BUS 320 with a minimum grade of C-; 45 units.
+bus 322,spring,2024,"BUS 254 with a minimum grade of C-, 45 units."
+bus 325,spring,2024,
+bus 326,spring,2024,
+bus 327,spring,2024,
+bus 330,spring,2024,
+bus 331,spring,2024,"BUS 330 (or BUS 329) with a minimum grade of C-, 45 units."
+bus 336,spring,2024,"MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-; BUS 232, ECON 233, or STAT 270, with a minimum grade of C-; 45 units."
+bus 338,spring,2024,"BUS 238 or BUS 240 or BUS 254, with a minimum grade of C-; 45 units."
+bus 340,spring,2024,"This course is only open to students admitted to the business administration minor between Fall 2012 - Summer 2016 and who have 45 units, OR to students admitted to the business administration minor Fall 2016 - onwards and who have 45 units, and corequisite: BUS 200."
+bus 341,spring,2024,"This course is only open to students admitted to the business administration minor between Fall 2012 - Summer 2016 and who have 45 units, OR to students admitted to the business administration minor Fall 2016 - onwards and who have 45 units, and corequisite: BUS 200."
+bus 343,spring,2024,45 units.
+bus 345,spring,2024,"BUS 343, 336, both with a minimum grade of C-; 45 units; OR Data Science majors with BUS 343 with a minimum grade of C- and 45 units."
+bus 346,spring,2024,45 units.
+bus 347,spring,2024,BUS 343 with a minimum grade of C-; 45 units.
+bus 361,spring,2024,45 units.
+bus 362,spring,2024,BUS 237 with a minimum grade of C-; 45 units; OR Data Science majors with 45 units.
+bus 373,spring,2024,BUS 232 with a minimum grade of C-; 45 units.
+bus 374,spring,2024,45 units; BUS 272 with a minimum grade of C-.
+bus 381,spring,2024,BUS 272 with a minimum grade of C-; 45 units.
+bus 393,spring,2024,45 units.
+bus 396,spring,2024,45 units.
+bus 401,spring,2024,"BUS 311 (or BUS 254 and BUS 312), BUS 340, BUS 341, all with a minimum grade of C-; 60 units. The course is only open to students in the business minor program."
+bus 410,spring,2024,"BUS 315, 316, 360W, all with a minimum grade of C-; 60 units."
+bus 411,spring,2024,"BUS 315 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 413,spring,2024,"BUS 312, BUS 315, and BUS 360W, all with a minimum grade of C-; 60 units."
+bus 417,spring,2024,"BUS 315, 360W, both with a minimum grade of C-; 60 units."
+bus 418,spring,2024,"BUS 315, 316, 360W, all with a minimum grade of C-; 60 units."
+bus 419,spring,2024,"BUS 315, 316, 360W, all with a minimum grade of C-; 60 units."
+bus 420,spring,2024,"BUS 321, 360W, both with a minimum grade of C-; 60 units."
+bus 421,spring,2024,"BUS 321 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 424,spring,2024,"BUS 322 and BUS 360W, both with a minimum grade of C-; 60 units."
+bus 425,spring,2024,
+bus 426,spring,2024,"BUS 321, 360W, both with a minimum grade of C-; 60 units."
+bus 430,spring,2024,BUS 360W with a minimum grade of C-; 60 units. Recommended: BUS 346.
+bus 432,spring,2024,"BUS 360W and one of BUS 272 or 381, all with a minimum grade of C-; 60 units. Recommended: BUS 346."
+bus 437,spring,2024,"BUS 336, 360W, both with a minimum grade of C-; 60 units; OR Data Science majors with BUS 360W with a minimum grade of C- and 60 units."
+bus 439,spring,2024,"BUS 345 or BUS 440, BUS 360W, BUS 437 or BUS 441, BUS 445, BUS 462, and BUS 464, all with a minimum grade of C-; 90 units; OR Data Science majors with BUS 360W, BUS 445, CMPT 354, all with a minimum grade of C- and 90 units."
+bus 440,spring,2024,"BUS 336, 360W, both with a minimum grade of C-, 60 units; OR Data Science majors with BUS 360W with a minimum grade of C-, 60 units."
+bus 441,spring,2024,"BUS 360W, BUS 343, both with a minimum grade of C-; 60 units."
+bus 443,spring,2024,"BUS 360W (or another upper division Writing (W) course), 343, both with a minimum grade of C-; 60 units."
+bus 444,spring,2024,"BUS 343, 360W, both with a minimum grade of C-; 60 units."
+bus 445,spring,2024,"BUS 343, 336, 360W, all with a minimum grade of C-, 60 units; OR Data Science majors with BUS 343, 360W, both with a minimum grade of C-, and 60 units."
+bus 446,spring,2024,"BUS 343, 347, 360W, all with a minimum grade of C-; 60 units."
+bus 447,spring,2024,"BUS 343, 360W, both with a minimum grade of C-; 60 units. Recommended: BUS 346."
+bus 448,spring,2024,"BUS 347, 360W, both with a minimum grade of C-; 60 units."
+bus 449,spring,2024,"BUS 343, 360W, both with a minimum grade of C-; 60 units."
+bus 450,spring,2024,BUS 360W (or another upper division Writing (W) course) with a minimum grade of C-; 60 units.
+bus 453,spring,2024,BUS 360W (or another upper division Writing (W) course) with a minimum grade of C-; 60 units. Recommended: BUS 338.
+bus 455,spring,2024,"BUS 254, BUS 345, BUS 347, and BUS 360W, all with a minimum grade of C-; 90 units."
+bus 462,spring,2024,"BUS 336, BUS 360W, BUS 362, all with a minimum grade of C-; 60 units. Corequisite: BUS 336 can be taken concurrently."
+bus 464,spring,2024,"BUS 360W, 362, both with a minimum grade of C-; 60 units."
+bus 468,spring,2024,"BUS 237, BUS 360W, BUS 362, all with a minimum grade of C-; 90 units."
+bus 471,spring,2024,60 units; BUS 360W with a minimum grade of C-.
+bus 473,spring,2024,"Students admitted prior to Fall 2022 with (BUS 373 or BUS 336) and BUS 360W, or students admitted Fall 2022 onward with BUS 373 and BUS 360W; both with a minimum grade of C-; 60 units."
+bus 474,spring,2024,"Students admitted prior to Fall 2022 with (BUS 373 or BUS 336) and BUS 360W, or students admitted Fall 2022 onward with BUS 373 and BUS 360W; both with a minimum grade of C-; 60 units."
+bus 475,spring,2024,BUS 360W with a minimum grade of C-; 60 units.
+bus 477,spring,2024,"BUS 338, BUS 360W (or another upper division Writing (W) course), both with a minimum grade of C-; 60 units. Recommended: BUS 314, BUS 361."
+bus 478,spring,2024,"BUS 207 (or ECON 201 or ECON 301), BUS 312, 343, 360W and either BUS 374 or 381, all with a minimum grade of C-; 90 units."
+bus 479,spring,2024,BUS 360W with a minimum grade of C-; 90 units. Corequisite: BUS 478.
+bus 481,spring,2024,"BUS 381 and 360W, with a minimum grade of C-; 60 units."
+bus 482,spring,2024,"60 units; BUS 272, 381 and 360W, all with a minimum grade of C-."
+bus 483,spring,2024,"BUS 393, BUS 360W, both with a minimum grade of C-; 60 units."
+bus 485,spring,2024,"BUS 272, 360W, and either 374 or 381, all with a minimum grade of C-; 60 units."
+bus 488,spring,2024,"BUS 360W and (BUS 374 or BUS 381), all with a minimum grade of C-; 60 units."
+bus 498,spring,2024,Permission of the faculty and BUS 360W with a minimum grade of C-; 60 units.
+bus 510,spring,2024,
+bus 511,spring,2024,
+bus 552,spring,2024,
+bus 555,spring,2024,BUS 510 or equivalent.
+bus 556,spring,2024,
+bus 557,spring,2024,
+bus 561,spring,2024,
+bus 579,spring,2024,
+bus 606,spring,2024,
+bus 614,spring,2024,Only for students in the IBL EMBA program.
+bus 615,spring,2024,
+bus 630,spring,2024,Only for students in the IBL EMBA program.
+bus 645,spring,2024,
+bus 647,spring,2024,
+bus 648,spring,2024,
+bus 649,spring,2024,
+bus 651,spring,2024,
+bus 652,spring,2024,
+bus 653,spring,2024,
+bus 655,spring,2024,
+bus 660,spring,2024,
+bus 661,spring,2024,
+bus 672,spring,2024,Only for students in the IBL EMBA program.
+bus 683,spring,2024,Only for students in the IBL EMBA program.
+bus 687,spring,2024,Only for students in the IBL EMBA program.
+bus 697,spring,2024,Only for students in the IBL EMBA program.
+bus 700,spring,2024,
+bus 702,spring,2024,
+bus 703,spring,2024,
+bus 710,spring,2024,
+bus 711,spring,2024,
+bus 719,spring,2024,
+bus 724,spring,2024,
+bus 726,spring,2024,
+bus 727,spring,2024,
+bus 733,spring,2024,
+bus 734,spring,2024,
+bus 735,spring,2024,
+bus 751,spring,2024,
+bus 752,spring,2024,
+bus 756,spring,2024,
+bus 763,spring,2024,
+bus 774,spring,2024,
+bus 792,spring,2024,
+bus 793,spring,2024,
+bus 796,spring,2024,"BUS 790 Lab to Market, BUS 791 Opportunity Identification and Assessment"
+bus 802,spring,2024,"BUS 803, BUS 806, and BUS 827."
+bus 810,spring,2024,"BUS 803, BUS 806, and BUS 827."
+bus 814,spring,2024,
+bus 846,spring,2024,BUS 845.
+bus 861,spring,2024,
+bus 880,spring,2024,BUS 881 or Academic Director approval.
+bus 963,spring,2024,
+bus 970,spring,2024,
+bus 983,spring,2024,Enrollment in PhD program.
+bus 984,spring,2024,Enrollment in PhD program.
+bus 985,spring,2024,Enrollment in PhD program.
+bus 987,spring,2024,Enrollment in PhD program.
+bus 988,spring,2024,Enrollment in PhD program.
+bus 990,spring,2024,Enrollment in PhD program.
+bus 992,spring,2024,Enrollment in PhD program.
+bus 993,spring,2024,
+ca 104,spring,2024,
+ca 118,spring,2024,
+ca 120,spring,2024,
+ca 123,spring,2024,CA (or FPA) 122. Corequisite: CA 123 and CA 124 must be taken concurrently.
+ca 124,spring,2024,"Declared dance major, extended minor, or permission from instructor."
+ca 131,spring,2024,CA (or FPA) 130 and prior approval.
+ca 135,spring,2024,
+ca 137,spring,2024,
+ca 140,spring,2024,
+ca 142,spring,2024,
+ca 144,spring,2024,CA 143. Corequisite: CA 146.
+ca 146,spring,2024,CA 145. Corequisite: CA 144.
+ca 149,spring,2024,
+ca 150,spring,2024,
+ca 152,spring,2024,CA 151.
+ca 161,spring,2024,CA (or FPA) 160.
+ca 170,spring,2024,
+ca 221,spring,2024,CA (or FPA) 220.
+ca 231,spring,2024,CA (or FPA) 230 and CA (or FPA) 233.
+ca 232,spring,2024,CA (or FPA) 131.
+ca 243,spring,2024,Prior approval.
+ca 246,spring,2024,CA 245.
+ca 249,spring,2024,CA (or FPA) 140 and/or prior approval.
+ca 252,spring,2024,"One of CA 123, 131, 146, 161, 171, 251."
+ca 255,spring,2024,"One of CA 123, 131, 146, 152, 161, 171."
+ca 256,spring,2024,"One of CA 123, 131, 146, 152, 161, 171."
+ca 261,spring,2024,CA (or FPA) 260. A course materials fee is required.
+ca 263,spring,2024,CA (or FPA) 160. A course materials fee is required.
+ca 269,spring,2024,CA (or FPA) 160. A course materials fee is required.
+ca 271,spring,2024,CA (or FPA) 170.
+ca 276,spring,2024,"CA 174, CA 170 or permission of instructor."
+ca 285,spring,2024,"One of CA (or FPA) 122, 130, 145, 150, 160, 170."
+ca 306,spring,2024,45 units.
+ca 307,spring,2024,45 units and permission of Internship Coordinator.
+ca 315,spring,2024,45 units.
+ca 321,spring,2024,CA (or FPA) 320.
+ca 323,spring,2024,CA (or FPA) 322 or prior approval.
+ca 332,spring,2024,CA (or FPA) 231 or prior approval.
+ca 339,spring,2024,"CA (or FPA) 231, or CA (or FPA) 251 with prior approval."
+ca 340,spring,2024,Permission of instructor.
+ca 343,spring,2024,CA 243.
+ca 344,spring,2024,CA 140 or permission of instructor.
+ca 346,spring,2024,CA 345.
+ca 347,spring,2024,CA 247 or permission of instructor.
+ca 349,spring,2024,CA (or FPA) 245.
+ca 350,spring,2024,"CA 252 and declared status in the theatre and performance major or honours, or by prior approval."
+ca 355,spring,2024,CA 354.
+ca 356,spring,2024,CA 256.
+ca 361,spring,2024,CA (or FPA) 360 and 366. Corequisite: CA 367.
+ca 363,spring,2024,CA (or FPA) 160. A course materials fee is required.
+ca 367,spring,2024,CA (or FPA) 366. Corequisite: CA 361.
+ca 369,spring,2024,CA (or FPA) 160. A course materials fee is required.
+ca 371,spring,2024,CA (or FPA) 270 and 271 or prior approval.
+ca 375,spring,2024,CA (or FPA) 270 or prior approval.
+ca 386,spring,2024,60 credit hours.
+ca 389,spring,2024,30 units of CA (or FPA) courses.
+ca 393,spring,2024,CA (or FPA) 390 or approval of instructor.
+ca 400,spring,2024,"60 units plus a minimum standing of completion of second year in any of the programs offered in the School for the Contemporary Arts, and prior approval."
+ca 401,spring,2024,"60 units plus a minimum standing of completion of second year in any of the programs offered in the School for the Contemporary Arts, and prior approval."
+ca 406,spring,2024,60 units.
+ca 407,spring,2024,60 units and permission of Internship Coordinator.
+ca 416,spring,2024,CA (or FPA) 316 (or 337) or CA (or FPA) 318 (or 335).
+ca 420,spring,2024,CA (or FPA) 285 and CA (or FPA) 321.
+ca 425,spring,2024,"CA 220, 324."
+ca 428,spring,2024,CA (or FPA) 427 or prior approval.
+ca 432,spring,2024,CA (or FPA) 430.
+ca 446,spring,2024,CA 445.
+ca 452,spring,2024,CA 451.
+ca 461,spring,2024,CA (or FPA) 460 and status as an approved major in visual art.
+ca 471,spring,2024,CA (or FPA) 370 or 371 and prior approval.
+ca 489,spring,2024,45 CA (or FPA) units.
+ca 823,spring,2024,
+ca 824,spring,2024,
+ca 825,spring,2024,
+ca 827,spring,2024,
+ca 829,spring,2024,"CA (or FPA) 821 and two of the following: CA (or FPA) 823, 824, 825, 826, or 828."
+ca 830,spring,2024,
+ca 883,spring,2024,
+ca 889,spring,2024,
+ca 891,spring,2024,CA 890.
+ca 892,spring,2024,
+ca 895,spring,2024,CA 892.
+ca 898,spring,2024,
+ca 899,spring,2024,CA 895.
+chem 110,spring,2024,"Pre-Calculus 12 (or equivalent), MATH 100 (may be taken concurrently), or permission of the Department. No previous training in chemistry is required for this course."
+chem 111,spring,2024,"Pre-Calculus 12 (or equivalent), MATH 100 (may be taken concurrently), or permission of the Department. No previous training in chemistry is required for this course."
+chem 120,spring,2024,"Chemistry 12 with a minimum grade of C, or CHEM 110 or 111 with a minimum grade of C-."
+chem 121,spring,2024,"Chemistry 12 with a minimum grade of C, or CHEM 109 or 111 with a minimum grade of C-."
+chem 122,spring,2024,CHEM 120 or 121 with a minimum grade of C-.
+chem 126,spring,2024,CHEM 121 with a minimum grade of C-. Corequisite: CHEM 122.
+chem 210,spring,2024,CHEM 122 with a minimum grade of C-.
+chem 216,spring,2024,"CHEM 122 and CHEM 126, both with a minimum grade of C-. Corequisite: CHEM 210."
+chem 260,spring,2024,"CHEM 122, MATH 152, and PHYS 121, 126 or 141 (or PHYS 102 with a minimum grade of B), all with a minimum grade of C-. Recommended: MATH 232."
+chem 266,spring,2024,CHEM 260 with a minimum grade of C-.
+chem 281,spring,2024,CHEM 121 with a minimum grade of C-. Corequisite: CHEM 122.
+chem 282,spring,2024,CHEM 281 with a minimum grade of C-.
+chem 283,spring,2024,CHEM 281 with a minimum grade of C-.
+chem 284,spring,2024,"CHEM 282 with a minimum of C+, or permission of the Department."
+chem 285,spring,2024,"CHEM 120 and CHEM 125, both with a minimum grade of C-, or CHEM 121 with a minimum grade of C-. Corequisite: CHEM 122 and CHEM 280."
+chem 286,spring,2024,CHEM 281 with a minimum grade of C-. Corequisite: CHEM 282 or 283.
+chem 296,spring,2024,"30 units, including five units of 2nd year CHEM courses. A student may enroll in this course only with prior written agreement of a faculty member to act as a research supervisor."
+chem 306,spring,2024,"Completion of 28 units in a science program, including first-year calculus, chemistry and physics. Minimum CGPA 2.67 (or permission of co-op co-ordinator)."
+chem 307,spring,2024,CHEM 306 and completion of 42 units toward a BSc degree. Minimum CGPA 2.67 (or permission of co-op co-ordinator).
+chem 316,spring,2024,"CHEM 210, 216, and 260, all with a minimum grade of C-, or permission of the department."
+chem 332,spring,2024,"CHEM 230, 236W and 260, all with a minimum grade of C-, or permission of the Department."
+chem 336,spring,2024,CHEM 236W with a minimum grade of C-. Corequisite: CHEM 332.
+chem 340,spring,2024,"Completion of 60 units in a science or applied science program, including first year chemistry, physics and calculus. CHEM 230 is strongly recommended."
+chem 360,spring,2024,CHEM 260 with a minimum grade of C-. Recommended: MATH 251.
+chem 372,spring,2024,"CHEM 281 and CHEM 360, both with a minimum grade of C-."
+chem 381,spring,2024,CHEM 380 with a minimum grade of C-.
+chem 396,spring,2024,"50 units, including one 3rd year CHEM core course (CHEM 316, 332, 336, 360, 366, 380 or NUSC 341). A student may enroll in this course only with prior written agreement of a faculty member to act as a research supervisor."
+chem 406,spring,2024,CHEM 307 and completion of 56 units toward a BSc degree. Minimum CGPA of 2.67 (or permission of co-op co-ordinator).
+chem 407,spring,2024,CHEM 406. Minimum CGPA of 2.67 (or permission of co-op co-ordinator).
+chem 408,spring,2024,CHEM 407.
+chem 419,spring,2024,CHEM 316 with a minimum grade of C-.
+chem 439,spring,2024,CHEM 332 with a minimum grade of C-.
+chem 449,spring,2024,"CHEM 210, 260, 283 (or 284), and 12 units of upper division CHEM, all with a minimum grade of C-; or permission of the department."
+chem 459,spring,2024,"CHEM 380 with a minimum grade of C-, or permission of the instructor."
+chem 481,spring,2024,Permission of the Department; knowledge of chemistry at an advanced level. Normally taken after completion of 300-level course requirements.
+chem 482,spring,2024,Permission of the Department. Normally taken during the fourth year of study.
+chem 483,spring,2024,CHEM 481 and permission of the Department. This course cannot be counted towards the 400-level CHEM unit requirement for the Chemistry Majors program.
+chem 484,spring,2024,Permission of the Department; knowledge of chemistry at an advanced level. Normally taken after completion of 300-level course requirements.
+chem 759,spring,2024,
+chem 802,spring,2024,
+chem 808,spring,2024,For students in the PhD program.
+chem 819,spring,2024,
+chem 839,spring,2024,
+chem 849,spring,2024,
+chem 898,spring,2024,
+chem 899,spring,2024,
+chin 100,spring,2024,
+chin 110,spring,2024,CHIN 100 or equivalent.
+chin 191,spring,2024,"CHIN 190 or equivalent. This course is for students of Chinese origin who have near native speaking ability in Chinese (Mandarin or other dialects), but limited knowledge of written Chinese."
+chin 200,spring,2024,CHIN 110 (or CHIN 101) or equivalent.
+chin 291,spring,2024,"CHIN 290 or equivalent. This course is for students of Chinese origin who have near native speaking ability in Chinese (Mandarin or other dialects), but basic knowledge of written Chinese."
+chin 330,spring,2024,CHIN 291 or permission of the instructor.
+cmns 110,spring,2024,
+cmns 130,spring,2024,
+cmns 202,spring,2024,Nine CMNS units with a minimum grade of C-.
+cmns 210,spring,2024,Nine CMNS units with a minimum grade of C-.
+cmns 215,spring,2024,Nine CMNS units with a minimum grade of C-.
+cmns 221,spring,2024,Nine CMNS units with a minimum grade of C-.
+cmns 240,spring,2024,Nine CMNS units with a minimum grade of C-.
+cmns 311,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 313,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 314,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 315,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 316,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 353,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 362,spring,2024,17 CMNS units with a minimum grade of C- or 45 units with a minimum CGPA of 2.00.
+cmns 395,spring,2024,"Complete Bridging Online at least two terms before anticipated co-op placement. Students must then enroll with the co-op program by the second week of the term preceding the work term of application, and have a minimum GPA of 2.7."
+cmns 396,spring,2024,CMNS 395.
+cmns 424,spring,2024,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 425,spring,2024,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 426,spring,2024,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 440,spring,2024,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 452,spring,2024,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 453,spring,2024,26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.
+cmns 461,spring,2024,75 units including CMNS 460 with a minimum grade of C-.
+cmns 479,spring,2024,Two upper division CMNS courses with a minimum grade of C- and permission of the instructor.
+cmns 480,spring,2024,Two upper division CMNS courses with a minimum grade of C- and consent of instructor.
+cmns 481,spring,2024,Two upper division CMNS courses with a minimum grade of C- and consent of instructor.
+cmns 482,spring,2024,Two upper division CMNS courses with a minimum grade of C- and consent of instructor.
+cmns 487,spring,2024,Depends on topic; published before enrollment.
+cmns 489,spring,2024,75 units and permission of the school.
+cmns 494,spring,2024,CMNS 396.
+cmns 495,spring,2024,CMNS 494.
+cmns 496,spring,2024,CMNS 495.
+cmns 497,spring,2024,Students accepted into honours program only.
+cmns 498,spring,2024,"Successful completion of CMNS 497-5, Honours Research Proposal, with grade of ""B"" or higher."
+cmns 801,spring,2024,
+cmns 802,spring,2024,
+cmns 830,spring,2024,
+cmns 849,spring,2024,
+cmns 850,spring,2024,
+cmns 851,spring,2024,
+cmns 858,spring,2024,
+cmns 880,spring,2024,
+cmns 881,spring,2024,
+cmns 891,spring,2024,
+cmns 892,spring,2024,
+cmns 893,spring,2024,"CMNS 801 and one of CMNS 800, CMNS 802 or CMNS 804."
+cmns 895,spring,2024,
+cmns 896,spring,2024,"CMNS 801 and one of CMNS 800, 802, or 804."
+cmns 897,spring,2024,
+cmns 898,spring,2024,
+cmns 899,spring,2024,
+cmpt 120,spring,2024,BC Math 12 or equivalent is recommended.
+cmpt 125,spring,2024,"CMPT 120 or CMPT 130, with a minimum grade of C-."
+cmpt 135,spring,2024,CMPT 130 with a minimum grade of C-.
+cmpt 201,spring,2024,"(CMPT 125 or CMPT 135) and MACM 101, both with a minimum grade of C-."
+cmpt 210,spring,2024,"MACM 101, MATH 152, CMPT 125 or CMPT 135, and (MATH 240 or MATH 232), all with a minimum grade of C-."
+cmpt 213,spring,2024,CMPT 225 with a minimum grade of C-.
+cmpt 225,spring,2024,"(MACM 101 and (CMPT 125, CMPT 129 or CMPT 135)) or (ENSC 251 and ENSC 252), all with a minimum grade of C-."
+cmpt 276,spring,2024,"One W course, CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (MATH 151 or MATH 150), all with a minimum grade of C-. MATH 154 or MATH 157 with at least a B+ may be substituted for MATH 151 or MATH 150."
+cmpt 295,spring,2024,"Either (MACM 101 and (CMPT 125 or CMPT 135)) or (MATH 151 and CMPT 102 for students in an Applied Physics program), all with a minimum grade of C-."
+cmpt 300,spring,2024,"CMPT 225 and (CMPT 295 or ENSC 254), all with a minimum grade of C-."
+cmpt 305,spring,2024,"CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (STAT 270 or STAT 271), all with a minimum grade of C-."
+cmpt 307,spring,2024,"CMPT 225, (MACM 201 or CMPT 210), (MATH 150 or MATH 151), and (MATH 232 or MATH 240), all with a minimum grade of C-. MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 150 or MATH 151."
+cmpt 310,spring,2024,"CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+cmpt 318,spring,2024,CMPT 225 with a minimum grade of C-. Additional prerequisites to be determined by the instructor subject to approval by the undergraduate program chair.
+cmpt 340,spring,2024,"Completion of 60 units including one of CMPT 125, 126, 128, 135, with a minimum grade of C- or CMPT 102 with a grade of B or higher."
+cmpt 353,spring,2024,"CMPT 225 and (STAT 101, STAT 270, STAT 271, ENSC 280, or MSE 210), with a minimum grade of C-."
+cmpt 354,spring,2024,"CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+cmpt 361,spring,2024,"CMPT 225 and MATH 232 or 240, all with a minimum grade of C-."
+cmpt 363,spring,2024,"CMPT 225 and CMPT 263, both with a minimum grade of C-."
+cmpt 365,spring,2024,CMPT 225 with a minimum grade of C-.
+cmpt 371,spring,2024,"CMPT 225 and (MATH 151 or MATH 150), with a minimum grade of C-. MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 151 (MATH 150)."
+cmpt 372,spring,2024,"CMPT 272 and CMPT 225, both with a minimum grade of C-."
+cmpt 383,spring,2024,"CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+cmpt 404,spring,2024,(MACM 201 or CMPT 210) with a minimum grade of C-. CMPT 307 and 308 are recommended.
+cmpt 405,spring,2024,CMPT 307 with a minimum grade of C-.
+cmpt 409,spring,2024,CMPT 307 with a minimum grade of C-.
+cmpt 410,spring,2024,"CMPT 310 and MACM 316, both with a minimum grade of C-."
+cmpt 413,spring,2024,"Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor."
+cmpt 415,spring,2024,Permission of Instructor and School.
+cmpt 416,spring,2024,Permission of the department.
+cmpt 419,spring,2024,
+cmpt 420,spring,2024,"CMPT 410 or CMPT 419 (Machine Learning), with a minimum grade of C-."
+cmpt 426,spring,2024,"Students must complete Bridging Online (visit www.sfu.ca/coop/bol for further details) at least two terms before their anticipated co-op placement. Students must then enroll with the co-op program by the second week of the term preceding the work term. Normally, students will have completed a minimum of 45 units by the end of the term of application, CMPT 275 or 276, and have a minimum CGPA of 2.50."
+cmpt 427,spring,2024,"CMPT 426, CGPA of 2.50."
+cmpt 428,spring,2024,"CMPT 427, CGPA of 2.50."
+cmpt 429,spring,2024,"CMPT 428, CGPA of 2.50."
+cmpt 430,spring,2024,"CMPT 429, CGPA of 2.50."
+cmpt 431,spring,2024,"CMPT 300, 371, both with a minimum grade of C-."
+cmpt 433,spring,2024,"CMPT 295 and CMPT 300, with a minimum grade of C-."
+cmpt 454,spring,2024,"CMPT 300 and 354, with a minimum grade of C-."
+cmpt 459,spring,2024,CMPT 354 with a minimum grade of C-.
+cmpt 461,spring,2024,CMPT 361 with a minimum grade of C-.
+cmpt 469,spring,2024,CMPT 361 with a minimum grade of C-.
+cmpt 471,spring,2024,"CMPT 300 and 371, with a minimum grade of C-."
+cmpt 474,spring,2024,CMPT 371 with a minimum grade of C-.
+cmpt 475,spring,2024,"CMPT 275 or CMPT 276, (MACM 201 or CMPT 210) , all with a minimum grade of C- and 15 units of upper division courses. Recommended: Co-op experience."
+cmpt 476,spring,2024,"MATH 232 or MATH 240, with a minimum grade of C-."
+cmpt 479,spring,2024,CMPT 300 with a minimum grade of C-.
+cmpt 493,spring,2024,"CMPT 275 or CMPT 276, at least 80 units, CGPA and UDGPA over 3.0, enrolled in any CS major program. Participation in the practicum is competitive and an application must be submitted to the Undergraduate Chair by a defined due date announced each term."
+cmpt 494,spring,2024,Students must have completed at least 15 units of upper division CMPT courses. Successful Capstone Project Proposal.
+cmpt 495,spring,2024,CMPT 494 with a minimum grade of C-. CMPT 495 must be taken in the term immediately following the successful completion of CMPT 494 and must be for the same project and faculty supervisor.
+cmpt 496,spring,2024,"Students must have completed 90 units, including 15 units of upper division CMPT courses, and have a GPA of at least 3.00. The proposal must be submitted to the undergraduate chair at least 15 days in advance of the term. The proposal must be signed by the supervisor(s) and the undergraduate chair."
+cmpt 497,spring,2024,Submission of a satisfactory capstone project proposal.
+cmpt 498,spring,2024,"Students must have completed 90 units, including 15 units of upper division CMPT courses, and have a GPA of at least 3.00. The proposal must be submitted to the Undergraduate Chair at least 15 days in advance of the term. The proposal must be signed by the supervisor(s) and the undergraduate chair."
+cmpt 626,spring,2024,12 units of CMPT coursework at the 700-level or higher with a CGPA of at least 3.0. Department Consent is required for enrollment.
+cmpt 627,spring,2024,CMPT 626 and a CGPA of at least 3.0. Department Consent is required for enrollment.
+cmpt 628,spring,2024,CMPT 627 and a CGPA of at least 3.0. Department Consent is required for enrollment.
+cmpt 629,spring,2024,Permission of the Graduate Program Chair.
+cmpt 631,spring,2024,"12 units of CMPT course work with an SFU CGPA of at least 3.0. Approval of supervisor and a GPC representative is required prior to applying for, or accepting an internship."
+cmpt 700,spring,2024,
+cmpt 701,spring,2024,
+cmpt 705,spring,2024,
+cmpt 713,spring,2024,
+cmpt 722,spring,2024,CMPT 361 or equivalent and CMPT 726.
+cmpt 724,spring,2024,
+cmpt 726,spring,2024,
+cmpt 727,spring,2024,
+cmpt 728,spring,2024,
+cmpt 729,spring,2024,
+cmpt 733,spring,2024,CMPT 732.
+cmpt 741,spring,2024,
+cmpt 743,spring,2024,CMPT 742. This course is only available to students enrolled in the master of visual computing program.
+cmpt 756,spring,2024,
+cmpt 757,spring,2024,This course is only available to students enrolled into the Visual Computing Specialization of the Professional Master's program in Computer Science.
+cmpt 769,spring,2024,
+cmpt 783,spring,2024,CMPT 782. This course is only available to students enrolled in the master of cybersecurity program.
+cmpt 785,spring,2024,
+cmpt 820,spring,2024,
+cmpt 863,spring,2024,
+cmpt 889,spring,2024,
+cmpt 894,spring,2024,
+cmpt 895,spring,2024,
+cmpt 896,spring,2024,
+cmpt 897,spring,2024,
+cmpt 898,spring,2024,
+cmpt 899,spring,2024,
+cmpt 980,spring,2024,Instructor discretion.
+cmpt 981,spring,2024,
+cmpt 982,spring,2024,
+cmpt 983,spring,2024,
+cmpt 984,spring,2024,
+cmpt 985,spring,2024,
+cogs 100,spring,2024,Open to all students.
+cogs 110,spring,2024,
+cogs 200,spring,2024,COGS 100.
+cogs 315,spring,2024,"One of: PHIL 110, 210, 310, 314, MACM 101, BUEC 232 or STAT 270."
+crim 101,spring,2024,
+crim 103,spring,2024,PSYC 100 and 102 are recommended.
+crim 104,spring,2024,SA 150 is recommended.
+crim 131,spring,2024,
+crim 135,spring,2024,
+crim 210,spring,2024,CRIM 101 and CRIM 131.
+crim 220,spring,2024,Any 100 division CRIM course is recommended.
+crim 230,spring,2024,CRIM 135.
+crim 241,spring,2024,CRIM 131.
+crim 251,spring,2024,CRIM 131.
+crim 302,spring,2024,CRIM 101.
+crim 303,spring,2024,Any 100 division CRIM course.
+crim 311,spring,2024,CRIM 101.
+crim 314,spring,2024,CRIM 101. Recommended: CRIM 131.
+crim 315,spring,2024,45 units.
+crim 318,spring,2024,CRIM 101.
+crim 320,spring,2024,CRIM 101; one of CRIM 120 or 220. CRIM 320 may be taken concurrently with CRIM 321.
+crim 321,spring,2024,CRIM 101; one of CRIM 120 or 220. This course may be taken concurrently with CRIM 320.
+crim 330,spring,2024,CRIM 101 and 230.
+crim 332,spring,2024,CRIM 101 and 135.
+crim 340,spring,2024,CRIM 101 and 220.
+crim 343,spring,2024,CRIM 101. Recommended: CRIM 241.
+crim 344,spring,2024,CRIM 101 and CRIM 135.
+crim 346,spring,2024,CRIM 101. Recommended: CRIM 241
+crim 351,spring,2024,CRIM 101 and 251.
+crim 355,spring,2024,45 units.
+crim 356,spring,2024,45 units.
+crim 370,spring,2024,"CRIM 320 and 330, and written application to the school no later than the last day of classes of the preceding term. CRIM 370 and 470 may not be taken concurrently."
+crim 406,spring,2024,CRIM 101.
+crim 416,spring,2024,CRIM 101.
+crim 417,spring,2024,CRIM 101.
+crim 418,spring,2024,CRIM 101.
+crim 429,spring,2024,CRIM 101 or FNST 101 or 201 or permission of instructor.
+crim 433,spring,2024,CRIM 101.
+crim 452,spring,2024,CRIM 101. Recommended: CRIM 357.
+crim 453,spring,2024,CRIM 101.
+crim 459,spring,2024,CRIM 101.
+crim 470,spring,2024,"CRIM 320, 321 and 330. Written application to the school no later than the last day of classes of the preceding term. Reserved for criminology honours and majors. Recommended: CRIM 370."
+crim 485,spring,2024,"Permission of the school, and minimum 90 units and CGPA of 2.75. Applicants must be declared Criminology majors."
+crim 486,spring,2024,"Permission of the school, and minimum 90 units and CGPA of 2.75. Applicants must be declared Criminology majors and must be enrolled in or have completed CRIM 320, 321 and 485. Corequisite: CRIM 488. A criminal record check may be required dependent on agency."
+crim 487,spring,2024,"CRIM 485, a minimum of 90 units and CGPA of 2.75, and/or permission of the School. Applicants must be declared Criminology majors. Corequisite: CRIM 489. A criminal record check may be required dependent on agency."
+crim 488,spring,2024,"Permission of the school, CRIM 485, a minimum of 90 units and CGPA of 2.75. Applicants must be declared Criminology majors. Corequisite: CRIM 486. A criminal record check may be required dependent on agency."
+crim 489,spring,2024,"CRIM 485, a minimum of 90 units and CGPA of 2.75, and/or permission of the School. Applicants must be declared Criminology majors. Corequisite: CRIM 487. A criminal record check may be required dependent on agency."
+crim 499,spring,2024,A minimum grade of B in CRIM 490 and 491 is required.
+crim 801,spring,2024,"CRIM 800, or permission of the instructor."
+crim 812,spring,2024,
+crim 861,spring,2024,
+crim 862,spring,2024,
+crim 863,spring,2024,"CRIM 861, or permission of the instructor."
+crim 870,spring,2024,
+crim 872,spring,2024,
+crim 873,spring,2024,
+crim 890,spring,2024,CRIM 897.
+crim 897,spring,2024,Completion of all course work within the PhD program.
+crim 898,spring,2024,
+crim 899,spring,2024,
+dmed 501,spring,2024,
+dmed 521,spring,2024,DMED 520.
+dmed 530,spring,2024,
+dmed 531,spring,2024,DMED 530.
+dmed 540,spring,2024,
+easc 101,spring,2024,
+easc 103,spring,2024,
+easc 107,spring,2024,
+easc 201,spring,2024,EASC 101 with a grade of C- or better. EASC 210 recommended.
+easc 204,spring,2024,"EASC 210, PHYS 101 or 120 or 125 or 140. All with a grade of C- or better."
+easc 205,spring,2024,"EASC 202, CHEM 122, and one of: (PHYS 102 and PHYS 133), (PHYS 121 and PHYS 133), (PHYS 126 and PHYS 133) or (PHYS 141). All with a grade of C- or better."
+easc 208,spring,2024,"EASC 202, CHEM 121, 122 and 126. All with a grade of C- or better."
+easc 210,spring,2024,EASC 101 with a grade of C- or better.
+easc 305,spring,2024,"EASC 101; MATH 152, PHYS 121 or 126 or 102 or 141, and STAT 201 or 270 (all with a grade of C- or better), and six units in any 200-division or higher EASC courses."
+easc 311,spring,2024,EASC 301 with a grade of C- or better. EASC 302 recommended.
+easc 313,spring,2024,EASC 204 with a grade of C- or better.
+easc 403,spring,2024,"EASC 201, EASC 209W or GEOG 213, and EASC 308. All with a grade of C- or better."
+easc 405,spring,2024,"EASC 304 or GEOG 311, with a grade of C- or better."
+easc 420,spring,2024,"EASC 302 or EASC 312, and EASC 304. All with a grade of C- or better."
+easc 491,spring,2024,75 units including 30 units in earth science courses and permission of the department.
+easc 493,spring,2024,75 units including 30 units in earth sciences courses and permission of the department.
+easc 498,spring,2024,Permission of the department. Normally taken after completion of 300-level program requirements.
+easc 499,spring,2024,"EASC 498 with a grade of B or better, admittance to the honours program, and permission of the department."
+easc 603,spring,2024,Undergraduate courses in physical and chemical hydrogeology (or equivalent) and consent of the department.
+easc 608,spring,2024,Permission of the instructor.
+easc 609,spring,2024,"Recommended: undergraduate courses in advanced mathematics, remote sensing, geophysics, natural hazards (or permission of instructor)."
+easc 610,spring,2024,"Prior knowledge and/or experience in sedimentary geology, stratigraphy, and facies models is required."
+easc 617,spring,2024,
+easc 635,spring,2024,Permission of instructor. Undergraduate physical hydrogeology and aqueous geochemistry courses required.
+easc 699,spring,2024,Enrollment in EASC MSc or PhD program or permission of instructor.
+easc 710,spring,2024,Prerequisite: permission of the instructor.
+easc 711,spring,2024,Permission of the instructor.
+easc 810,spring,2024,Enrollment in MSc program.
+easc 898,spring,2024,Enrollment in MSc program.
+easc 901,spring,2024,Enrollment in PhD program.
+easc 910,spring,2024,Enrollment in PhD program.
+easc 998,spring,2024,Enrollment in PhD Program.
+eco 641,spring,2024,ECO 622 - Project Management & Policy for ER; ECOR 911O- Planning and Monitoring for ER.
+econ 102,spring,2024,
+econ 103,spring,2024,
+econ 105,spring,2024,
+econ 113,spring,2024,
+econ 115,spring,2024,
+econ 201,spring,2024,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of A-; MATH 157 with a minimum grade of C-.
+econ 233,spring,2024,"MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-; 15 units. MATH 150, MATH 151, MATH 154, or MATH 157 may be taken concurrently with ECON 233."
+econ 260,spring,2024,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-.
+econ 280,spring,2024,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-.
+econ 302,spring,2024,ECON 201 with a minimum grade of C-; 60 units.
+econ 305,spring,2024,ECON 201 with a minimum grade of C-; 60 units. Students with a minimum grade of A- in ECON 103 and 105 at Simon Fraser University at their first attempt can complete ECON 305 concurrently with ECON 201 after 30 units. Students seeking permission to enroll on this basis must contact the undergraduate advisor in economics.
+econ 310,spring,2024,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of A-; 60 units.
+econ 325,spring,2024,ECON 201 with a minimum grade of C-; 60 units.
+econ 331,spring,2024,"ECON 103 and 105, with a minimum grade of C-; MATH 157 with a minimum grade of C-; 60 units or permission of the department."
+econ 333,spring,2024,"ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of A-; ECON 233 or BUS (or BUEC) 232 or STAT 270, MATH 157, all with a minimum grade of C-; 60 units. Students with a minimum grade of A- in ECON 233, BUS (or BUEC) 232 or STAT 270 can take ECON 333 after 30 units. Students seeking permission to enroll based on their ECON 233, BUS (or BUEC) 232 or STAT 270 grade must contact the undergraduate advisor in economics."
+econ 335,spring,2024,
+econ 345,spring,2024,ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of A-; 60 units or permission of the department.
+econ 403,spring,2024,"ECON 302, 305 and 331, all with a minimum grade of C-. Students who have completed both MATH 232 and 251 may substitute them for ECON 331. Entry into this course requires a minimum CGPA of 3.0 or permission of the department."
+econ 425,spring,2024,ECON 302 with a minimum grade of C-.
+econ 437,spring,2024,"ECON 201 or ECON 301, with a minimum grade of C-."
+econ 446,spring,2024,"ECON 201, ECON 305 and ECON 345, all with a minimum grade of C-."
+econ 483,spring,2024,To be determined by the instructor subject to approval by the department chair.
+econ 498,spring,2024,"ECON 201 and ECON 305, all with a minimum grade of C- and permission of the undergraduate chair of the department."
+econ 750,spring,2024,"Completion of core MA degree requirements of ECON 802, 807 (or 808), 835, and 836 with a minimum GPA of 3.0."
+econ 751,spring,2024,ECON 750.
+econ 752,spring,2024,ECON 751 and department approval.
+econ 804,spring,2024,ECON 802 and 803 or equivalent.
+econ 807,spring,2024,ECON 798 or equivalent. Offered once a year.
+econ 809,spring,2024,ECON 808.
+econ 828,spring,2024,
+econ 832,spring,2024,"ECON 802, 807 or 808, or with the approval of the instructor."
+econ 836,spring,2024,ECON 835 or equivalent.
+econ 838,spring,2024,ECON 837.
+econ 899,spring,2024,"ECON 802, 807 (or 808), 835, and 836 (or 837)."
+econ 900,spring,2024,
+econ 912,spring,2024,
+econ 921,spring,2024,
+econ 987,spring,2024,
+econ 990,spring,2024,
+econ 991,spring,2024,
+edpr 510,spring,2024,
+edpr 525,spring,2024,
+edpr 535,spring,2024,
+edpr 551,spring,2024,
+edpr 561,spring,2024,
+edpr 562,spring,2024,
+edpr 577,spring,2024,
+educ 199,spring,2024,
+educ 212,spring,2024,"Students who have credit for MATH 150, MATH 151, MATH 154, MATH 157 need permission of the instructor to participate in EDUC 211 and EDUC 212."
+educ 220,spring,2024,
+educ 222,spring,2024,
+educ 230,spring,2024,
+educ 240,spring,2024,
+educ 250,spring,2024,
+educ 252,spring,2024,
+educ 311,spring,2024,60 units.
+educ 315,spring,2024,EDUC 220 or PSYC 250 or LING 100. Students may be required to successfully complete a Criminal Record Check.
+educ 320,spring,2024,EDUC 220.
+educ 322,spring,2024,EDUC 220 or PSYC 250.
+educ 323,spring,2024,60 units including EDUC 220.
+educ 324,spring,2024,EDUC 220 or PSYC 250 and 60 units.
+educ 326,spring,2024,"One of EDUC 100, 220, 230, or 240; or EDUC 401/402, or corequisite EDUC 403."
+educ 327,spring,2024,"60 units, including EDUC 220."
+educ 328,spring,2024,EDUC 220 or EDUC 401/402 or corequisite EDUC 403.
+educ 341,spring,2024,60 units including three units in EDUC courses.
+educ 370,spring,2024,"Completion of at least 60 units, including 3 units in Education."
+educ 376,spring,2024,
+educ 380,spring,2024,FREN 301 or 304 or 370 or equivalent.
+educ 382,spring,2024,60 units.
+educ 388,spring,2024,
+educ 398,spring,2024,Will be announced prior to the beginning of each term.
+educ 403,spring,2024,EDUC 402. Students must successfully complete a Criminal Record Check.
+educ 404,spring,2024,EDUC 401/402 or corequisite EDUC 403.
+educ 405,spring,2024,EDUC 401/402 or EDUC 402/403. Students must successfully complete a Criminal Record Check.
+educ 422,spring,2024,PSYC 250 or corequisite of EDUC 315 or 473. Students may be required to successfully complete a Criminal Record Check.
+educ 423,spring,2024,Or corequisite: EDUC 323.
+educ 426,spring,2024,"Students may be required to successfully complete a Criminal Record Check. 60 units including EDUC 220 or PSYC 250, or EDUC 401/402 or Corequsite: EDUC 403."
+educ 437,spring,2024,60 units including 3 units in Education.
+educ 458,spring,2024,60 units.
+educ 464,spring,2024,EDUC 401/402 or PSYC 250 or corequisite EDUC 403.
+educ 465,spring,2024,60 units.
+educ 466,spring,2024,Corequisite: EDUC 464.
+educ 468,spring,2024,60 units including 6 units in Education courses.
+educ 471,spring,2024,60 units.
+educ 472,spring,2024,EDUC 401/402 or corequisite EDUC 403.
+educ 702,spring,2024,
+educ 703,spring,2024,
+educ 704,spring,2024,
+educ 705,spring,2024,
+educ 802,spring,2024,EDUC 801. Students must successfully complete a Criminal Record Check.
+educ 805,spring,2024,
+educ 806,spring,2024,
+educ 807,spring,2024,Acceptance into the MEd in Educational Practice program.
+educ 811,spring,2024,
+educ 813,spring,2024,
+educ 817,spring,2024,
+educ 820,spring,2024,
+educ 823,spring,2024,
+educ 825,spring,2024,
+educ 829,spring,2024,
+educ 837,spring,2024,
+educ 847,spring,2024,
+educ 850,spring,2024,
+educ 852,spring,2024,
+educ 855,spring,2024,
+educ 863,spring,2024,EDUC 810 or 864.
+educ 864,spring,2024,
+educ 866,spring,2024,
+educ 872,spring,2024,
+educ 874,spring,2024,EDUC 870.
+educ 881,spring,2024,
+educ 883,spring,2024,
+educ 885,spring,2024,
+educ 886,spring,2024,
+educ 888,spring,2024,
+educ 892,spring,2024,
+educ 898,spring,2024,
+educ 899,spring,2024,
+educ 904,spring,2024,
+educ 905,spring,2024,
+educ 910,spring,2024,
+educ 912,spring,2024,
+educ 922,spring,2024,
+educ 924,spring,2024,
+educ 925,spring,2024,
+educ 926,spring,2024,
+educ 927,spring,2024,
+educ 935,spring,2024,"EDUC 864, EDUC 890, EDUC 891, EDUC 892, EDUC 893. Corequisite: EDUC 934."
+educ 962,spring,2024,
+educ 983,spring,2024,
+educ 984,spring,2024,
+engl 204,spring,2024,12 units or one 100-division English course.
+engl 209,spring,2024,12 units or one 100-division English course.
+engl 211,spring,2024,12 units or one 100-division English course.
+engl 214,spring,2024,12 units or one 100-division English course.
+engl 304,spring,2024,30 units or two 200-division English courses.
+engl 312,spring,2024,30 units or two 200-division English courses.
+engl 320,spring,2024,30 units or two 200-division English courses.
+engl 330,spring,2024,30 units or two 200-division English courses.
+engl 345,spring,2024,30 units or two 200-division English courses.
+engl 355,spring,2024,30 units or two 200-division English courses.
+engl 361,spring,2024,30 units or two 200-division English courses. Students in the Global Asia Program Minor may enroll with permission of the instructor.
+engl 363,spring,2024,30 units or two 200-division English courses.
+engl 364,spring,2024,30 units or two 200-division English courses. Recommended: ENGL 216.
+engl 372,spring,2024,30 units; or two 200-division English courses; or formal declaration in the creative writing minor and ENGL 272.
+engl 375,spring,2024,"30 units or two 200-division English courses. Recommended: One of English 199, 199W, or 214."
+engl 383,spring,2024,30 units or two 200-division English courses.
+engl 385,spring,2024,30 units or two 200-division English courses.
+engl 490,spring,2024,"Two 100-division English courses, two 200-division English courses and two 300-division English courses. Reserved for English honours, major, joint major and minor students. Admission is by permission of the instructor and the department."
+engl 491,spring,2024,"Two 100-division English courses, two 200-division English courses and two 300-division English courses. Reserved for English honours, major, joint major and minor students. Admission is by permission of the instructor and the department."
+engl 494,spring,2024,"Permission of the department, plus normally a minimum of 90 units, including credit or standing in two 100-division English courses, two 200-division English courses, and four 300 or 400-division English courses, one of which must be ENGL 364."
+engl 496,spring,2024,"Lower division requirements for the English major. Open only to students who have been accepted into the English honours program, and who have completed ENGL 494."
+engl 832,spring,2024,
+engl 844,spring,2024,
+engl 860,spring,2024,
+engl 875,spring,2024,
+engl 881,spring,2024,
+engl 882,spring,2024,
+engl 891,spring,2024,
+engl 892,spring,2024,
+engl 893,spring,2024,
+engl 894,spring,2024,ENGL 892 and ENGL 893.
+engl 899,spring,2024,
+ensc 180,spring,2024,"(ENSC 151 or CMPT 120 or CMPT 130) and (MATH 151 or MATH 150), all with a minimum grade of C-. Corequisite: MATH 152 and MATH 232."
+ensc 194,spring,2024,
+ensc 195,spring,2024,
+ensc 196,spring,2024,
+ensc 295,spring,2024,ENSC 195 or 196.
+ensc 296,spring,2024,ENSC 195 or 196 and approval of internship co-ordinator required.
+ensc 325,spring,2024,"ENSC 225 or ENSC 226 or MSE 251, with a minimum grade of C-."
+ensc 327,spring,2024,"(ENSC 380 or MSE 280) and ENSC 280, all with a minimum grade of C-. Students who completed STAT 270 prior to Spring 2015 may use STAT 270 instead of ENSC 280."
+ensc 350,spring,2024,"(ENSC 215 and either ENSC 250 or CMPT 250) or (ENSC 252 and ENSC 254), all with a minimum grade of C-."
+ensc 383,spring,2024,"ENSC 380 (or MSE 280), with a minimum grade of C-."
+ensc 386,spring,2024,"PHYS 120, (MATH 260 or MATH 310), and (ENSC 281 or ENSC 385), all with a minimum grade of C-."
+ensc 387,spring,2024,"ENSC 380 or MSE 280, with a minimum grade of C-."
+ensc 395,spring,2024,ENSC 295 or 296 and a minimum of 75 units.
+ensc 396,spring,2024,"ENSC 295 or 296, a minimum of 75 units and approval of internship co-ordinator required."
+ensc 410,spring,2024,A minimum of 80 units is required to enroll in this course.
+ensc 413,spring,2024,"MATH 251, ENSC 280, ENSC 351, ENSC 380, all with a minimum grade of B."
+ensc 416,spring,2024,"ENSC 316 and MATH 254, both with a minimum grade of C-."
+ensc 427,spring,2024,ENSC 327 with a minimum grade of C-. A minimum of 80 units required.
+ensc 450,spring,2024,"(ENSC 225 or ENSC 226 or MSE 251) and ENSC 350, all with a minimum grade of C- and a minimum of 80 units."
+ensc 452,spring,2024,"ENSC 350 and 351, with a minimum grade of C- and a minimum of 80 units."
+ensc 461,spring,2024,To be determined by the instructor subject to approval by the department chair.
+ensc 474,spring,2024,((ENSC 180 and ENSC 251) or CMPT 225) with a minimum grade of C- and a minimum of 80 units.
+ensc 475,spring,2024,"(ENSC 225 or MSE 251), ENSC 320, (ENSC 380 or MSE 280), all with a minimum grade of C- and a minimum of 80 units. ENSC 380/MSE 280 can be taken concurrently."
+ensc 488,spring,2024,"(ENSC 230 or ENSC 386) and (ENSC 383 or MSE 381), all with a minimum grade of C- and 80 units."
+ensc 495,spring,2024,"ENSC 225 or ENSC 226 or MSE 251 or PHYS 365, with a minimum grade of C- and permission of the instructor and a minimum of 80 units. Enrollment in this course is by application only."
+ensc 498,spring,2024,At least 115 units or permission of the academic supervisor.
+ensc 499,spring,2024,ENSC 498 with a minimum grade of P.
+ensc 704,spring,2024,"12 units of ENSC course work at the 800-level or higher with an SFU CGPA of at least 3.0. Approval of supervisor and a GPC representative is required prior to applying for, and accepting an internship."
+ensc 813,spring,2024,MATH 251 or ENSC 280 or ENSC 380 or permission of instructor.
+ensc 851,spring,2024,
+ensc 870,spring,2024,Students may only register for the ENSC 870-0 during their final term.
+ensc 880,spring,2024,ENSC PhD student.
+ensc 891,spring,2024,
+ensc 892,spring,2024,
+ensc 894,spring,2024,
+ensc 895,spring,2024,
+ensc 896,spring,2024,
+ensc 897,spring,2024,
+ensc 898,spring,2024,
+ensc 899,spring,2024,
+env 299,spring,2024,
+env 302,spring,2024,Admission into Environment Co-operative Education Program.
+env 303,spring,2024,"ARCH 350, ENV 302 or GEOG 302 and readmission into Environment Co-operative Education Program."
+env 402,spring,2024,"ARCH 351, ENV 303 or GEOG 303 and readmission into Environment Co-operative Education Program."
+env 403,spring,2024,"ARCH 450, ENV 402 or GEOG 402 and readmission into Environment Co-operative Education Program."
+env 404,spring,2024,"ARCH 451, ENV 403 or GEOG 403 and readmission into Environment Co-operative Education Program."
+evsc 100,spring,2024,
+evsc 300,spring,2024,EVSC 201W.
+evsc 305,spring,2024,EVSC 100 and 50 units.
+evsc 320,spring,2024,"EVSC 100 or permission of the instructor and one of the following: BISC 204, REM 211, or GEOG 215."
+evsc 380,spring,2024,Acceptance in the environmental science co-operative education program.
+evsc 381,spring,2024,EVSC 380 and readmission to the environmental science co-operative education program.
+evsc 391,spring,2024,"60 units, 3.0 cumulative grade point average."
+evsc 395,spring,2024,
+evsc 400,spring,2024,EVSC 300 and EVSC 305.
+evsc 445,spring,2024,"GEOG 251, or one of STAT 100, 201, 203, 205 or 270 or permission of the instructor."
+evsc 480,spring,2024,EVSC 381 and readmission to the environmental science co-operative education program.
+evsc 481,spring,2024,EVSC 480 and readmission to the environmental science co-operative education program.
+evsc 482,spring,2024,EVSC 481 and readmission to the environmental science co-operative education program.
+evsc 489,spring,2024,"EVSC 305, 90 units and consent of EVSC Director."
+evsc 491,spring,2024,"60 units, 3.0 cumulative grade point average."
+evsc 645,spring,2024,"Enrollment in the ER MSc program, or permission of the instructor."
+fass 201,spring,2024,Open only to students accepted to the FASS Co-op Program.
+fass 301,spring,2024,Open only to students accepted to the FASS Co-op Program.
+fass 302,spring,2024,Open only to students accepted to the FASS Co-op Program.
+fass 401,spring,2024,Open only to students accepted to the FASS Co-op Program.
+fass 402,spring,2024,Open only to students accepted to the FASS Co-op Program.
+fep 200,spring,2024,
+fep 201,spring,2024,
+fep 202,spring,2024,
+fep 203,spring,2024,
+fep 204,spring,2024,
+fep 205,spring,2024,
+fep 206,spring,2024,
+fep 209,spring,2024,
+fep 221,spring,2024,
+fep 222,spring,2024,
+fep 224,spring,2024,
+fep 225,spring,2024,
+fren 102,spring,2024,FREN 120 or FREN 121 or FREN 101 or Grade 9 core French.
+fren 120,spring,2024,Never studied or experienced French before.
+fren 121,spring,2024,FREN 120 or grade 10 French (or equivalent based on placement test). May not be taken for credit by students with French 11 or 12.
+fren 201,spring,2024,FREN 122 or FREN 102 or Grade 12 core French.
+fren 221,spring,2024,"FREN 211 or 212, or with a grade of A, FREN 210. In the latter case, FREN 211 and 221 may be taken concurrently."
+fren 222,spring,2024,"FREN 221 or, with a grade of A, FREN 211 or, with a grade of A, FREN 212."
+fren 245,spring,2024,FREN 222 (students with B+ in FREN 221 can take 222 concurrently with 245).
+fren 275,spring,2024,FREN 222 (students with B+ in FREN 221 can take 222 concurrently with FREN 275).
+fren 300,spring,2024,"FREN 222 or, with a grade of A and permission of instructor, FREN 215 or 217."
+fren 340,spring,2024,FREN 245 or 240.
+fren 344,spring,2024,FREN 245 or 230 or 240.
+fren 352,spring,2024,FREN 222. Students with B+ in FREN 221 may take FREN 222 and FREN 352 concurrently.
+fren 416,spring,2024,"FREN 270 or 275 or LING 222, FREN 301W, and at least one 300-level group A (ling.) course."
+fren 425,spring,2024,"FREN 270 or 275 or LING 222, FREN 301W, and at least one 300-level group A (ling.) course."
+fren 440,spring,2024,"FREN 230 or 240 or 245, FREN 301W, and at least one 300-level group B (lit.) course."
+fren 444,spring,2024,"FREN 230 or 240 or 245, FREN 301W, and at least one 300-level group B (lit.) course."
+fren 480,spring,2024,"FREN 301W and one of 230, 240, 245, 270 or 275 or LING 222. Corequisite: To be taken in conjunction with a 400-division course in French linguistics or literature."
+fren 803,spring,2024,
+fren 840,spring,2024,
+fren 896,spring,2024,
+fren 898,spring,2024,
+fren 998,spring,2024,
+ga 101,spring,2024,
+ga 210,spring,2024,15 units.
+ga 303,spring,2024,45 units. Recommended: GA (or ASC) 201.
+ga 400,spring,2024,45 units.
+geog 100,spring,2024,
+geog 104,spring,2024,
+geog 111,spring,2024,
+geog 161,spring,2024,
+geog 213,spring,2024,GEOG 111 or EASC 101.
+geog 214,spring,2024,GEOG 111.
+geog 215,spring,2024,GEOG 111.
+geog 221,spring,2024,GEOG 100.
+geog 241,spring,2024,"One of GEOG 100, INDG 101, SA 101, or SA 150."
+geog 251,spring,2024,
+geog 253,spring,2024,
+geog 255,spring,2024,
+geog 302,spring,2024,acceptance in the environment co-operative education program.
+geog 303,spring,2024,GEOG 302 and readmission to the environment co-operative education program.
+geog 313,spring,2024,"GEOG 213, or both EASC 209W and EASC 304."
+geog 315,spring,2024,GEOG 215 or BISC 204.
+geog 316,spring,2024,GEOG 215 or BISC 204 or permission of the instructor.
+geog 324,spring,2024,"At least 45 units, including GEOG 100."
+geog 333,spring,2024,A minimum of 45 units.
+geog 352,spring,2024,"GEOG 251 or one of STAT 201, 203 (formerly 103), 205, or 270."
+geog 353,spring,2024,GEOG 253.
+geog 355,spring,2024,GEOG 255.
+geog 402,spring,2024,GEOG 303 and readmission to the environment co-operative education program.
+geog 403,spring,2024,GEOG 402 and readmission to the environment co-operative education program.
+geog 404,spring,2024,"Permission to enter directed readings courses requires written consent of both the faculty member willing to supervise the research, and the chair of the department."
+geog 405,spring,2024,"Permission to enter directed readings courses requires written consent of both the faculty member willing to supervise the research, and the chair of the department."
+geog 409,spring,2024,GEOG 403 and readmission to the environment co-operative education program.
+geog 414,spring,2024,GEOG 314.
+geog 418,spring,2024,"One of GEOG 311, GEOG 314, GEOG 316, GEOG 317, EASC 304, or EASC 405; one of GEOG 251, STAT 201, STAT 203 (formerly STAT 103), STAT 205, or STAT 270."
+geog 457,spring,2024,GEOG 356.
+geog 465,spring,2024,"At least 60 units, including GEOG 241."
+geog 491,spring,2024,105 units and consent of supervisor. See a departmental academic advisor for details.
+geog 601,spring,2024,
+geog 614,spring,2024,
+geog 655,spring,2024,
+geog 658,spring,2024,Enrolled in a graduate program.
+geog 665,spring,2024,
+geog 671,spring,2024,GEOG 600.
+geog 677,spring,2024,"GEOG 600, GEOG 601 and GEOG 606."
+geog 678,spring,2024,"GEOG 600, GEOG 601 and GEOG 603."
+geog 679,spring,2024,GEOG 600 and GEOG 671.
+geog 681,spring,2024,
+geog 691,spring,2024,
+geog 697,spring,2024,
+geog 698,spring,2024,
+geog 699,spring,2024,
+germ 100,spring,2024,
+germ 110,spring,2024,GERM 100 (or GERM 102) or equivalent.
+germ 210,spring,2024,GERM 200 (or GERM 201) or equivalent.
+gero 101,spring,2024,
+gero 300,spring,2024,60 units.
+gero 404,spring,2024,"60 units, GERO 300."
+gero 408,spring,2024,60 units. Recommended: GERO 300.
+gero 413,spring,2024,Recommended: GERO 101 or 300.
+gero 802,spring,2024,
+gero 823,spring,2024,
+gero 840,spring,2024,
+gero 896,spring,2024,
+gero 897,spring,2024,
+gero 898,spring,2024,
+gero 899,spring,2024,
+gero 994,spring,2024,All coursework towards the PhD in Gerontology.
+gero 995,spring,2024,All coursework towards the PhD in Gerontology.
+gero 998,spring,2024,
+grad 700,spring,2024,
+grad 800,spring,2024,
+grad 850,spring,2024,
+gsws 100,spring,2024,
+gsws 204,spring,2024,
+gsws 212,spring,2024,
+gsws 215,spring,2024,
+gsws 312,spring,2024,15 units.
+gsws 315,spring,2024,15 units.
+gsws 320,spring,2024,15 units.
+gsws 321,spring,2024,15 units.
+gsws 331,spring,2024,"30 units, including three unist in GSWS. Students who have taken GDST 301, or WS 301 Special Topics: Theorizing Queer Genders may not take this course for further credit."
+gsws 341,spring,2024,"45 units, including six units of lower division history."
+gsws 401,spring,2024,Nine units in GSWS including GSWS 101 (or WS 101) and/or GSWS 102 (or WS 102) and approval of the course proposal by the department.
+gsws 402,spring,2024,Nine units in GSWS including GSWS 101 (or WS 101) and/or GSWS 102 (or WS 102) and approval of course proposal by Dept.
+gsws 403,spring,2024,nine units in GSWS including GSWS 101 (or WS 101) or GSWS 102 (or WS 102) and approval of course proposal by Dept.
+gsws 431,spring,2024,45 units including six units in GSWS or CA.
+gsws 433,spring,2024,"45 units, including six units in GSWS or WS or GDST."
+gsws 800,spring,2024,
+gsws 812,spring,2024,
+gsws 824,spring,2024,
+gsws 830,spring,2024,
+gsws 840,spring,2024,
+gsws 844,spring,2024,GSWS 822.
+gsws 898,spring,2024,
+gsws 997,spring,2024,
+gsws 998,spring,2024,
+gsws 999,spring,2024,GSWS 822 and five graduate courses.
+hist 104,spring,2024,
+hist 106,spring,2024,
+hist 132,spring,2024,
+hist 151,spring,2024,
+hist 200,spring,2024,
+hist 204,spring,2024,Recommended: HIST 101 and 102W.
+hist 206,spring,2024,
+hist 215,spring,2024,
+hist 223,spring,2024,
+hist 225,spring,2024,
+hist 243,spring,2024,
+hist 255,spring,2024,
+hist 320,spring,2024,"45 units, including six units of lower division history. Strongly recommended: HIST 220 or 223."
+hist 326,spring,2024,"45 units, including six units of lower division history."
+hist 338,spring,2024,"45 units, including six units of lower division history. Recommended: HIST 225."
+hist 341,spring,2024,"45 units, including six units of lower division history."
+hist 354,spring,2024,"45 units, including six units of lower division history. Recommended: one of HIST 151, 249."
+hist 355,spring,2024,"45 units, including six units of lower division history. Recommended: one of HIST 151, 249."
+hist 376,spring,2024,"45 units, including six units of lower division history."
+hist 402,spring,2024,"45 units including nine units of lower division history and one of HIST 220, 223, HUM 219, 305, 311, 312W or permission of the department."
+hist 404,spring,2024,45 units including nine units of lower division history. Recommended: HIST 315.
+hist 430,spring,2024,"45 units, including nine units of lower division history or permission of the instructor. Recommended: HIST 101, 102W, 104."
+hist 436,spring,2024,45 units including nine units of lower division history. Recommended: HIST 101 and 102W.
+hist 454,spring,2024,"45 units, including 9 units of lower-division HIST or 9 units of GSWS. Recommended: HIST 115."
+hist 467,spring,2024,"45 units including nine units of lower division history and one of HIST 151, 249, 350, 354, 355 or permission of the department."
+hist 485,spring,2024,45 units including nine units of lower division history.
+hist 489,spring,2024,45 units including nine units of lower division history. Recommended: at least three upper division courses in history.
+hist 490,spring,2024,45 units including nine units of lower division history. Recommended: at least three upper division courses in history.
+hist 494,spring,2024,Admission to the honours program in history.
+hist 498,spring,2024,Admission to the honours program in History.
+hist 805,spring,2024,
+hist 810,spring,2024,
+hist 815,spring,2024,
+hist 860,spring,2024,
+hist 861,spring,2024,
+hist 862,spring,2024,
+hist 869,spring,2024,
+hist 870,spring,2024,
+hist 872,spring,2024,
+hist 889,spring,2024,
+hist 892,spring,2024,
+hist 896,spring,2024,
+hist 897,spring,2024,
+hist 898,spring,2024,
+hist 899,spring,2024,
+hsci 100,spring,2024,
+hsci 120,spring,2024,
+hsci 130,spring,2024,
+hsci 160,spring,2024,
+hsci 180,spring,2024,
+hsci 204,spring,2024,"HSCI 100 or BISC 101, HSCI 130, all with a minimum grade of C-."
+hsci 206,spring,2024,HSCI 130 with a minimum grade of C-.
+hsci 207,spring,2024,HSCI 130 with a minimum grade of C-. Corequisite: STAT 201 or 203 or 205.
+hsci 211,spring,2024,"HSCI 100 or BISC 101, HSCI 130, all with a minimum grade of C-."
+hsci 212,spring,2024,"HSCI 100 or BISC 101, HSCI 130, all with a minimum grade of C-."
+hsci 220,spring,2024,HSCI 130 with a minimum grade of C- or permission of the instructor.
+hsci 230,spring,2024,"30 units, including HSCI 130 with a minimum grade of C-, or permission of the instructor."
+hsci 305,spring,2024,"60 units, including nine HSCI units with a minimum grade of C-."
+hsci 310,spring,2024,60 units including HSCI 130 with a minimum grade of C-.
+hsci 312,spring,2024,"60 units, including either HSCI 130 or BPK 140, with a minimum grade of C-."
+hsci 321,spring,2024,MBB 231 with a minimum grade of C- or permission of the instructor.
+hsci 324,spring,2024,BISC 202 with a minimum grade of C-.
+hsci 326,spring,2024,MBB 231 with a minimum grade of C-.
+hsci 333,spring,2024,"60 units and completion of one of: HSCI 100, BISC 100, BISC 101 or BISC 102, with a minimum grade of C-."
+hsci 336,spring,2024,MBB 231 with a minimum grade of C-.
+hsci 340,spring,2024,"60 units and two HSCI 200-level courses with a minimum grade of C-, one of which may be taken concurrently."
+hsci 341,spring,2024,"HSCI 230, and STAT 201 or 203 or 205, all with a minimum grade of C-."
+hsci 350,spring,2024,Students must be accepted into the Health Sciences Co-op program and complete Bridging Online.
+hsci 351,spring,2024,Completion of HSCI 350 Co-op Practicum I.
+hsci 408,spring,2024,"90 units, including HSCI 230 (or 330) with a minimum grade of C-."
+hsci 410,spring,2024,"STAT 302 or STAT 305, with a minimum grade of C-. Recommended: HSCI 230."
+hsci 416,spring,2024,"STAT 302 or STAT 305, and HSCI 207 (or 307) or HSCI 230 (or 330), all with a minimum grade of C-."
+hsci 427,spring,2024,"MBB 326 or HSCI 326, with a minimum grade of C, or permission of the instructor."
+hsci 431,spring,2024,"60 units including either HSCI 212 or 230 (or 330), with a minimum grade of C-."
+hsci 432,spring,2024,HSCI 230 (or 330) with a minimum grade of C-.
+hsci 440,spring,2024,"HSCI 321, HSCI 323, and one of BISC 357, MBB 308, or MBB 309W, all with a minimum grade of C-."
+hsci 441,spring,2024,"HSCI 338 and one of: BISC 303, BISC 357, MBB 308, or MBB 309, all with a minimum grade of C-."
+hsci 449,spring,2024,"90 units including HSCI 312 with a minimum grade of C- and HSCI 319 or 327, with a minimum grade of C-. Students may be required to successfully complete a Criminal Record Check."
+hsci 450,spring,2024,Completion of HSCI 351 Co-op Practicum II.
+hsci 451,spring,2024,Completion of HSCI 450 Co-op Practicum III.
+hsci 452,spring,2024,Completion of HSCI 451 Co-op Practicum IV.
+hsci 471,spring,2024,Will vary according to topic.
+hsci 472,spring,2024,Will vary according to topic.
+hsci 474,spring,2024,"HSCI 323 and either HSCI 321 or MBB 331, all with a minimum grade of C-."
+hsci 481,spring,2024,"90 units, including at least 15 upper division HSCI units with a minimum grade of C-. Other prerequisites may vary according to topic."
+hsci 482,spring,2024,"HSCI 326 or MBB 326 or HSCI 338, with a minimum grade of C-."
+hsci 485,spring,2024,"90 units, including at least 15 upper division HSCI units with a minimum grade of C-. Other prerequisites may vary according to topic."
+hsci 486,spring,2024,"90 units, including at least 15 upper division HSCI units with a minimum grade of C-. Other prerequisites may vary according to topic."
+hsci 488,spring,2024,
+hsci 489,spring,2024,
+hsci 490,spring,2024,
+hsci 491,spring,2024,HSCI 490 with a minimum grade of C-.
+hsci 492,spring,2024,"One of HSCI 491, HSCI 493, HSCI 494, with a minimum grade of C-."
+hsci 493,spring,2024,HSCI 490 with a minimum grade of C-.
+hsci 495,spring,2024,Minimum 90 units completed.
+hsci 727,spring,2024,MBB/HSCI 426 or permission of the instructor.
+hsci 774,spring,2024,
+hsci 803,spring,2024,
+hsci 804,spring,2024,HSCI 801.
+hsci 821,spring,2024,
+hsci 826,spring,2024,
+hsci 827,spring,2024,
+hsci 842,spring,2024,
+hsci 846,spring,2024,HSCI 845 or permission of the instructor.
+hsci 849,spring,2024,HSCI 802.
+hsci 880,spring,2024,"HSCI 801, 802, 803, 901."
+hsci 886,spring,2024,
+hsci 887,spring,2024,
+hsci 890,spring,2024,
+hsci 891,spring,2024,
+hsci 893,spring,2024,
+hsci 897,spring,2024,HSCI 880.
+hsci 898,spring,2024,
+hsci 901,spring,2024,HSCI 900
+hsci 903,spring,2024,HSCI 902.
+hsci 983,spring,2024,
+hsci 990,spring,2024,
+hum 106,spring,2024,
+hum 130,spring,2024,
+hum 162,spring,2024,HUM 161 or permission of the instructor.
+hum 222,spring,2024,
+hum 232,spring,2024,
+hum 309,spring,2024,45 units.
+hum 320,spring,2024,45 units.
+hum 330,spring,2024,45 units.
+hum 331,spring,2024,45 units.
+hum 350,spring,2024,45 units.
+hum 360,spring,2024,45 units.
+hum 381,spring,2024,45 units.
+hum 390,spring,2024,"Two of any 300-division humanities courses or permission of the chair plus permission of instructor. This course may be used only once for credit towards a degree and is reserved for humanities major, joint major, extended minor, minor and PBD students."
+hum 480,spring,2024,"45 units, including HUM 101."
+hum 800,spring,2024,
+hum 801,spring,2024,
+hum 802,spring,2024,
+hum 803,spring,2024,
+hum 804,spring,2024,
+hum 805,spring,2024,
+iat 100,spring,2024,
+iat 102,spring,2024,
+iat 106,spring,2024,
+iat 110,spring,2024,
+iat 167,spring,2024,"CMPT 120 (or equivalent first year programming course such as CMPT 102, 125, 126, 128, 130, 135, or 166) with a minimum grade of C-."
+iat 201,spring,2024,"Completion of 21 units, including at least one lower division ""W"" course."
+iat 202,spring,2024,IAT 100 with a minimum grade of C- and a minimum of 21 units.
+iat 208,spring,2024,Completion of 21 units.
+iat 210,spring,2024,Completion of 21 units.
+iat 222,spring,2024,Completion of 21 units.
+iat 233,spring,2024,"Completion of 21 units, IAT 102, and IAT 106, both with a minimum grade of C-."
+iat 235,spring,2024,Completion of 21 units and IAT 102 with a minimum grade of C-.
+iat 244,spring,2024,Completion of 21 units.
+iat 265,spring,2024,"Completion of 21 units and IAT 167 with a minimum grade of C- and one of MATH 130, MACM 101, MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-."
+iat 267,spring,2024,"Completion of 21 units and IAT 167 with a minimum grade of C- and one of MATH 130, MACM 101, MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-. Recommended: IAT 265."
+iat 271,spring,2024,
+iat 272,spring,2024,IAT 271 (or WKTM 100).
+iat 312,spring,2024,"Completion of 48 units, including IAT 265 with a minimum grade of C-."
+iat 313,spring,2024,Completion of 48 units.
+iat 320,spring,2024,"Completion of 48 units, including IAT 267 and 222, with a minimum grade of C-."
+iat 333,spring,2024,"Completion of 48 units, including IAT 265 with a minimum grade of C-. Recommended: IAT 102 or 233."
+iat 334,spring,2024,"Completion of 48 units, including IAT 235 with a minimum grade of C-."
+iat 336,spring,2024,IAT 233 with a minimum grade of C-.
+iat 339,spring,2024,"IAT 235 and IAT 265, with a minimum grade of C-."
+iat 340,spring,2024,Completion of 24 units. Recommended: IAT 202 New Media Images.
+iat 343,spring,2024,"Minimum of 24 units, including MATH 130 or MACM 101 or MATH 150 or MATH 151 or MATH 154 or MATH 157, with a minimum grade of C-."
+iat 344,spring,2024,Minimum of 48 units and IAT 202 with a minimum grade of C-.
+iat 355,spring,2024,"IAT 201 and IAT 267 and either IAT 265 or CMPT 225, all with a minimum grade of C-. Recommended: IAT 235."
+iat 359,spring,2024,"Completion of 48 units, including IAT 265 and IAT 267, with a minimum grade of C-."
+iat 373,spring,2024,IAT 272 (or WKTM 200).
+iat 374,spring,2024,IAT 373 (or WKTM 300).
+iat 375,spring,2024,IAT 374 (or WKTM 400).
+iat 386,spring,2024,"Completion of 45 units, and permission of the instructor and of the School is required. No more than six units of Directed Studies may be taken."
+iat 387,spring,2024,"Completion of 45 units, and permission of the School and the instructor is required. No more than six units of Directed Studies may be taken."
+iat 410,spring,2024,"Completion of 60 units, including IAT 265 and IAT 312, with a minimum grade of C-."
+iat 431,spring,2024,Completion of 60 units.
+iat 432,spring,2024,IAT 334 with a minimum grade of C- and completion of 60 units. Recommended: IAT 201 and 235.
+iat 438,spring,2024,"Completion of 75 units, including IAT 309W, 333 and 334, with a minimum grade of C-."
+iat 443,spring,2024,"Completion of 60 units, including IAT 344 with a minimum grade of C-."
+iat 445,spring,2024,"Completion of 60 units, including IAT 343 with a minimum grade of C-."
+iat 481,spring,2024,Completion of 60 units.
+iat 486,spring,2024,"Completion of 69 units, and permission of the instructor and School are required. No more than six units of Directed Studies may be taken."
+iat 487,spring,2024,"Completion of 69 units, and permission of the instructor and School are required. No more than six units of Directed Studies may be taken."
+iat 488,spring,2024,"Completion of 69 units. No more than six units of Directed Studies may be taken, and permission of the instructor and school are required."
+iat 490,spring,2024,Students accepted into Honours Program and project accepted by a supervisor.
+iat 499,spring,2024,"Completion of 90 units (ensuring a 4th year equivalent student), including 18 upper division IAT units plus IAT 309W with a minimum grade of C-. Enrollment is competitive - each term we will enroll a maximum of 20 students or team based on the strongest student project ideas and CGPA."
+iat 802,spring,2024,Graduate student status.
+iat 805,spring,2024,Enrollment in the SIAT graduate program.
+iat 806,spring,2024,SIAT Graduate Student.
+iat 813,spring,2024,
+iat 814,spring,2024,
+iat 871,spring,2024,
+iat 885,spring,2024,
+iat 890,spring,2024,Enrollment in SIAT PhD Program and completion of Annotated Bibliography.
+iat 895,spring,2024,"Enrollment in the SIAT MA project-based option and completion of SIAT 803, 804, and 806."
+iat 896,spring,2024,"Enrollment in the SIAT MSc project-based option and completion of SIAT 803, 804, and 806."
+iat 897,spring,2024,
+iat 898,spring,2024,
+iat 899,spring,2024,
+indg 101,spring,2024,
+indg 222,spring,2024,Vary according to topic. Consult course outline on prerequisite(s) of each topic offering.
+indg 286,spring,2024,Recommended: INDG 101.
+indg 305,spring,2024,
+indg 326,spring,2024,45 units including INDG (or FNST) 101 or 201W.
+indg 327,spring,2024,INDG (or FNST) 101 or INDG (or FNST) 201W.
+indg 329,spring,2024,45 units.
+indg 332,spring,2024,INDG (or FNST) 101 or INDG (or FNST) 201W.
+indg 360,spring,2024,45 units.
+indg 363,spring,2024,45 units and permission of instructor; no previous artistic training and/or experience are required.
+indg 401,spring,2024,INDG (or FNST) 101 or 201W. Recommended: POL 221.
+indg 403,spring,2024,INDG (or FNST) 101 or INDG (or FNST) 201W.
+indg 429,spring,2024,"INDG (or FNST) 101 or 201W, or CRIM 101, or permission of instructor."
+indg 442,spring,2024,15 units in Indigenous (or First Nations) studies. Corequisite: Permission of an instructor and department.
+indg 447,spring,2024,15 units of INDG (or FNST) courses; permission of an instructor and department approval. Corequisite: Varies depending on topic.
+inlg 130,spring,2024,Students in the Indigenous Studies program should complete INLG 133 before INLG 130.
+inlg 133,spring,2024,
+inlg 134,spring,2024,INLG (or FNLG) 133.
+inlg 200,spring,2024,
+inlg 233,spring,2024,INLG (or FNLG) 134.
+inlg 234,spring,2024,INLG (or FNLG) 233.
+inlg 258,spring,2024,
+inlg 300,spring,2024,"Completion of Certificate in Indigenous Language Proficiency offered in the same language as INLG (or FNLG) 300, including INLG (or FNLG) 200 or LING 220; or with permission of instructor."
+inlg 333,spring,2024,Completion of Certificate in Indigenous Language Proficiency; or with permission of instructor.
+inlg 334,spring,2024,Completion of Certificate in Indigenous Language Proficiency including INLG (or FNLG) 333 (or as corequisite); or permission of instructor.
+inlg 335,spring,2024,"INLG (or FNLG) 130, INLG (or FNLG) 133, INLG (or FNLG) 233 or permission of instructor. Recommended: LING 360."
+inlg 358,spring,2024,Completion of Certificate in Indigenous Language Proficiency including INLG (or FNLG) 258; or permission of instructor.
+inlg 433,spring,2024,INLG (or FNLG) 332 or permission of course supervisor.
+inlg 434,spring,2024,INLG (or FNLG) 433 or permission of course supervisor. Recommended: LING 431 and 432.
+inlg 435,spring,2024,"LING 220, INLG (or FNLG) 332 or permission of instructor. Recommended: LING 360, 431 and 432."
+inlg 458,spring,2024,Completion of Certificate in Indigenous Language Proficiency including INLG (or FNLG) 358; or permission of instructor.
+ins 887,spring,2024,
+ins 888,spring,2024,
+ins 890,spring,2024,Permission of the department.
+ins 891,spring,2024,
+ins 892,spring,2024,
+ins 893,spring,2024,
+ins 894,spring,2024,
+ins 895,spring,2024,
+ins 896,spring,2024,
+ins 897,spring,2024,
+ins 898,spring,2024,
+ins 899,spring,2024,
+is 101,spring,2024,
+is 105,spring,2024,
+is 200,spring,2024,
+is 210,spring,2024,
+is 220,spring,2024,
+is 221,spring,2024,
+is 230,spring,2024,
+is 265,spring,2024,
+is 300,spring,2024,IS 101 and 45 units.
+is 319,spring,2024,45 units.
+is 322,spring,2024,45 units. Recommended: IS 200.
+is 333,spring,2024,45 units.
+is 339,spring,2024,45 units.
+is 365,spring,2024,45 units.
+is 402,spring,2024,45 units.
+is 427,spring,2024,45 units.
+is 428,spring,2024,75 units. International studies major or honours students and written application to the school no later than the last day of classes of the preceding term.
+is 451,spring,2024,90 units. International Studies major or honours students.
+is 490,spring,2024,Admission is by permission of the instructor and the School.
+is 497,spring,2024,"Completion of 60 units and a minimum CGPA of 3.0 is required. International Studies major or honours students. Students must successfully complete a Criminal Record Check, if required."
+is 499,spring,2024,Minimum grade of B+ in IS 490.
+is 806,spring,2024,
+is 820,spring,2024,
+is 822,spring,2024,
+is 830,spring,2024,Acceptance into the MA in International Studies Program. Undergraduate course work in methods is highly recommended.
+is 839,spring,2024,
+is 842,spring,2024,
+is 880,spring,2024,Enrollment in the MA in International Studies program.
+is 886,spring,2024,Enrollment in the MA in International Studies program.
+is 898,spring,2024,Enrollment in the MA in International Studies program.
+ital 100,spring,2024,
+ital 110,spring,2024,ITAL 100 or equivalent.
+ital 200,spring,2024,ITAL 110 (or ITAL 101) or equivalent.
+japn 100,spring,2024,
+japn 110,spring,2024,JAPN 100 or equivalent. Students who took Japanese courses in secondary school and/or with previous knowledge of Japanese may need to be evaluated for placement into JAPN 110 or higher level of courses and are required to contact the instructor before enrollment.
+japn 200,spring,2024,JAPN 110 (or JAPN 101) or equivalent.
+japn 210,spring,2024,JAPN 200 or equivalent.
+japn 300,spring,2024,JAPN 201 or by permission of the department
+lbrl 750,spring,2024,
+lbrl 751,spring,2024,
+lbrl 752,spring,2024,
+lbst 100,spring,2024,
+lbst 101,spring,2024,
+lbst 201,spring,2024,Strongly Recommended: LBST 101.
+lbst 307,spring,2024,Strongly Recommended: LBST 101.
+lbst 309,spring,2024,Strongly Recommended: LBST 101 and at least one other Labour Studies course.
+lbst 311,spring,2024,30 units. Strongly Recommended: LBST 101.
+lbst 312,spring,2024,Strongly Recommended: LBST 101.
+lbst 330,spring,2024,Strongly Recommended: LBST 101 and/or 301.
+lbst 431,spring,2024,Will vary according to topic. LBST 101 is strongly recommended for all upper division LBST courses.
+ling 100,spring,2024,
+ling 111,spring,2024,
+ling 160,spring,2024,
+ling 190,spring,2024,
+ling 200,spring,2024,
+ling 220,spring,2024,
+ling 315,spring,2024,LING 220.
+ling 322,spring,2024,LING 282W.
+ling 324,spring,2024,LING 282W.
+ling 330,spring,2024,LING 282W.
+ling 360,spring,2024,LING 282W.
+ling 363,spring,2024,"LING 360, 362."
+ling 415,spring,2024,12 units of upper division linguistic courses.
+ling 450,spring,2024,LING 250 or SDA 250.
+ling 491,spring,2024,"LING 220, 60 units, and permission of the Undergraduate Committee Chair."
+ling 807,spring,2024,
+ling 810,spring,2024,
+ling 811,spring,2024,
+ling 891,spring,2024,
+ling 893,spring,2024,
+ling 894,spring,2024,All PhD coursework in Linguistics.
+ling 895,spring,2024,All PhD coursework in Linguistics.
+ling 896,spring,2024,
+ling 898,spring,2024,
+ling 899,spring,2024,
+ls 801,spring,2024,
+ls 811,spring,2024,
+ls 815,spring,2024,
+ls 829,spring,2024,
+ls 998,spring,2024,
+ls 999,spring,2024,
+macm 101,spring,2024,"BC Math 12 (or equivalent), or any of MATH 100, 150, 151, 154, 157."
+macm 201,spring,2024,MACM 101 or (ENSC 251 and one of MATH 232 or MATH 240).
+macm 203,spring,2024,"One of CMPT 102, 120, 126, 128 or 130 and one of MATH 150, 151, 154 or 157 and one of MATH 232 or 240. MATH 232 or 240 can be taken as corequisite. Students in excess of 80 units may not take MACM 203 for further credit."
+macm 316,spring,2024,"MATH 152 or 155 or 158, and MATH 232 or 240, and computing experience."
+math 100,spring,2024,"Pre-Calculus 11 or Foundations of Mathematics 11 (or equivalent)
+with a grade of at least B or Pre-Calculus 12 (or equivalent), with a grade of at least C and SFU FAN credit, or SFU FAN X99 course with a grade of at least B-, or achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test. MATH 100 may not be counted towards the mathematics minor, major or honours degree requirements."
+math 130,spring,2024,"Pre-Calculus 12 or Foundations of
+Mathematics 12 (or equivalent) with a
+grade of at least B, or MATH 100 with a grade of at least C."
+math 150,spring,2024,"Pre-Calculus 12 (or equivalent) with a grade of at least B+, or MATH 100 with a grade of at least B-, or achieving a satisfactory grade on the Simon Fraser University Calculus Readiness Test."
+math 152,spring,2024,"MATH 150 or 151, with a minimum grade of C-; or MATH 154 or 157 with a grade of at least B."
+math 154,spring,2024,"Pre-Calculus 12 (or equivalent) with a grade of at least B, or MATH 100 with a grade of at least C-, or achieving a satisfactory grade on the Simon Fraser University Calculus Readiness Test."
+math 155,spring,2024,"MATH 150, 151 or 154, with a minimum grade of C-; or MATH 157 with a grade of at least B."
+math 157,spring,2024,"Pre-Calculus 12 (or equivalent) with a grade of at least B, or MATH 100 with a grade of at least C, or achieving a
+satisfactory grade on the Simon Fraser University Calculus
+Readiness Test."
+math 158,spring,2024,"MATH 150 or 151 or 154 or 157, with a minimum grade of C-."
+math 190,spring,2024,"Pre-Calculus 11 or Foundations of Mathematics 11 (or equivalent)
+with a grade of at least B, or SFU FAN X99 course with a grade of at least C, or achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test. This course may not be counted toward the Mathematics minor, major or honours degree requirements. Students who have taken, have received transfer credit for, or are currently taking MATH 150, 151, 154 or 157 may not take MATH 190 for credit without permission from the Department of Mathematics. Intended to be particularly accessible to students who are not specializing in mathematics."
+math 232,spring,2024,"MATH 150 or 151 or MACM 101, with a minimum grade of C-; or MATH 154 or 157, both with a grade of at least B."
+math 240,spring,2024,"MATH 150 or 151 or MACM 101, with a minimum grade of C-; or MATH 154 or 157, both with a grade of at least B."
+math 242,spring,2024,MATH 152 with a minimum grade of C-; or MATH 155 or 158 with a grade of B.
+math 251,spring,2024,MATH 152 with a minimum grade of C-; or MATH 155 or MATH 158 with a grade of at least B. Recommended: It is recommended that MATH 240 or 232 be taken before or concurrently with MATH 251.
+math 252,spring,2024,"MATH 240 or 232, and 251, all with a minimum grade of C-. MATH 240 or 232 may be taken concurrently."
+math 260,spring,2024,"MATH 152 with a minimum grade of C-; or MATH 155 or 158, with a grade of at least B; MATH 232 or 240, with a minimum grade of C-."
+math 292,spring,2024,Prerequisites will be specified according to the particular topic or topics offered.
+math 302,spring,2024,"MATH 152 or 155 or 158, and MATH 232 or 240, all with a minimum grade of C-. There may be additional prerequisites depending on the specific course topic."
+math 308,spring,2024,"MATH 150, 151, 154, or 157 and MATH 240 or 232, all with a minimum grade of C-."
+math 314,spring,2024,"MATH 260 or MATH 310, with a minimum grade of C-; and one of MATH 251 with a grade of B+, or one of MATH 252 or 254, with a minimum grade of C-."
+math 320,spring,2024,"MATH 242 and 251, with a minimum grade of C-."
+math 336,spring,2024,"Students must apply to and receive permission from the co-op co-ordinator at least one, preferably two, terms in advance. They will normally be required to have completed 45 units with a GPA of 2.5. This course will be graded on a pass/withdraw basis. A course fee is required."
+math 337,spring,2024,MATH 336 and permission of the co-op co-ordinator; students must apply at least one term in advance.
+math 341,spring,2024,"MATH 340 or 342 or 332, with a minimum grade of C-."
+math 436,spring,2024,MATH 337 and permission of the co-op co-ordinator; students must apply at least one term in advance.
+math 437,spring,2024,MATH 436 and permission of the co-op co-ordinator; students must apply at least one term in advance.
+math 441,spring,2024,MATH 340 with a minimum grade of C-.
+math 443,spring,2024,MATH 340 with a minimum grade of C- and either MATH 343 with a minimum grade of C- or MACM 201 with a minimum grade of B+.
+math 448,spring,2024,MATH 308 with a minimum grade of C-. Recommended: MATH 345.
+math 462,spring,2024,"One of MATH 314, MATH 418, PHYS 384, with a minimum grade of C-. An alternative to the above prerequisite is both of MATH 251 and (MATH 260 or MATH 310), both with grades of at least B+."
+math 468,spring,2024,"MATH 360 and (MATH 348 or STAT 380), both with a minimum grade of C-. Strongly Recommended: Experience with a computing platform such as R, MATLAB, or Python."
+math 475,spring,2024,"MATH 242, MATH 240 or MATH 232 and STAT 270, all with a minimum grade of C-."
+math 486,spring,2024,MATH 437 and permission of the co-op co-ordinator. Students must apply at least one term in advance.
+math 741,spring,2024,
+math 743,spring,2024,
+math 748,spring,2024,
+math 762,spring,2024,
+math 775,spring,2024,
+math 795,spring,2024,
+math 800,spring,2024,
+math 808,spring,2024,
+math 842,spring,2024,
+math 875,spring,2024,Only available to students in Mathematics PhD program. Corequisite: MATH 876.
+math 876,spring,2024,Only available to students in Mathematics PhD program. Corequisite: MATH 875.
+math 877,spring,2024,
+math 879,spring,2024,
+math 880,spring,2024,
+math 890,spring,2024,
+math 891,spring,2024,
+math 895,spring,2024,
+math 898,spring,2024,
+math 899,spring,2024,
+mbb 110,spring,2024,MATH 12 or equivalent is recommended.
+mbb 151,spring,2024,Acceptance in the Science Co-operative Education Program.
+mbb 201,spring,2024,BISC 101; CHEM 281 as prerequisite or corequisite.
+mbb 222,spring,2024,or Corequisite CHEM 281.
+mbb 229,spring,2024,or Corequisite: MBB 222.
+mbb 231,spring,2024,"MBB 222, BISC 101, CHEM 281 with grades of C- or better. Corequisite or Prerequisite: CHEM 282 or CHEM 283."
+mbb 251,spring,2024,Acceptance in the Science Co-operative Education Program.
+mbb 321,spring,2024,"MBB 231, with a minimum grade of C."
+mbb 322,spring,2024,"MBB 231, with a minimum grade of C."
+mbb 326,spring,2024,MBB 231 with a minimum grade of C.
+mbb 331,spring,2024,"MBB 231, and BISC 202, with a minimum grade of C."
+mbb 342,spring,2024,"MBB 231, BISC 202 and either MBB 243 or 3 units of CMPT or equivalent, all with a minimum grade of C. Recommended: STAT 201 (or an equivalent statistics course) or STAT 270."
+mbb 351,spring,2024,Acceptance in the Science Co-operative Education Program.
+mbb 427,spring,2024,"One of MBB 326, HSCI 326, MBB 426 or HSCI 426, with a minimum grade of C, or permission of the instructor."
+mbb 438,spring,2024,"MBB 331, with a minimum grade of C."
+mbb 443,spring,2024,"MBB 321 and MBB 322, with a minimum grade of C."
+mbb 446,spring,2024,"MBB 322 and 331, with a minimum grade of C, or permission of the instructor."
+mbb 451,spring,2024,Acceptance in the Science Co-operative Education Program.
+mbb 452,spring,2024,Acceptance in the Science Co-operative Education Program.
+mbb 463,spring,2024,"MBB 331, with a minimum grade of C."
+mbb 481,spring,2024,"MBB 308, MBB 309W and MBB 331, enrollment in the MBB or Biological Physics Honours Program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the MBB department. Corequisite: MBB 482 and MBB 483."
+mbb 482,spring,2024,"MBB 308, MBB 309W and MBB 331, enrollment in the MBB or Biological Physics Honours Program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the MBB department. Corequisite: MBB 481 and MBB 483."
+mbb 483,spring,2024,"MBB 308, MBB 309W and MBB 331, enrollment in the MBB or Biological Physics Honours Program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the MBB department. Corequisite: MBB 481 and MBB 482."
+mbb 490,spring,2024,"MBB 231, with a minimum grade of C, and permission of the molecular biology and biochemistry department. Usually, upper level standing with at least 60 units in a Biochemistry major, minor or honours program will be required."
+mbb 491,spring,2024,"MBB 308 or MBB 309W and permission of the MBB department. Upper level standing in an MBB major, minor or honours program is required."
+mbb 492,spring,2024,"MBB 491, MBB 308, MBB 309W and MBB 331, enrollment in the MBB honours program, a minimum 3.0 CGPA and 3.0 UDGPA and permission of the department."
+mbb 498,spring,2024,"MBB 308 or 309W; Students may not take MBB 498 concurrently with MBB 481, 482, 483, 491 or 492 or BISC 490, 491, 492W, 498 or 499."
+mbb 505,spring,2024,MBB 741 or equivalent bioinformatics course (undergraduate or graduate).
+mbb 727,spring,2024,"One of MBB 326, HSCI 326, MBB 426 or HSCI 426, or permission of the instructor."
+mbb 738,spring,2024,MBB 331 (or BISC 331) or equivalent.
+mbb 743,spring,2024,
+mbb 746,spring,2024,
+mbb 803,spring,2024,
+mbb 841,spring,2024,"It is recommended that students have previously taken one introductory computer-programming course (e.g. CMPT 102, 110, 120, 130 or equivalent) and one introductory statistics course (e.g. STAT 201, 270 or equivalent); or permission of the instructor."
+mbb 871,spring,2024,
+mbb 872,spring,2024,
+mbb 873,spring,2024,
+mbb 898,spring,2024,
+mbb 899,spring,2024,
+mse 102,spring,2024,
+mse 193,spring,2024,
+mse 210,spring,2024,PHYS 141 or equivalent. MATH 150 or MATH 151.
+mse 211,spring,2024,"MATH 152 or equivalent, and MATH 232 or equivalent."
+mse 222,spring,2024,"PHYS 140, MATH 152, and (MATH 260 or MATH 310)."
+mse 223,spring,2024,"PHYS 140, MATH 251, and (MATH 260 or MATH 310)."
+mse 251,spring,2024,MSE 250 or ENSC 220 or SEE 230.
+mse 280,spring,2024,MSE 250 (or ENSC 220) and (MATH 260 or MATH 310).
+mse 293,spring,2024,
+mse 294,spring,2024,
+mse 352,spring,2024,CMPT 130 and either MSE 251 or ENSC 226.
+mse 393,spring,2024,MSE 293 or 294.
+mse 394,spring,2024,"MSE 293 or 294 and approval of
+internship co-ordinator required."
+mse 402,spring,2024,"100 units including one of MSE 102, ENSC 100, ENSC 106, or CMPT 106. MSE 102 may be taken concurrently."
+mse 410,spring,2024,Completion of at least 24 units from the upper division list of MSE curriculum courses and completion of two co-op terms (MSE 293 or MSE 294 and MSE 393 or MSE 394). Must not be taken concurrently with MSE 493 or MSE 494.
+mse 413,spring,2024,Minimum 80 units and MSE 352.
+mse 426,spring,2024,"Math 232, MATH 251, MSE 320 or ENSC 382 and a minimum of 80 credits."
+mse 480,spring,2024,MSE 310 (or ENSC 387)and a minimum of 80 credits.
+mse 483,spring,2024,MSE 381 or ENSC 383 and a minimum of 80 credits.
+mse 486,spring,2024,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee.
+mse 487,spring,2024,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee.
+mse 489,spring,2024,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee.
+mse 490,spring,2024,"To be determined by the instructor subject to approval by the department
+chair."
+mse 491,spring,2024,"To be determined by instructor subject to approval by the department
+chair."
+mse 493,spring,2024,MSE 393 or 394 and a minimum of 75 units.
+mse 494,spring,2024,"MSE 393 or 394, a minimum of 75 units and approval of internship co-ordinator required."
+mse 495,spring,2024,"Permission of the undergraduate
+curriculum committee chair."
+mse 496,spring,2024,"Permission of the undergraduate
+curriculum committee chair."
+mse 497,spring,2024,"Permission of the undergraduate
+curriculum committee chair."
+mse 498,spring,2024,At least 100 units or permission of the academic supervisor.
+mse 499,spring,2024,MSE 498.
+mse 726,spring,2024,
+mse 780,spring,2024,
+mse 782,spring,2024,Recommended: MSE 381 or equivalent.
+mse 795,spring,2024,12 units of MSE course work at the 700-level or higher with a minimum SFU CGPA of 3.0. Approval of supervisor and a GPC representative is required prior to applying for and accepting an internship.
+mse 802,spring,2024,Enrollment in a research-based program.
+mse 804,spring,2024,
+mse 812,spring,2024,
+mse 822,spring,2024,
+mse 890,spring,2024,PhD Students in the School of Mechatronic Systems Engineering (MSE).
+mse 891,spring,2024,
+mse 892,spring,2024,
+mse 893,spring,2024,
+mse 894,spring,2024,
+mse 895,spring,2024,
+mse 898,spring,2024,
+mse 899,spring,2024,MSE 890.
+mse 923,spring,2024,"Recommended Prerequisite: MSE 310, MSE 250, and MSE 352 (or equivalent)."
+neur 802,spring,2024,Enrollment in translational and integrative neuroscience graduate specialization or permission from lead workshop organizer.
+nusc 342,spring,2024,"NUSC 341, with a minimum grade of C-, or permission of the Department. Recommended: MATH 251."
+nusc 346,spring,2024,NUSC 341 with a minimum grade of C-.
+nusc 482,spring,2024,Permission of the Department.
+onc 510,spring,2024,Enrollment in a participating graduate program. No specific courses are prerequisites.
+pers 100,spring,2024,
+phil 105,spring,2024,
+phil 110,spring,2024,
+phil 150,spring,2024,
+phil 201,spring,2024,"One of PHIL 100, 100W, 120, 120W, 121, 144, 150, 151, 300, or COGS 100."
+phil 203,spring,2024,"One of PHIL 100, 100W, 120, 120W, 121, 144, 150, 151, 300, or COGS 100."
+phil 221,spring,2024,"One of PHIL 100, 100W, 120, 120W, 121, 144, 150, 151, or 300."
+phil 270,spring,2024,
+phil 300,spring,2024,At least 60 units.
+phil 310,spring,2024,"One of PHIL 110, 210, 314, 315, or MACM 101; or a minimum of 12 units in MATH."
+phil 315,spring,2024,"One of: PHIL 110, 210, 310, 314, MACM 101, BUEC 232, BUS 232, or STAT 270."
+phil 321,spring,2024,"One of PHIL 120, 120W, 121, 220, 221, 270, SDA 270, ENV 320W, or REM 320W."
+phil 329,spring,2024,"One of PHIL 120, 120W, 121, 220, 221, 270, SDA 270, ENV 320W, or REM 320W."
+phil 341,spring,2024,"Either one of: PHIL 201 or 203; or both of PHIL 100, 100W, or 300, and COGS 200."
+phil 343,spring,2024,"Either one of: PHIL 201 or 203; or both of PHIL 100, 100W, or 300, and COGS 200."
+phil 356,spring,2024,"One prior philosophy course (not including PHIL 105, PHIL 110, PHIL 310, PHIL 314, or PHIL 315)."
+phil 479,spring,2024,Enrolled in the philosophy honours program.
+phil 803,spring,2024,
+phil 804,spring,2024,
+phil 822,spring,2024,
+phil 824,spring,2024,
+phil 899,spring,2024,
+phys 100,spring,2024,"BC Pre-Calculus 12 (or equivalent) or MATH 100, with a minimum grade of C-. BC Physics 11 (or equivalent) is recommended."
+phys 101,spring,2024,"BC Principles of Physics 12 or PHYS 100 or equivalent, with a minimum grade of C-. This prerequisite may be waived, at the discretion of the department, as determined by the student's performance on a regularly scheduled PHYS 100 final exam. Please consult the physics advisor for further details. Corequisite: MATH 150 or 151 or 154 or 157; BISC 100 or 101 or 102. Recommended Corequisite: PHYS 132."
+phys 102,spring,2024,"PHYS 101 or 120 or 125 or 140; MATH 150 or 151 or 154 or 157; both with a minimum grade of C-. Corequisite: BISC 100 or 101 or 102. Recommended Corequisites: MATH 152, 155 or 158; PHYS 133."
+phys 120,spring,2024,"BC Principles of Physics 12 or PHYS 100 or equivalent, with a minimum grade of C-. This prerequisite may be waived, at the discretion of the department, as determined by the student's performance on a regularly scheduled PHYS 100 final exam. Please consult the physics advisor for further details. Corequisite: MATH 150 or 151 or 154. Recommended Corequisite: PHYS 132."
+phys 121,spring,2024,"PHYS 120 or 125 or 140, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or 155. Recommended Corequisite: PHYS 133."
+phys 126,spring,2024,PHYS 125 with a minimum grade of C- or permission of the department. Corequisite: MATH 152. Recommended Corequisite: PHYS 133.
+phys 132,spring,2024,
+phys 133,spring,2024,"PHYS 132 or 140 or ENSC 120 (no substitutions), with a minimum grade of C-. Corequisite: PHYS 102 or 121 or 126."
+phys 141,spring,2024,"PHYS 120 or PHYS 125 or PHYS 140, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or MATH 155."
+phys 190,spring,2024,
+phys 201,spring,2024,"PHYS 121 or PHYS 126 or PHYS 141, with a minimum grade of C-, or PHYS 102 with a minimum grade of B."
+phys 211,spring,2024,MATH 251; MATH 232 or MATH 240; PHYS 255 or ENSC 380. All prerequisite courses require a minimum grade of C-. Recommended Corequisite: MATH 260 or MATH 310.
+phys 234,spring,2024,"PHYS 233 and PHYS 255, both with a minimum grade of C-."
+phys 285,spring,2024,"Either MATH 232 or MATH 240, with a minimum grade of C-."
+phys 313,spring,2024,PHYS 121 or 126 or 141 (or PHYS 102 with a minimum grade of B); MATH 232 or 240; both with a minimum grade of C-.
+phys 321,spring,2024,"PHYS 121 or PHYS 126 or PHYS 141 (or PHYS 102 with a minimum grade of B); MATH 252 or MATH 254; MATH 260 or MATH 310. All prerequisite courses require a minimum grade of C-, unless specified."
+phys 335,spring,2024,"Completion of 30 units, with a minimum GPA of 2.75 in the physics program. Students should apply to the department at least one term in advance."
+phys 336,spring,2024,PHYS 335 followed by 12 units. A minimum cumulative GPA of 2.75. Students should apply to the department at least one term in advance.
+phys 346,spring,2024,CHEM 120 or 121; PHYS 102 or 121 or 126 or 141; MATH 152 or 155; all with a minimum grade of C-.
+phys 347,spring,2024,Completion of 45 units including CHEM 122; MATH 152 or MATH 155; PHYS 102 or PHYS 121 or PHYS 126 or PHYS 141; all with a minimum grade of C-. Recommended: BISC 101.
+phys 390,spring,2024,PHYS 211; CHEM 120 or CHEM 121; both with a minimum grade of C-.
+phys 395,spring,2024,MATH 260 or MATH 310; PHYS 255; CMPT 120 or equivalent. All prerequisite courses require a minimum grade of C-.
+phys 415,spring,2024,PHYS 385; either PHYS 384 or MATH 314. All prerequisite courses require a minimum grade of C-.
+phys 432,spring,2024,All students interested in taking this course must consult with their faculty supervisor regarding prerequisites.
+phys 435,spring,2024,PHYS 336 and 60 units with a minimum cumulative GPA of 2.75.
+phys 436,spring,2024,PHYS 435 followed by 12 units. A minimum cumulative GPA of 2.75.
+phys 437,spring,2024,PHYS 436 and a minimum cumulative GPA of 2.75. Students should apply to the department at least one term in advance.
+phys 445,spring,2024,"PHYS 344 or CHEM 360, with a minimum grade of C-. Recommended: PHYS 385."
+phys 455,spring,2024,PHYS 321 with a minimum grade of C-. Corequisite: PHYS 385.
+phys 485,spring,2024,PHYS 385 or CHEM 364; PHYS 313 or permission from instructor for non-physics students; all with a minimum grade of C-.
+phys 801,spring,2024,
+phys 812,spring,2024,PHYS 810 or equivalent.
+phys 833,spring,2024,PHYS 231 or MBB 309W; PHYS 347 or 344 or MBB 323 or CHEM 360; or permission of the department.
+phys 841,spring,2024,PHYS 445 or equivalent.
+phys 855,spring,2024,Permission of the instructor.
+phys 861,spring,2024,"PHYS 465 or equivalent, and PHYS 415."
+phys 871,spring,2024,Recommended Corequisite: PHYS 812.
+phys 898,spring,2024,
+phys 899,spring,2024,
+plan 100,spring,2024,
+plan 302,spring,2024,"PLAN 100 or PLAN 200; one of PLAN 300 or PLAN 319, or REM 319; and permission of department. Student must be enrolled in the bachelor of environment in resource and environmental management planning stream."
+plan 319,spring,2024,45 units.
+plan 400,spring,2024,PLAN 100 or PLAN 200; and 60 units.
+plan 402,spring,2024,PLAN 302 and permission of department. Student must be enrolled in the bachelor of environment in resource and environmental management planning stream.
+plan 408,spring,2024,PLAN 100 or PLAN 200; and 60 units.
+plan 443,spring,2024,PLAN 100 or PLAN 200; and 60 units.
+plan 495,spring,2024,"PLAN 300, PLAN 302 or ENV 302, and 75 units; or with instructor permission. Students must be enrolled in the bachelor of environment in resource and environmental (planning) program."
+plcy 300,spring,2024,45 units.
+plcy 802,spring,2024,
+plcy 806,spring,2024,
+plcy 807,spring,2024,"PLCY 800 or MPP 800, or permission of the instructor."
+plcy 809,spring,2024,Open only to students enrolled in the MPP program.
+plcy 813,spring,2024,
+plcy 815,spring,2024,
+plcy 821,spring,2024,
+plcy 824,spring,2024,MPP 801 and MPP 802 or equivalent.
+plcy 829,spring,2024,"PLCY 801 and PLCY 802 or, MPP 801 and MPP 802, or equivalent."
+plcy 835,spring,2024,"PLCY 802, PLCY 804, PLCY 806, PLCY 807 and approval of the department."
+pol 100,spring,2024,
+pol 121,spring,2024,
+pol 131,spring,2024,
+pol 132,spring,2024,
+pol 141,spring,2024,
+pol 201,spring,2024,
+pol 210,spring,2024,POL 100 or permission of department.
+pol 221,spring,2024,POL 100 or 151 or permission of department.
+pol 222,spring,2024,POL 100 or 151 or permission of department.
+pol 244,spring,2024,
+pol 253,spring,2024,
+pol 315,spring,2024,POL 201 or permission of instructor.
+pol 321,spring,2024,Six lower division units in political science or permission of the department.
+pol 344,spring,2024,Six lower division units in political science or permission of the department.
+pol 346,spring,2024,Six lower division units in political science or permission of the department.
+pol 348,spring,2024,POL 141 and three lower division units in political science or permission of the department.
+pol 349,spring,2024,Six lower division units in Political Science or permission of the department.
+pol 350,spring,2024,30 units.
+pol 390,spring,2024,"One of POL 201, ECON 233, STAT 203 or equivalent."
+pol 417,spring,2024,Eight upper division units in political science or permission of the department.
+pol 428,spring,2024,Eight upper division units in political science or permission of the department.
+pol 455,spring,2024,Eight upper division units in political science or permission of the department.
+pol 459,spring,2024,Eight upper division units in political science or permission of the department.
+pol 496,spring,2024,90 units. By application to the undergraduate chair.
+pol 498,spring,2024,Permission of the department. Students may count only one readings course as credit towards their upper division political science requirements.
+pol 499,spring,2024,Permission of the department (see regulations listed in the Department of Political Science section).
+pol 802,spring,2024,
+pol 803,spring,2024,
+pol 804,spring,2024,POL 800.
+pol 837,spring,2024,
+pol 845,spring,2024,
+pol 856,spring,2024,
+pol 890,spring,2024,
+pol 891,spring,2024,
+pol 892,spring,2024,
+pol 893,spring,2024,
+pol 894,spring,2024,
+pol 896,spring,2024,
+pol 897,spring,2024,
+pol 898,spring,2024,"To enroll in POL 898, students must have completed a minimum of four courses while in the MA program, one of which must be POL 800, and must have a minimum CGPA of 3.67."
+pol 899,spring,2024,
+psyc 100,spring,2024,
+psyc 102,spring,2024,
+psyc 210,spring,2024,"BC high school Math 12 with a minimum grade of C (2.0) or BC high school Math 11 with a minimum grade of B- (2.67) or any level MATH or STAT course with a C- (1.67) or FAN X99 taken at SFU with a minimum grade of C (2.00). Corequisite: PSYC 201W, but prior completion recommended."
+psyc 221,spring,2024,PSYC 100.
+psyc 241,spring,2024,PSYC 102.
+psyc 250,spring,2024,PSYC 102.
+psyc 260,spring,2024,PSYC 102.
+psyc 268,spring,2024,PSYC 102.
+psyc 280,spring,2024,PSYC 100. Recommended: BISC 101.
+psyc 301,spring,2024,PSYC 201 and 210 and a minimum CGPA of 2.67.
+psyc 303,spring,2024,PSYC 201 and 221 (or 335).
+psyc 308,spring,2024,PSYC 201.
+psyc 325,spring,2024,PSYC 201W and PSYC 280.
+psyc 330,spring,2024,PSYC 201 and 221.
+psyc 352,spring,2024,PSYC 201 and PSYC 250.
+psyc 354,spring,2024,PSYC 201 and 250.
+psyc 356,spring,2024,"PSYC 201, 241 and 250."
+psyc 357,spring,2024,PSYC 201 and 250 or acceptance into the diploma program in gerontology.
+psyc 362,spring,2024,PSYC 201 and 260.
+psyc 363,spring,2024,PSYC 201 and 260.
+psyc 364,spring,2024,"PSYC 201, 260."
+psyc 365,spring,2024,PSYC 201.
+psyc 366,spring,2024,PSYC 201 and PSYC 260.
+psyc 376,spring,2024,PSYC 201W and PSYC 268. Recommended: PSYC 210.
+psyc 379,spring,2024,PSYC 201 and 268. PSYC 241 is recommended.
+psyc 381,spring,2024,PSYC 201 and 280.
+psyc 383,spring,2024,PSYC 201 and 280.
+psyc 385,spring,2024,PSYC 201W.
+psyc 386,spring,2024,PSYC 201 and 280.
+psyc 391,spring,2024,PSYC 201. Other prerequisites vary by topic offering.
+psyc 393,spring,2024,"PSYC 201, 60 units, a UDGPA of at least 2.5, and permission of the department. Tri-council ethics certificate."
+psyc 411,spring,2024,"PSYC 201, 210, 301, 60 units, and a CGPA of 3.0. Recommended: PSYC 410."
+psyc 441,spring,2024,"PSYC 201, 210, 241, and 60 units, and a CGPA of 3.0. Other prerequisites vary by topic offering."
+psyc 450,spring,2024,"PSYC 201, 210, 250 and 60 units, and a CGPA of 3.0. Other prerequisites vary by topic offering."
+psyc 459,spring,2024,A minimum grade of B in PSYC 457.
+psyc 461,spring,2024,"PSYC 201, 210, 260, 60 units, and a CGPA of 3.0. Other prerequisites vary by topic offering."
+psyc 491,spring,2024,"PSYC 201, 210, 60 units, a CGPA of 3.0. Other prerequisites vary by topic offering."
+psyc 493,spring,2024,"PSYC 201, 210, 60 units, a UDGPA of at least 3.0, and permission of the department."
+psyc 494,spring,2024,"PSYC 201, 210, 60 units, a UDGPA of at least 3.0, and permission of the department."
+psyc 495,spring,2024,"PSYC 201, 210, 60 units, a UDGPA of at least 3.0, and permission of the department."
+psyc 499,spring,2024,PSYC 490.
+psyc 750,spring,2024,
+psyc 770,spring,2024,
+psyc 819,spring,2024,Graduate program standing.
+psyc 823,spring,2024,Admission to the Clinical Psychology Graduate Program.
+psyc 824,spring,2024,Admission to the Masters or Doctoral program.
+psyc 825,spring,2024,Admission to Clinical Psychology Graduate Program. Students must successfully complete a Criminal Record Check.
+psyc 836,spring,2024,"PSYC 790, 815."
+psyc 880,spring,2024,"PSYC 744, 770, 820B, 821B, 910, 911. Students must successfully complete a Criminal Record Check."
+psyc 881,spring,2024,Admission to the doctoral clinical program. Students must successfully complete a Criminal Record Check.
+psyc 882,spring,2024,Admission to the clinical program with a specialization in neuropsychology. Students must successfully complete a Criminal Record Check.
+psyc 886,spring,2024,"Equivalent of the MA clinical program, three PhD level courses, successful completion of the PhD comprehensive examinations, and successful defense of the PhD research proposal. Students must successfully complete a Criminal Record Check."
+psyc 890,spring,2024,"PSYC 790, 835 or 836. Students must successfully complete a Criminal Record Check."
+psyc 892,spring,2024,PSYC 790. Students must successfully complete a Criminal Record Check.
+psyc 895,spring,2024,
+psyc 896,spring,2024,
+psyc 897,spring,2024,PSYC 790.
+psyc 898,spring,2024,
+psyc 899,spring,2024,
+psyc 911,spring,2024,
+psyc 912,spring,2024,
+psyc 913,spring,2024,
+psyc 914,spring,2024,
+psyc 916,spring,2024,
+psyc 917,spring,2024,
+psyc 918,spring,2024,
+psyc 950,spring,2024,
+psyc 991,spring,2024,
+psyc 992,spring,2024,
+psyc 993,spring,2024,
+psyc 997,spring,2024,
+psyc 998,spring,2024,Admission to the masters or doctoral program.
+psyc 999,spring,2024,Admission to Clinical Psychology Graduate Program.
+pub 101,spring,2024,
+pub 231,spring,2024,PUB 131 or equivalent. IAT 102 is recommended.
+pub 332,spring,2024,PUB 231.
+pub 350,spring,2024,60 units.
+pub 372,spring,2024,60 units.
+pub 431,spring,2024,PUB 331 or PUB 332.
+pub 448,spring,2024,60 units.
+pub 456,spring,2024,75 units.
+pub 602,spring,2024,Admittance to the program.
+pub 606,spring,2024,Admittance to the program.
+pub 607,spring,2024,admittance to the program.
+pub 801,spring,2024,Admittance to the program.
+pub 802,spring,2024,Admittance to the program.
+pub 891,spring,2024,PUB 890.
+pub 900,spring,2024,PUB 899.
+punj 100,spring,2024,
+rem 100,spring,2024,
+rem 200,spring,2024,"One of REM 100, GEOG 100, GEOG 111, or EVSC 100."
+rem 207,spring,2024,
+rem 221,spring,2024,"One of REM 100, GEOG 100, GEOG 111, or EVSC 100."
+rem 311,spring,2024,REM 100 or EVSC 100; BISC 204 or GEOG 215 or REM 211; STAT 201 or STAT 203 or STAT 205 or GEOG 251 or equivalent. Recommended: REM 225.
+rem 319,spring,2024,45 units.
+rem 355,spring,2024,45 units or permission of instructor.
+rem 375,spring,2024,45 units.
+rem 412,spring,2024,REM 100 or EVSC 100; BISC 204 or GEOG 215 or REM 211; STAT 201 or STAT 203 or STAT 205 or GEOG 251 or equivalent; and 60 units. Recommended: REM 225.
+rem 431,spring,2024,REM 100 or EVSC 100 or GEOG 111; REM 221; 60 units; or permission from instructor.
+rem 491,spring,2024,90 units.
+rem 495,spring,2024,75 units.
+rem 611,spring,2024,
+rem 631,spring,2024,
+rem 641,spring,2024,Enrollment in a REM graduate program or permission of the department.
+rem 643,spring,2024,
+rem 644,spring,2024,
+rem 660,spring,2024,
+rem 661,spring,2024,
+rem 664,spring,2024,
+rem 665,spring,2024,
+rem 690,spring,2024,
+rem 691,spring,2024,Students must have completed at least one term's courses and permission of REM's co-op co-ordinator.
+rem 697,spring,2024,
+rem 699,spring,2024,
+rem 898,spring,2024,
+rem 899,spring,2024,
+sa 101,spring,2024,
+sa 150,spring,2024,
+sa 218,spring,2024,
+sa 250,spring,2024,SA 150.
+sa 255,spring,2024,SA 101 or 150.
+sa 257,spring,2024,SA 101 or 150.
+sa 301,spring,2024,SA 201W.
+sa 304,spring,2024,SA 101 or 150 or 201W.
+sa 325,spring,2024,SA 101 or 150 or 201W.
+sa 335,spring,2024,SA 101 or 150 or 201W.
+sa 340,spring,2024,SA 101 or 150 or 201W.
+sa 350,spring,2024,SA 250.
+sa 353,spring,2024,Minimum of 30 units including SA 150.
+sa 355,spring,2024,SA 255 and SA 257.
+sa 362,spring,2024,SA 101 or 150 or 201W.
+sa 368,spring,2024,"SA 101, 201W, or 150."
+sa 418,spring,2024,"72 units, which must include SA 101 or 150 or 201W."
+sa 442,spring,2024,Minimum of 72 units including either SA 101 or SA 150.
+sa 443,spring,2024,Minimum of 72 units including either SA 101 or SA 150.
+sa 474,spring,2024,Minimum 72 units including SA 101 or SA 201W.
+sa 496,spring,2024,Minimum of 72 units including SA 101 or 150 or 201W.
+sa 499,spring,2024,"SA 495, permission from the SA department, and prior agreement from an SA faculty member who has agreed to supervise the honours essay."
+sa 853,spring,2024,
+sa 854,spring,2024,
+sa 856,spring,2024,
+sa 871,spring,2024,
+sa 872,spring,2024,
+sa 875,spring,2024,
+sa 887,spring,2024,
+sa 897,spring,2024,"All PhD course requirements, with the exception of SA 857 must be completed before student may enroll in SA 897."
+sa 898,spring,2024,
+sa 899,spring,2024,
+sd 281,spring,2024,
+sd 401,spring,2024,SD 281; one of SD 381 or SD 481; and 75 units.
+sd 481,spring,2024,"One of PLAN 100, PLAN 200, REM 100, or SD 281; and 60 units."
+sd 491,spring,2024,60 units and permission of the department.
+sda 270,spring,2024,
+sda 490,spring,2024,Admission into the Social Data Analytics Minor and 18 units completed in the minor.
+see 111,spring,2024,SEE 110.
+see 222,spring,2024,"PHYS 140, CHEM 121 or (CHEM 122 and CHEM 126)."
+see 224,spring,2024,MATH 251.
+see 225,spring,2024,"PHYS 140, MATH 251, (MATH 260 or MATH 310)."
+see 231,spring,2024,SEE 230.
+see 242,spring,2024,"MATH 152, MATH 232."
+see 251,spring,2024,"SEE 230, SEE 221, (MATH 260 or MATH 310)."
+see 290,spring,2024,
+see 294,spring,2024,
+see 390,spring,2024,SEE 290 or SEE 294.
+see 394,spring,2024,SEE 290 or SEE 294.
+see 411,spring,2024,"SEE 410W. Must be taken in the term immediately following 410W. In order to obtain credit, students must successfully complete both SEE 410W and SEE 411."
+see 460,spring,2024,"SEE 100, SEE 221, SEE 222."
+see 463,spring,2024,"CMPT 130, SEE 231."
+see 476,spring,2024,Permission of the undergraduate curriculum chair.
+see 486,spring,2024,A minimum of 100 units and permission of the chair of the undergraduate curriculum committee. The specific prerequisite courses will be identified by the course supervisor.
+see 490,spring,2024,SEE 390 or SEE 394.
+see 494,spring,2024,SEE 390 or SEE 394.
+see 811,spring,2024,
+see 890,spring,2024,
+see 891,spring,2024,
+see 896,spring,2024,
+see 897,spring,2024,
+see 898,spring,2024,
+see 899,spring,2024,SEE 890. Corequisite: SEE 897.
+span 100,spring,2024,
+span 110,spring,2024,"SPAN 100 (or SPAN 102), grade 12 Spanish, or equivalent."
+span 210,spring,2024,SPAN 200 (or SPAN 201) or equivalent.
+stat 100,spring,2024,
+stat 201,spring,2024,Recommended: 30 units.
+stat 203,spring,2024,"Recommended: 30 units including a research methods course such as SA 255, CRIM 220, POL 200W, or equivalent."
+stat 240,spring,2024,"One of STAT 201, STAT 203, STAT 205, STAT 270, BUS 232, or ECON 233, and one of CMPT 102, CMPT 120, CMPT 125, CMPT 128, CMPT 129, CMPT 130, all with a minimum grade of C- or permission of the instructor. STAT 260 is also recommended."
+stat 260,spring,2024,"One of STAT 201, STAT 203, STAT 205, STAT 270, BUS 232, ECON 233, or POL 201, with a grade of at least C- or permission of the instructor. Corequisite: STAT 261."
+stat 261,spring,2024,"One of STAT 201, STAT 203, STAT 205, STAT 270, BUS 232, ECON 233, or POL 201, with a grade of at least C- or permission of the instructor. Corequisite: STAT 260."
+stat 270,spring,2024,"or Corequisite: MATH 152 or 155 or 158, with a minimum grade of C-. Students wishing an intuitive appreciation of a broad range of statistical strategies may wish to take STAT 100 first."
+stat 271,spring,2024,CMPT 210 with a minimum grade of C-.
+stat 285,spring,2024,"STAT 270 and one of MATH 152, MATH 155, or MATH 158, all with a minimum grade of C-."
+stat 302,spring,2024,"One of STAT 201, STAT 203, STAT 205, STAT 270, BUS 232, or ECON 233, with a minimum grade of C-."
+stat 305,spring,2024,"One of STAT 201, STAT 203, STAT 205, STAT 270, BUS 232, or ECON 233, with a minimum grade of C-."
+stat 336,spring,2024,Students must apply and receive permission from the co-op co-ordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.5 before they may take this practicum course.
+stat 337,spring,2024,STAT 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 360,spring,2024,"One of STAT 260 or STAT 341 and one of STAT 302, STAT 305, STAT 350, or ECON 333, all with a minimum grade of C-. CMPT 125 or CMPT 129 is also recommended. Corequisite: STAT 361."
+stat 361,spring,2024,"One of STAT 260 or STAT 341 and one of STAT 302, STAT 305, STAT 350, or ECON 333, all with a minimum grade of C-. CMPT 125 or CMPT 129 is also recommended. Corequisite: STAT 360."
+stat 380,spring,2024,"STAT 330, or all of: STAT 285, MATH 208W, and MATH 251, all with a minimum grade of C-."
+stat 403,spring,2024,"STAT 302, 305 or 350 or ECON 333, all with a minimum grade of C-."
+stat 410,spring,2024,STAT 350 with a minimum grade of C-.
+stat 436,spring,2024,STAT 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 437,spring,2024,STAT 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 438,spring,2024,STAT 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op co-ordinator at least one term in advance.
+stat 445,spring,2024,"STAT 285 or STAT 302 or STAT 305 or ECON 333 or equivalent, with a minimum grade of C-."
+stat 460,spring,2024,"STAT 330 and 350, with a minimum grade of C-."
+stat 475,spring,2024,"STAT 302 or STAT 305 or STAT 350 or ECON 333 or equivalent, with a minimum grade of C-."
+stat 490,spring,2024,Dependent on the topic covered.
+stat 603,spring,2024,A course in statistics.
+stat 604,spring,2024,Any course in Statistics. Open only to students in departments other than Statistics and Actuarial Science.
+stat 605,spring,2024,Any course in Statistics. Open only to students in departments other than Statistics and Actuarial Science.
+stat 645,spring,2024,STAT 302 or STAT 305 or STAT 350 or STAT 604 or STAT 605 or ECON 333 or permission of instructor. Open only to graduate students in departments other than Statistics and Actuarial Science.
+stat 675,spring,2024,STAT 302 or STAT 305 or STAT 350 or STAT 604 or STAT 605 or ECON 333 or permission of instructor. Open only to graduate students in departments other than Statistics and Actuarial Science.
+stat 811,spring,2024,
+stat 812,spring,2024,
+stat 840,spring,2024,STAT 450 or permission of the instructor.
+stat 851,spring,2024,STAT 830 and STAT 850 or permission of instructor.
+stat 853,spring,2024,STAT 830 or equivalent or permission of instructor.
+stat 856,spring,2024,STAT 450 or permission of the instructor.
+stat 880,spring,2024,
+stat 881,spring,2024,
+stat 882,spring,2024,
+stat 894,spring,2024,
+stat 895,spring,2024,
+stat 898,spring,2024,
+stat 899,spring,2024,
+tekx 101,spring,2024,
+ugrad 400,spring,2024,
+urb 413,spring,2024,30 units.
+urb 499,spring,2024,60 units and permission of the instructor. Students should seek permission from the instructor prior to the term in which they wish to enroll.
+urb 602,spring,2024,
+urb 613,spring,2024,
+urb 645,spring,2024,
+urb 670,spring,2024,
+urb 692,spring,2024,Enrollment in either GDUS or MURB or permission of instructor.
+urb 693,spring,2024,
+urb 694,spring,2024,
+urb 695,spring,2024,
+urb 697,spring,2024,URB 696 with a grade of A- or higher. Students who receive a B+ in URB 696 may enroll for URB 697 with permission of their senior supervisor.
+urb 701,spring,2024,Enrollment in the M.URB program with a CGPA of at least of 3.0.
+urb 702,spring,2024,Cooperative Education Practicum I and a CGPA of at least 3.0.
+wl 100,spring,2024,
+wl 200,spring,2024,"six units in World Literature, including one W course."
+wl 203,spring,2024,
+wl 309,spring,2024,45 units.
+wl 320,spring,2024,45 units.
+wl 330,spring,2024,45 units.
+wl 340,spring,2024,Admission is by permission of the Instructor and Director.
+wl 403,spring,2024,"60 units including two 300-level courses in world literature, English, and/or humanities."
