@@ -21,7 +21,7 @@ def parse_sfu_transcript(pdf_path, output_csv=None):
     full_text = re.sub(r'\s+', ' ', full_text)
     
     # Extract major
-    major_match = re.search(r'Major in (.*?), Bachelor of Science', full_text)
+    major_match = re.search(r'Major in (.*?), Bachelor of (?:Applied Science|Science)', full_text)
     major = major_match.group(1).strip() if major_match else "Unknown"
     
     # Extract current CGPA
