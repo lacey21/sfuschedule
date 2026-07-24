@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """
-decisionTree.py — predicts how full a course section will be at a given
-enrollment (registration) date, using SFU Institutional Research & Planning
-"Course Section Availability" reports as historical training data.
-
 Usage:
     python decisionTree.py <course> <section> <enrollment_date YYYY-MM-DD>
+    Optional flags:
+    --test_size <fraction>, specify test/train split (default 0.2)
+    --data-dir <path>, specify a different data/ folder (default ../data)
+    --lookback-terms <int>, how many prior terms to consider when looking up historic fill rate (default 4)
+    --skip-instructor-api, to skip instructor-specific rating via the SFU course outlines API (faster, but less accurate)
+    --max-instructor-lookups <int>, cap on unique sections queried against the SFU API while building training
+
 
 Example:
     python decisionTree.py CMPT225 D100 2026-07-15
+    python decisionTree.py CMPT310 D100 2026-07-15 --test_size 0.1
+
 """
 
 import sys
@@ -20,15 +25,16 @@ from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 import openpyxl
+import requests
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Data directory is sfuschedule/data, current file is in sfuschedule/code, so we need to go up one level to get to data
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 
 REG_OPEN = {
-    "spring": (11, 13),  # opens in the prior calendar year
+    # opens in the prior term
+    "spring": (11, 13),  
     "summer": (3, 3),
     "fall": (7, 6),
 }
@@ -317,13 +323,18 @@ def _extract_term_code(fname):
     return int(matches[0]) if matches else None
 
 
-def load_all_offerings(data_dir=DATA_DIR):
-    # Loads all course-offering files in the data/courseOfferings/ folder into a single DataFrame.
-    folder = os.path.join(data_dir, "courseOfferings")
+def _load_offerings_folder(data_dir, subfolder):
+    # Loads every .xlsx/.xls/.csv file (any name containing a 4-digit term
+    # code) under data/<subfolder>/ into one normalized long DataFrame.
+    folder = os.path.join(data_dir, subfolder)
     frames = []
     if not os.path.isdir(folder):
         return pd.DataFrame()
     for fname in os.listdir(folder):
+        if fname.startswith("sfu_prerequisites"):
+            continue
+        if fname.startswith("database") and not fname.lower().endswith(".xlsx"):
+            continue
         if not fname.lower().endswith((".xlsx", ".xls", ".csv")):
             continue
         term_code = _extract_term_code(fname)
@@ -342,6 +353,50 @@ def load_all_offerings(data_dir=DATA_DIR):
     all_df = all_df.dropna(subset=["percent_filled"])
     return all_df
 
+
+def load_all_offerings(data_dir=DATA_DIR):
+    # Loads all course-offering files in the data/courseOfferings/ folder into a single DataFrame.
+    return _load_offerings_folder(data_dir, "courseOfferings")
+
+
+def load_course_fill_by_week(data_dir=DATA_DIR):
+    # Loads the data/courseFillByWeek/percent-filled-<termCode>.xlsx reports
+    #  used specifically to look up how full a course historically was at a given week of registration.
+    return _load_offerings_folder(data_dir, "courseFillByWeek")
+
+
+def _build_fill_week_index(fill_df):
+    # Pre-aggregates courseFillByWeek data into two dicts so historic_fill_rate
+    # lookups are O(1) per row instead of re-scanning the whole DataFrame
+    course_idx, section_idx = {}, {}
+    if fill_df.empty:
+        return course_idx, section_idx
+
+    course_g = fill_df.groupby(["subject", "catnbr", "week_of_reg", "term_code"])["percent_filled"].mean()
+    for (subj, cat, wk, term), val in course_g.items():
+        course_idx.setdefault((str(subj).upper(), str(cat).upper(), wk), {})[term] = val
+
+    section_g = fill_df.groupby(["subject", "catnbr", "section", "week_of_reg", "term_code"])["percent_filled"].mean()
+    for (subj, cat, sec, wk, term), val in section_g.items():
+        section_idx.setdefault((str(subj).upper(), str(cat).upper(), str(sec).upper(), wk), {})[term] = val
+
+    return course_idx, section_idx
+
+
+def get_historic_fill_rate(course_idx, section_idx, subject, catnbr, section, week_of_reg,
+                            current_term_code, lookback_terms=4):
+    # Averages %Filled for this course at the SAME week_of_reg across up to `lookback_terms` most recent PRIOR terms found in data/courseFillByWeek/.
+    # Prefers an exact section match for a given prior term; falls back to any section of the course if that specific section wasn't offered then.
+    subject, catnbr, section = str(subject).upper(), str(catnbr).upper(), str(section).upper()
+    sec_terms = section_idx.get((subject, catnbr, section, week_of_reg), {})
+    course_terms = course_idx.get((subject, catnbr, week_of_reg), {})
+
+    prior_terms = sorted((t for t in set(sec_terms) | set(course_terms) if t < current_term_code), reverse=True)
+    rates = []
+    for t in prior_terms[:lookback_terms]:
+        rates.append(sec_terms[t] if t in sec_terms else course_terms[t])
+    return float(np.mean(rates)) if rates else np.nan
+
 # 3. Professor/Class rating lookup 
 _PROF_DF_CACHE = None
 
@@ -356,8 +411,8 @@ def _load_professors(data_dir=DATA_DIR):
     return _PROF_DF_CACHE
 
 
-def get_professor_rating(course, data_dir=DATA_DIR):
-    # Returns the average professor rating for a given course (e.g. "CMPT225") based on the RMP data.
+def get_course_rating(course, data_dir=DATA_DIR):
+    # Returns the average professor rating for a given course (e.g. "CMPT225"), averaged across every professor who's ever taught it 
     df = _load_professors(data_dir)
     if df.empty:
         return np.nan
@@ -371,6 +426,69 @@ def get_professor_rating(course, data_dir=DATA_DIR):
     return float(df["rating"].mean())
 
 
+
+# Instructor-specific rating via the SFU course outlines API.
+BASE_URL = "http://www.sfu.ca/bin/wcm/course-outlines"
+
+
+def get_section_details(dept, course_num, section, year, term):
+    url = f"{BASE_URL}?{year}/{term}/{dept}/{course_num}/{section}"
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        return resp.json()
+    except Exception as e:
+        print(f"  Failed: {dept} {course_num} {section} - {e}")
+        return None
+
+
+def _extract_instructor_names(details):
+    # SFU course-outline responses put instructor info either directly under 'instructor' or nested under 'info' -> 'instructor'
+    if not isinstance(details, dict):
+        return []
+    instr = details.get("instructor")
+    if not isinstance(instr, list):
+        info = details.get("info")
+        instr = info.get("instructor") if isinstance(info, dict) else None
+    if not isinstance(instr, list):
+        return []
+    return [e["name"] for e in instr if isinstance(e, dict) and e.get("name")]
+
+
+def _normalize_name_tokens(name):
+    return frozenset(t for t in re.split(r"[^A-Za-z]+", str(name).upper()) if t)
+
+
+def _names_match(a_tokens, b_tokens):
+    if not a_tokens or not b_tokens:
+        return False
+    return a_tokens == b_tokens or len(a_tokens & b_tokens) >= 2
+
+
+_INSTRUCTOR_RATING_CACHE = {}
+
+
+def get_instructor_rating(dept, course_num, section, year, term, data_dir=DATA_DIR):
+    # Returns the RMP rating of whoever actually taught this section  (via the SFU course outlines API), or None if it can't be found.
+    key = (str(dept).upper(), str(course_num).upper(), str(section).upper(), year, term)
+    if key in _INSTRUCTOR_RATING_CACHE:
+        return _INSTRUCTOR_RATING_CACHE[key]
+
+    details = get_section_details(dept, course_num, section, year, term)
+    names = _extract_instructor_names(details)
+    prof_df = _load_professors(data_dir)
+
+    rating = None
+    if names and not prof_df.empty:
+        prof_tokens = [(_normalize_name_tokens(n), r) for n, r in zip(prof_df["name"], prof_df["rating"])]
+        matched = [r for nm in names for tok, r in prof_tokens if _names_match(_normalize_name_tokens(nm), tok)]
+        if matched:
+            rating = float(np.mean(matched))
+
+    _INSTRUCTOR_RATING_CACHE[key] = rating
+    return rating
+
+
 # 4. Program-requirement lookup from course planners
 def get_course_popularity_metrics(course, data_dir=DATA_DIR):
     """Returns (is_major_requirement, num_planners_containing_course)."""
@@ -380,8 +498,9 @@ def get_course_popularity_metrics(course, data_dir=DATA_DIR):
     if os.path.isdir(folder):
         for planner in os.listdir(folder):
             path = os.path.join(folder, planner)
-            print(f"[DEBUG] Checking planner file: {path}")
-            #Example, ENSC COMPUTER planner (Spring 2023 onward) PDF.pdf
+            #Only read through .txt files
+            if not path.lower().endswith(".txt"):
+                continue
             if not os.path.isfile(path):
                 continue
             try:
@@ -396,25 +515,59 @@ def get_course_popularity_metrics(course, data_dir=DATA_DIR):
 
 
 # 5. Build the training set + decision tree
-FEATURE_NAMES = ["week_of_reg", "max_enrol", "sem_taught_2yrs", "prof_rating", "is_major_req"]
+FEATURE_NAMES = ["week_of_reg", "max_enrol", "sem_taught_2yrs", "course_rating",
+                  "prof_rating", "is_major_req", "historic_fill_rate"]
 
 
-def build_training_set(offerings_df, data_dir=DATA_DIR):
+def build_training_set(offerings_df, fill_df, data_dir=DATA_DIR, lookback_terms=4,
+                        use_instructor_api=True, max_instructor_lookups=300):
     # Build the feature matrix X and target vector y from the historical offerings DataFrame.
     df = offerings_df.copy()
     df["code"] = df.apply(lambda r: normalize_code(r["subject"], r["catnbr"]), axis=1)
 
     # cache expensive per-course lookups
     codes = df["code"].unique()
-    prof_rating_map = {c: get_professor_rating(c, data_dir) for c in codes}
+    course_rating_map = {c: get_course_rating(c, data_dir) for c in codes}
     major_map = {c: get_course_popularity_metrics(c, data_dir)[0] for c in codes}
 
-    df["prof_rating"] = df["code"].map(prof_rating_map)
+    df["course_rating"] = df["code"].map(course_rating_map)
     df["is_major_req"] = df["code"].map(major_map)
+
+    # historic_fill_rate: how full this course was at the SAME week of registration in previous terms, from data/courseFillByWeek/
+    course_idx, section_idx = _build_fill_week_index(fill_df)
+    df["historic_fill_rate"] = df.apply(
+        lambda r: get_historic_fill_rate(course_idx, section_idx, r["subject"], r["catnbr"],
+                                          r["section"], r["week_of_reg"], r["term_code"], lookback_terms),
+        axis=1,
+    )
+
+    # prof_rating: instructor-specific rating via the SFU course outlines API
+    df["prof_rating"] = np.nan
+    if use_instructor_api:
+        combos = df[["subject", "catnbr", "section", "term_code"]].drop_duplicates()
+        if len(combos) > max_instructor_lookups:
+            print(f"[INFO] {len(combos)} unique sections found; only querying the SFU course-outlines "
+                  f"API for the first {max_instructor_lookups} (raise with --max-instructor-lookups). "
+                  f"The rest fall back to course_rating.")
+        prof_map = {}
+        for _, r in combos.head(max_instructor_lookups).iterrows():
+            term_name, term_year = term_name_from_code(r["term_code"])
+            prof_map[(r["subject"], r["catnbr"], r["section"], r["term_code"])] = get_instructor_rating(
+                r["subject"], r["catnbr"], r["section"], term_year, term_name, data_dir
+            )
+        df["prof_rating"] = df.apply(
+            lambda r: prof_map.get((r["subject"], r["catnbr"], r["section"], r["term_code"])), axis=1
+        )
 
     df = df.dropna(subset=["week_of_reg", "max_enrol", "percent_filled"])
     df["sem_taught_2yrs"] = df["sem_taught_2yrs"].fillna(0)
-    df["prof_rating"] = df["prof_rating"].fillna(df["prof_rating"].mean())
+    df["course_rating"] = df["course_rating"].fillna(df["course_rating"].mean())
+    # No instructor match (API skipped/failed/no RMP hit) -> fall back to course_rating
+    df["prof_rating"] = df["prof_rating"].fillna(df["course_rating"])
+    fill_default = df["historic_fill_rate"].mean()
+    if pd.isna(fill_default):
+        fill_default = df["percent_filled"].mean()
+    df["historic_fill_rate"] = df["historic_fill_rate"].fillna(fill_default)
 
     X = df[FEATURE_NAMES].astype(float).values
     y = df["percent_filled"].astype(float).values
@@ -444,9 +597,7 @@ def validate_model(model, X, y, test_size=0.2):
 
 # 6. Prediction for a specific course/section/enrollment date
 def get_actual_snapshot(offerings_df, subject, catnbr, section, term_code, enrollment_date):
-    """If we happen to already have real historical data for this exact
-    term/course/section, return the closest known %Filled on/before the
-    requested date (useful for sanity-checking predictions)."""
+    # Returns the most recent historical snapshot of a course section on or before the enrollment date.
     sub = offerings_df[
         (offerings_df["term_code"] == term_code)
         & (offerings_df["subject"].astype(str).str.upper() == subject.upper())
@@ -460,7 +611,8 @@ def get_actual_snapshot(offerings_df, subject, catnbr, section, term_code, enrol
     return row
 
 # Predict the fullness of a course section based on historical data and features
-def predict_fullness(model, offerings_df, course, section, enrollment_date_str, data_dir=DATA_DIR):
+def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_date_str,
+                      data_dir=DATA_DIR, lookback_terms=4, use_instructor_api=True):
     term_name, term_year, week_of_reg, term_code, reg_open = parse_enrollment_date(enrollment_date_str)
     print(f"1. Parsed date -> Term: {term_name.title()} {term_year} (code {term_code}), "
           f"Week of registration: {week_of_reg} (opens {reg_open.date()})")
@@ -479,21 +631,47 @@ def predict_fullness(model, offerings_df, course, section, enrollment_date_str, 
               f"MaxEnrol={max_enrol}, last known %Filled on/before date={snapshot['percent_filled']:.2%} "
               f"(as of {snapshot['date'].date()})")
     else:
+        
         hist = offerings_df[offerings_df["subject"].astype(str).str.upper() == subject.upper()]
         max_enrol = hist["max_enrol"].median() if not hist.empty else offerings_df["max_enrol"].median()
         sem_taught_2yrs = hist["sem_taught_2yrs"].median() if not hist.empty else 0
         print(f"2. No exact historical record for {code} {section} in term {term_code} — "
               f"using department-median MaxEnrol={max_enrol:.0f} as a stand-in.")
 
-    prof_rating = get_professor_rating(code, data_dir)
-    print(f"3. Professor rating for {code} (course-level average, no instructor field in the "
-          f"source reports): {prof_rating:.2f}/5.0")
+    course_rating = get_course_rating(code, data_dir)
+    print(f"3a. Course-level rating for {code} (average across every professor who's taught it): "
+          f"{course_rating:.2f}/5.0")
+
+    prof_rating = get_instructor_rating(subject, catnbr, section, term_year, term_name, data_dir) \
+        if use_instructor_api else None
+    if prof_rating is not None:
+        print(f"3b. Instructor-specific rating for {code} {section} "
+              f"(via SFU course outlines API): {prof_rating:.2f}/5.0")
+    else:
+        prof_rating = course_rating
+        reason = "lookup skipped (--skip-instructor-api)" if not use_instructor_api else \
+                 "no outline/instructor/RMP match found"
+        print(f"3b. No instructor-specific rating for {code} {section} ({reason}) — "
+              f"falling back to the course-level rating.")
+
+    course_idx, section_idx = _build_fill_week_index(fill_df)
+    historic_fill = get_historic_fill_rate(course_idx, section_idx, subject, catnbr, section,
+                                            week_of_reg, term_code, lookback_terms)
+    if not np.isnan(historic_fill):
+        print(f"3c. Historic fill rate for {code} at week {week_of_reg} of registration "
+              f"(averaged over up to {lookback_terms} prior terms in data/courseFillByWeek/): "
+              f"{historic_fill:.1%}")
+    else:
+        historic_fill = fill_df["percent_filled"].mean() if not fill_df.empty else 0.5
+        print(f"3c. No historic week-by-week data found for {code} at week {week_of_reg} — "
+              f"using the overall average ({historic_fill:.1%}) as a stand-in.")
 
     is_major, n_planners = get_course_popularity_metrics(code, data_dir)
     print(f"4. Curriculum metrics -> Program requirement: {bool(is_major)} "
           f"(appears in {n_planners} planner file(s))")
 
-    feature_vector = np.array([[week_of_reg, max_enrol, sem_taught_2yrs, prof_rating, is_major]])
+    feature_vector = np.array([[week_of_reg, max_enrol, sem_taught_2yrs, course_rating,
+                                 prof_rating, is_major, historic_fill]])
     predicted = model.predict(feature_vector)[0]
     predicted = min(max(predicted, 0.0), 1.0)
     print(f"5. PREDICTED CLASS FULLNESS: {predicted * 100:.1f}%")
@@ -508,6 +686,15 @@ def main():
     parser.add_argument("--data-dir", default=DATA_DIR)
     parser.add_argument("--test-size", type=float, default=0.2,
                          help="Fraction of the historical data held out for validation (0-1). Default 0.2.")
+    parser.add_argument("--lookback-terms", type=int, default=4,
+                         help="How many previous terms in data/courseFillByWeek/ to average the "
+                              "same-week fill rate over. Default 4.")
+    parser.add_argument("--skip-instructor-api", action="store_true",
+                         help="Skip the SFU course-outlines API lookup (faster, works offline); "
+                              "falls back to the course-level rating everywhere.")
+    parser.add_argument("--max-instructor-lookups", type=int, default=300,
+                         help="Cap on unique sections queried against the SFU course-outlines API "
+                              "while building the training set, to limit runtime. Default 300.")
     args = parser.parse_args()
 
     print(f"Running Prediction for {args.course} {args.section} on {args.enrollment_date} ---")
@@ -520,13 +707,25 @@ def main():
     print(f"Loaded {len(offerings_df)} historical (date, section) snapshots "
           f"across terms: {sorted(offerings_df['term_code'].unique().tolist())}")
 
-    X, y, _ = build_training_set(offerings_df, args.data_dir)
+    fill_df = load_course_fill_by_week(args.data_dir)
+    if fill_df.empty:
+        print(f"[WARN] No files found under {args.data_dir}/courseFillByWeek/ — "
+              f"historic_fill_rate will fall back to an overall average.")
+    else:
+        print(f"Loaded {len(fill_df)} courseFillByWeek snapshots "
+              f"across terms: {sorted(fill_df['term_code'].unique().tolist())}")
+
+    X, y, _ = build_training_set(offerings_df, fill_df, args.data_dir, lookback_terms=args.lookback_terms,
+                                  use_instructor_api=not args.skip_instructor_api,
+                                  max_instructor_lookups=args.max_instructor_lookups)
     print(f"Built {len(X)} training rows with features {FEATURE_NAMES}")
 
     model = build_and_train_decision_tree(X, y)
     model = validate_model(model, X, y, test_size=args.test_size)
 
-    predict_fullness(model, offerings_df, args.course, args.section, args.enrollment_date, args.data_dir)
+    predict_fullness(model, offerings_df, fill_df, args.course, args.section, args.enrollment_date,
+                      args.data_dir, lookback_terms=args.lookback_terms,
+                      use_instructor_api=not args.skip_instructor_api)
 
 
 if __name__ == "__main__":
