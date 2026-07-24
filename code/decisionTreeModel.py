@@ -51,12 +51,10 @@ TERM_DIGIT = {"spring": 1, "summer": 4, "fall": 7}
 def parse_enrollment_date(enrollment_date_str):
     date_obj = datetime.strptime(enrollment_date_str, "%Y-%m-%d")
     y = date_obj.year
-
     spring_open = datetime(y - 1, *REG_OPEN["spring"])
     summer_open = datetime(y, *REG_OPEN["summer"])
     fall_open = datetime(y, *REG_OPEN["fall"])
     next_spring_open = datetime(y, *REG_OPEN["spring"])
-
     if date_obj < summer_open:
         term_name, term_year, reg_open = "spring", y, spring_open
     elif date_obj < fall_open:
@@ -65,13 +63,12 @@ def parse_enrollment_date(enrollment_date_str):
         term_name, term_year, reg_open = "fall", y, fall_open
     else:
         term_name, term_year, reg_open = "spring", y + 1, next_spring_open
-
+    #Determine week of registration 
     week_of_registration = max(1, (date_obj - reg_open).days // 7 + 1)
     term_code = (term_year - 1900) * 10 + TERM_DIGIT[term_name]
-
     return term_name, term_year, week_of_registration, term_code, reg_open
 
-
+# Determine when registrain opens
 def _week_of_registration_for_date(date_obj, term_name, term_year):
     if term_name == "spring":
         reg_open = datetime(term_year - 1, *REG_OPEN["spring"])
@@ -81,24 +78,22 @@ def _week_of_registration_for_date(date_obj, term_name, term_year):
         reg_open = datetime(term_year, *REG_OPEN["fall"])
     return max(1, (date_obj - reg_open).days // 7 + 1)
 
-
+# Dervive the season/year from XXXX
 def term_name_from_code(term_code):
     digit = term_code % 10
     year = 1900 + term_code // 10
     name = {1: "spring", 4: "summer", 7: "fall"}.get(digit, "unknown")
     return name, year
 
-
+# Put codes into standard form
 def normalize_code(subject, catnbr):
     return f"{str(subject).strip().upper()}{str(catnbr).strip().upper()}"
 
-
+# Used for safe comparison, ex. CMPT 225 vs cmpt225 vs CMPT-225
 def normalize_token(token):
     return re.sub(r"[\s\-]", "", str(token)).strip().upper()
 
-
-# 2. Load a term's course-offering file (either report format) into a
-#    normalized long-format DataFrame.
+# 2. Load a term's course-offering file (either report format) into a normalized long-format DataFrame.
 def _load_long_format(ws, term_code):
     # Parses the 'database' sheet layout: one row per (date, section)
     header_row = None
@@ -108,12 +103,9 @@ def _load_long_format(ws, term_code):
             break
     if header_row is None:
         return pd.DataFrame()
-
     cols = [c for c in ws.iter_rows(min_row=header_row, max_row=header_row, values_only=True)][0]
-
     # Normalize column names by stripping spaces and converting to lowercase for safe lookup
     col_idx = {str(name).strip().casefold(): i for i, name in enumerate(cols) if name is not None}
-
     def get_val(row_data, *possible_names, default=None):
         # Safely fetches a value from the row using multiple possible column header names.
         for name in possible_names:
@@ -121,18 +113,15 @@ def _load_long_format(ws, term_code):
             if idx is not None and idx < len(row_data):
                 return row_data[idx]
         return default
-
     records = []
     for row in ws.iter_rows(min_row=header_row + 1, values_only=True):
         date_val = get_val(row, "Date")
         if not isinstance(date_val, datetime):
             continue
-
         subject = get_val(row, "Subject", "Subj")
         catnbr = get_val(row, "CatNbr", "Cat Nbr", "Catalog Number", "CatalogNbr")
         if not subject or not catnbr:
             continue
-
         term_name, term_year = term_name_from_code(term_code)
         records.append({
             "term_code": term_code,
@@ -150,10 +139,8 @@ def _load_long_format(ws, term_code):
         })
     return pd.DataFrame.from_records(records)
 
-
 def _load_pivot_format(ws, term_code):
-    # Parses the 'pivot.percent.filled' sheet layout: one row per section,
-    # %Filled spread across date columns, with forward-filled course info.
+    # Parses the 'pivot.percent.filled' sheet layout: one row per section, %Filled spread across date columns, with forward-filled course info.
     header_row = None
     for i, row in enumerate(ws.iter_rows(min_row=1, max_row=20, values_only=True), start=1):
         if row and row[0] and str(row[0]).strip().casefold() == "subject":
@@ -161,23 +148,17 @@ def _load_pivot_format(ws, term_code):
             break
     if header_row is None:
         return pd.DataFrame()
-
     week_label_row = [r for r in ws.iter_rows(min_row=header_row - 2, max_row=header_row - 2, values_only=True)][0]
     header = [r for r in ws.iter_rows(min_row=header_row, max_row=header_row, values_only=True)][0]
-
-    # Case-insensitive lookup so a slightly renamed header (e.g. 'Section'
-    # instead of 'Sect') doesn't crash the loader — just falls back to None.
+    # Case-insensitive lookup so a slightly renamed header (e.g. 'Section' instead of 'Sect') doesn't crash the loader — just falls back to None.
     static_cols = {str(name).strip().casefold(): i for i, name in enumerate(header[:9]) if name is not None}
-
     def col(row_data, *possible_names):
         for name in possible_names:
             idx = static_cols.get(name.strip().casefold())
             if idx is not None and idx < len(row_data):
                 return row_data[idx]
         return None
-
     date_col_idx = [i for i, v in enumerate(header) if isinstance(v, datetime)]
-
     # forward-fill sparse week-group labels across the date columns
     week_label = {}
     last_label = None
@@ -185,7 +166,7 @@ def _load_pivot_format(ws, term_code):
         if week_label_row[i]:
             last_label = week_label_row[i]
         week_label[i] = last_label
-
+    # Helper to extract week number
     def label_to_week_num(label):
         if not label:
             return None
@@ -194,9 +175,7 @@ def _load_pivot_format(ws, term_code):
             return None
         n = int(m.group(1))
         return n + 10 if "Classes" in label else n
-
     term_name, term_year = term_name_from_code(term_code)
-
     records = []
     last_subject = last_catnbr = last_title = last_5yr = last_2yr = None
     for row in ws.iter_rows(min_row=header_row + 1, values_only=True):
@@ -210,12 +189,10 @@ def _load_pivot_format(ws, term_code):
             last_5yr = col(row, "LastSemTaught5Yrs")
         if col(row, "#SemTaught2Yrs", "SemTaught2Yrs"):
             last_2yr = col(row, "#SemTaught2Yrs", "SemTaught2Yrs")
-
         section = col(row, "Sect", "Section", "Sec")
         max_enrol = col(row, "MaxEnrol", "Max Enrol", "Capacity", "Cap")
         if not last_subject or not last_catnbr or not section:
             continue
-
         for i in date_col_idx:
             val = row[i] if i < len(row) else None
             if val is None:
@@ -238,9 +215,8 @@ def _load_pivot_format(ws, term_code):
             })
     return pd.DataFrame.from_records(records)
 
-
+ # Handles both raw fractions (0.53) and percent-strings ('53%')
 def _parse_percent(x):
-    """Handles both raw fractions (0.53) and percent-strings ('53%')."""
     if pd.isna(x):
         return np.nan
     s = str(x).strip()
@@ -256,16 +232,13 @@ def _parse_percent(x):
         return float(s)
     except ValueError:
         return np.nan
-
-
 _MONTH_ABBR = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
     "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
 }
 
-
+# Converts a string like "04-Jul" or "4 Jul" into a (day, month) pair
 def _parse_day_month(s):
-    # Parses a string like "04-Jul" or "4 Jul" into (day, month) pair
     m = re.match(r"\s*(\d{1,2})[\s\-]?([A-Za-z]{3})", str(s))
     if not m:
         return None
@@ -274,13 +247,11 @@ def _parse_day_month(s):
         return None
     return int(m.group(1)), month
 
-
+# Loads a CSV file in the long-format layout (one row per date/section) into a DataFrame.
 def _load_csv_long_format(path, term_code):
-    # Loads a CSV file in the long-format layout (one row per date/section) into a DataFrame.
     df = pd.read_csv(path, encoding="utf-8-sig")
     df.columns = [c.strip() for c in df.columns]
     term_name, term_year = term_name_from_code(term_code)
-
     def parse_date(s):
         dm = _parse_day_month(s)
         if dm is None:
@@ -293,10 +264,8 @@ def _load_csv_long_format(path, term_code):
             return datetime(year, month, day)
         except ValueError:
             return pd.NaT
-
     df["_date"] = df["Date"].apply(parse_date)
     df = df.dropna(subset=["_date"])
-
     out = pd.DataFrame({
         "term_code": term_code,
         "date": df["_date"],
@@ -313,7 +282,7 @@ def _load_csv_long_format(path, term_code):
     })
     return out.dropna(subset=["subject", "catnbr", "section"])
 
-
+# Loads a course-offering file (either report format) into a normalized long-format DataFrame.
 def load_offering_file(path, term_code):
     ext = os.path.splitext(path)[1].lower()
     if ext == ".csv":
@@ -323,25 +292,24 @@ def load_offering_file(path, term_code):
         return _load_long_format(wb["database"], term_code)
     return _load_pivot_format(wb[wb.sheetnames[0]], term_code)
 
-
+# Extracts a 4-digit term code from the filename (e.g. "1214" for Summer 2021).
 def _extract_term_code(fname):
-    # Extracts a 4-digit term code from the filename (e.g. "1214" for Summer 2021).
     matches = re.findall(r"(?<!\d)(1\d{3})(?!\d)", fname)
     return int(matches[0]) if matches else None
 
-
+# Loads every .xlsx/.xls/.csv file (any name containing a 4-digit term code) under data/<subfolder>/ into one normalized long DataFrame.
 def _load_offerings_folder(data_dir, subfolder):
-    # Loads every .xlsx/.xls/.csv file (any name containing a 4-digit term
-    # code) under data/<subfolder>/ into one normalized long DataFrame.
     folder = os.path.join(data_dir, subfolder)
     frames = []
     if not os.path.isdir(folder):
         return pd.DataFrame()
     for fname in os.listdir(folder):
+        #ignore the prerequisites file and the database.xsls files file
         if fname.startswith("sfu_prerequisites"):
             continue
         if fname.startswith("database") and fname.lower().endswith(".xlsx"):
             continue
+        #ignore any file that doesn't have a valid extension
         if not fname.lower().endswith((".xlsx", ".xls", ".csv")):
             continue
         term_code = _extract_term_code(fname)
@@ -353,6 +321,7 @@ def _load_offerings_folder(data_dir, subfolder):
             frames.append(df)
     if not frames:
         return pd.DataFrame()
+    # Concatenate all Dataframes into one
     all_df = pd.concat(frames, ignore_index=True)
     all_df["percent_filled"] = pd.to_numeric(all_df["percent_filled"], errors="coerce")
     all_df["max_enrol"] = pd.to_numeric(all_df["max_enrol"], errors="coerce")
@@ -360,56 +329,43 @@ def _load_offerings_folder(data_dir, subfolder):
     all_df = all_df.dropna(subset=["percent_filled"])
     return all_df
 
-
+# Loads all course-offering files in the data/courseOfferings/ folder into a single DataFrame.
 def load_all_offerings(data_dir=DATA_DIR):
-    # Loads all course-offering files in the data/courseOfferings/ folder into a single DataFrame.
     return _load_offerings_folder(data_dir, "courseOfferings")
 
-
+# Loads the data/courseFillByWeek/percent-filled-<termCode>.xlsx reports
 def load_course_fill_by_week(data_dir=DATA_DIR):
-    # Loads the data/courseFillByWeek/percent-filled-<termCode>.xlsx reports
-    #  used specifically to look up how full a course historically was at a given week of registration.
     return _load_offerings_folder(data_dir, "courseFillByWeek")
 
-
+# Pre-aggregates courseFillByWeek data into two dicts so historic_fill_rate lookups are O(1)
 def _build_fill_week_index(fill_df):
-    # Pre-aggregates courseFillByWeek data into two dicts so historic_fill_rate
-    # lookups are O(1) per row instead of re-scanning the whole DataFrame
     course_idx, section_idx = {}, {}
     if fill_df.empty:
         return course_idx, section_idx
-
     course_g = fill_df.groupby(["subject", "catnbr", "week_of_reg", "term_code"])["percent_filled"].mean()
     for (subj, cat, wk, term), val in course_g.items():
         course_idx.setdefault((str(subj).upper(), str(cat).upper(), wk), {})[term] = val
-
     section_g = fill_df.groupby(["subject", "catnbr", "section", "week_of_reg", "term_code"])["percent_filled"].mean()
     for (subj, cat, sec, wk, term), val in section_g.items():
         section_idx.setdefault((str(subj).upper(), str(cat).upper(), str(sec).upper(), wk), {})[term] = val
-
     return course_idx, section_idx
 
-
+# Find average %Filled for this course at Same week of registration for up to X lookback terms
 def get_historic_fill_rate(course_idx, section_idx, subject, catnbr, section, week_of_reg,
                             current_term_code, lookback_terms=4):
-    # Averages %Filled for this course at the SAME week_of_reg across up to `lookback_terms` most
-    # recent PRIOR terms found in data/courseFillByWeek/. Prefers an exact section match for a
-    # given prior term; falls back to any section of the course if that section wasn't offered then.
     subject, catnbr, section = str(subject).upper(), str(catnbr).upper(), str(section).upper()
     sec_terms = section_idx.get((subject, catnbr, section, week_of_reg), {})
     course_terms = course_idx.get((subject, catnbr, week_of_reg), {})
-
+    #Falls back to any course term if section data is not available
     prior_terms = sorted((t for t in set(sec_terms) | set(course_terms) if t < current_term_code), reverse=True)
     rates = []
     for t in prior_terms[:lookback_terms]:
         rates.append(sec_terms[t] if t in sec_terms else course_terms[t])
     return float(np.mean(rates)) if rates else np.nan
-
-
-# 3. Professor/Class rating lookup
+# Cache for professor ratings to avoid repeated lookups
 _PROF_DF_CACHE = None
 
-
+# 3. Professor/Class rating lookup
 def _load_professors(data_dir=DATA_DIR):
     global _PROF_DF_CACHE
     if _PROF_DF_CACHE is None:
@@ -420,10 +376,8 @@ def _load_professors(data_dir=DATA_DIR):
             _PROF_DF_CACHE = pd.DataFrame()
     return _PROF_DF_CACHE
 
-
+# Returns the average professor rating for a given course (e.g. "CMPT225"), averaged across every professor who's ever taught it.
 def get_course_rating(course, data_dir=DATA_DIR):
-    # Returns the average professor rating for a given course (e.g. "CMPT225"), averaged
-    # across every professor who's ever taught it.
     df = _load_professors(data_dir)
     if df.empty:
         return np.nan
@@ -435,28 +389,25 @@ def get_course_rating(course, data_dir=DATA_DIR):
     if len(matches):
         return float(matches.mean())
     return float(df["rating"].mean())
-
-
 # Instructor-specific rating via the SFU course outlines API.
 BASE_URL = "http://www.sfu.ca/bin/wcm/course-outlines"
 
-
+# Offerings does not include instructors, query SFU API by dept/course/section/year/term
 def get_section_details(dept, course_num, section, year, term):
     url = f"{BASE_URL}?{year}/{term}/{dept}/{course_num}/{section}"
     try:
         resp = requests.get(url, timeout=10)
         if resp.status_code == 404:
-            # No outline on file for this section/term. This is a normal, expected outcome — not an actual error, so don't log as one
+            # No outline on file for this section/term. This is a normal, expected outcome, not an actual error, so don't log as one
             return None
         resp.raise_for_status()
         return resp.json()
     except Exception as e:
         print(f"  Failed: {dept} {course_num} {section} - {e}")
         return None
-
-
+    
+# SFU course-outline responses put instructor info either directly under 'instructor' or nested under 'info' -> 'instructor'
 def _extract_instructor_names(details):
-    # SFU course-outline responses put instructor info either directly under 'instructor' or nested under 'info' -> 'instructor'
     if not isinstance(details, dict):
         return []
     instr = details.get("instructor")
@@ -467,45 +418,37 @@ def _extract_instructor_names(details):
         return []
     return [e["name"] for e in instr if isinstance(e, dict) and e.get("name")]
 
-
+# Simplify instructor names, ex. comparing "John Smith" vs "Smith, J."
 def _normalize_name_tokens(name):
     return frozenset(t for t in re.split(r"[^A-Za-z]+", str(name).upper()) if t)
 
-
+# Comparison function for names
 def _names_match(a_tokens, b_tokens):
     if not a_tokens or not b_tokens:
         return False
     return a_tokens == b_tokens or len(a_tokens & b_tokens) >= 2
-
-
+#Cache ratings to avoid repeated lookups for the same section
 _INSTRUCTOR_RATING_CACHE = {}
 
-
+# Returns the RMP rating of whoever actually taught this section (via the SFU course outlines API), or None if it can't be found.
 def get_instructor_rating(dept, course_num, section, year, term, data_dir=DATA_DIR):
-    # Returns the RMP rating of whoever actually taught this section (via the SFU course
-    # outlines API), or None if it can't be found.
     key = (str(dept).upper(), str(course_num).upper(), str(section).upper(), year, term)
     if key in _INSTRUCTOR_RATING_CACHE:
         return _INSTRUCTOR_RATING_CACHE[key]
-
     details = get_section_details(dept, course_num, section, year, term)
     names = _extract_instructor_names(details)
     prof_df = _load_professors(data_dir)
-
     rating = None
     if names and not prof_df.empty:
         prof_tokens = [(_normalize_name_tokens(n), r) for n, r in zip(prof_df["name"], prof_df["rating"])]
         matched = [r for nm in names for tok, r in prof_tokens if _names_match(_normalize_name_tokens(nm), tok)]
         if matched:
             rating = float(np.mean(matched))
-
     _INSTRUCTOR_RATING_CACHE[key] = rating
     return rating
 
-
-# Program-requirement lookup from course planners
+# Program-requirement lookup from course planners, if major requirement or prerequiste
 def get_course_popularity_metrics(course, data_dir=DATA_DIR):
-    """Returns (is_major_requirement, num_planners_containing_course)."""
     folder = os.path.join(data_dir, "coursePlanners")
     target = normalize_token(course)
     count = 0
@@ -525,42 +468,36 @@ def get_course_popularity_metrics(course, data_dir=DATA_DIR):
             except Exception as e:
                 print(f"Warning: Failed to read planner file {path}: {e}")
                 continue
+    # Returns (is_major_requirement, num_planners_containing_course).
     return (1 if count > 0 else 0), count
-
-
-# Build the training set + decision tree
+# Based off data and analysis to predict fullness
 FEATURE_NAMES = ["week_of_reg", "max_enrol", "sem_taught_2yrs", "course_rating",
                   "prof_rating", "is_major_req", "historic_fill_rate"]
 
-
+# Build the training set + decision tree
 def build_training_set(offerings_df, fill_df, data_dir=DATA_DIR, lookback_terms=4,
                         use_instructor_api=True, max_instructor_lookups=300):
     # Build the feature matrix X and target vector y from the historical offerings DataFrame.
     df = offerings_df.copy()
     df["code"] = df.apply(lambda r: normalize_code(r["subject"], r["catnbr"]), axis=1)
-
     # cache expensive per-course lookups
     codes = df["code"].unique()
     course_rating_map = {c: get_course_rating(c, data_dir) for c in codes}
     major_map = {c: get_course_popularity_metrics(c, data_dir)[0] for c in codes}
-
     df["course_rating"] = df["code"].map(course_rating_map)
     df["is_major_req"] = df["code"].map(major_map)
-
-    # historic_fill_rate: how full this course was at the SAME week of registration in previous terms, from data/courseFillByWeek/
     course_idx, section_idx = _build_fill_week_index(fill_df)
     df["historic_fill_rate"] = df.apply(
         lambda r: get_historic_fill_rate(course_idx, section_idx, r["subject"], r["catnbr"],
                                           r["section"], r["week_of_reg"], r["term_code"], lookback_terms),
         axis=1,
     )
-
     # prof_rating: instructor-specific rating via the SFU course outlines API
     df["prof_rating"] = np.nan
     if use_instructor_api:
         combos = df[["subject", "catnbr", "section", "term_code"]].drop_duplicates()
         if len(combos) > max_instructor_lookups:
-            print(f"[INFO] {len(combos)} unique sections found; only querying the SFU course-outlines "
+            print(f" {len(combos)} unique sections found; only querying the SFU course-outlines "
                   f"API for the first {max_instructor_lookups} (raise with --max-instructor-lookups). "
                   f"The rest fall back to course_rating.")
         prof_map = {}
@@ -571,32 +508,28 @@ def build_training_set(offerings_df, fill_df, data_dir=DATA_DIR, lookback_terms=
             prof_map[(r["subject"], r["catnbr"], r["section"], r["term_code"])] = rating
             if rating is None:
                 n_failed += 1
-        print(f"[INFO] Instructor lookups: {len(prof_map) - n_failed}/{len(prof_map)} resolved to a rating.")
+        print(f" Instructor lookups: {len(prof_map) - n_failed}/{len(prof_map)} resolved to a rating.")
         df["prof_rating"] = df.apply(
             lambda r: prof_map.get((r["subject"], r["catnbr"], r["section"], r["term_code"])), axis=1
         )
-
     df = df.dropna(subset=["week_of_reg", "max_enrol", "percent_filled"])
     df["sem_taught_2yrs"] = df["sem_taught_2yrs"].fillna(0)
     df["course_rating"] = df["course_rating"].fillna(df["course_rating"].mean())
-    # No instructor match (API skipped/failed/no RMP hit) -> fall back to course_rating
+    # No instructor match (API skipped/failed/no RMP hit), fall back to course_rating
     df["prof_rating"] = df["prof_rating"].fillna(df["course_rating"])
     fill_default = df["historic_fill_rate"].mean()
     if pd.isna(fill_default):
         fill_default = df["percent_filled"].mean()
     df["historic_fill_rate"] = df["historic_fill_rate"].fillna(fill_default)
-
     X = df[FEATURE_NAMES].astype(float).values
     y = df["percent_filled"].astype(float).values
     return X, y, df
-
 
 def build_and_train_decision_tree(X, y):
     # Use model DecisionTreeRegressor with hyperparameters tuned for this dataset. The model is trained on the provided feature matrix X and target vector y.
     model = DecisionTreeRegressor(max_depth=6, min_samples_split=10, min_samples_leaf=5, random_state=42)
     model.fit(X, y)
     return model
-
 
 def evaluate_split(X, y, test_size):
     # Splits dataset into training and testing sets
@@ -609,28 +542,23 @@ def evaluate_split(X, y, test_size):
     r2 = r2_score(y_test, preds)
     return mse, r2, model
 
-
 def compare_test_splits(X, y, test_sizes):
     # Compares different test sizes to default to best
     results = []
     for ts in test_sizes:
         mse, r2, model = evaluate_split(X, y, ts)
         results.append((ts, mse, r2, model))
-
     results.sort(key=lambda t: -t[2])  # best R2 first
-    print(f"[SPLIT COMPARISON] {'test_size':>10} {'n_train':>10} {'n_test':>10} {'MSE':>10} {'RMSE':>10} {'R2':>10}")
+    best_ts, best_mse, best_r2, best_model = results[0]
+    print(f"Split Comparison: Best test_size = {best_ts} (R2={best_r2:.4f}, RMSE={best_mse ** 0.5:.4f})")
     for i, (ts, mse, r2, _) in enumerate(results):
         n_test = int(round(len(X) * ts))
         n_train = len(X) - n_test
         marker = " <- best" if i == 0 else ""
         print(f"{'':>19}{ts:>10.2f} {n_train:>10} {n_test:>10} {mse:>10.4f} {mse ** 0.5:>10.4f} {r2:>10.4f}{marker}")
-
-    best_ts, best_mse, best_r2, best_model = results[0]
-    print(f"[SPLIT COMPARISON] Best test_size = {best_ts} (R2={best_r2:.4f}, RMSE={best_mse ** 0.5:.4f})")
     for name, imp in sorted(zip(FEATURE_NAMES, best_model.feature_importances_), key=lambda t: -t[1]):
         print(f"    feature importance: {name:<16} {imp:.3f}")
     return best_ts, best_mse, best_r2
-
 
 # Prediction for a specific course/section/enrollment date
 def get_actual_snapshot(offerings_df, subject, catnbr, section, term_code, enrollment_date):
@@ -647,21 +575,18 @@ def get_actual_snapshot(offerings_df, subject, catnbr, section, term_code, enrol
     row = sub.sort_values("date").iloc[-1]
     return row
 
-
 # Predict the fullness of a course section based on historical data and features
 def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_date_str,
                       data_dir=DATA_DIR, lookback_terms=4, use_instructor_api=True):
     term_name, term_year, week_of_reg, term_code, reg_open = parse_enrollment_date(enrollment_date_str)
     print(f"1. Parsed date -> Term: {term_name.title()} {term_year} (code {term_code}), "
           f"Week of registration: {week_of_reg} (opens {reg_open.date()})")
-
     m = re.match(r"([A-Za-z]+)\s*([0-9A-Za-z]+)", course)
     subject, catnbr = (m.group(1), m.group(2)) if m else (course, "")
     code = normalize_code(subject, catnbr)
-
     enrollment_date = datetime.strptime(enrollment_date_str, "%Y-%m-%d")
     snapshot = get_actual_snapshot(offerings_df, subject, catnbr, section, term_code, enrollment_date)
-
+    # If a snapshot exists, use its max_enrol and sem_taught_2yrs, otherwise, fall back to department median values.
     if snapshot is not None:
         max_enrol = snapshot["max_enrol"]
         sem_taught_2yrs = snapshot["sem_taught_2yrs"] or 0
@@ -678,9 +603,9 @@ def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_d
     course_rating = get_course_rating(code, data_dir)
     print(f"3a. Course-level rating for {code} (average across every professor who's taught it): "
           f"{course_rating:.2f}/5.0")
-
     prof_rating = get_instructor_rating(subject, catnbr, section, term_year, term_name, data_dir) \
         if use_instructor_api else None
+    # If the instructor-specific rating is not found, fall back to the course-level rating.
     if prof_rating is not None:
         print(f"3b. Instructor-specific rating for {code} {section} "
               f"(via SFU course outlines API): {prof_rating:.2f}/5.0")
@@ -694,6 +619,7 @@ def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_d
     course_idx, section_idx = _build_fill_week_index(fill_df)
     historic_fill = get_historic_fill_rate(course_idx, section_idx, subject, catnbr, section,
                                             week_of_reg, term_code, lookback_terms)
+    # If no historic week-by-week data is found, fall back to the overall average fill rate across all courses in the dataset
     if not np.isnan(historic_fill):
         print(f"3c. Historic fill rate for {code} at week {week_of_reg} of registration "
               f"(averaged over up to {lookback_terms} prior terms in data/courseFillByWeek/): "
@@ -702,11 +628,9 @@ def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_d
         historic_fill = fill_df["percent_filled"].mean() if not fill_df.empty else 0.5
         print(f"3c. No historic week-by-week data found for {code} at week {week_of_reg} — "
               f"using the overall average ({historic_fill:.1%}) as a stand-in.")
-
     is_major, n_planners = get_course_popularity_metrics(code, data_dir)
     print(f"4. Curriculum metrics -> Program requirement: {bool(is_major)} "
           f"(appears in {n_planners} planner file(s))")
-
     feature_vector = np.array([[week_of_reg, max_enrol, sem_taught_2yrs, course_rating,
                                  prof_rating, is_major, historic_fill]])
     predicted = model.predict(feature_vector)[0]
@@ -714,8 +638,8 @@ def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_d
     print(f"5. PREDICTED CLASS FULLNESS: {predicted * 100:.1f}%")
     return predicted
 
-
 def main():
+    # User arguments for training the decision tree model
     parser = argparse.ArgumentParser(description="Train the course-fullness decision tree and save it for reuse.")
     parser.add_argument("--data-dir", default=DATA_DIR)
     parser.add_argument("--model-path", default=MODEL_PATH,
@@ -734,13 +658,11 @@ def main():
                          help="Cap on unique sections queried against the SFU course-outlines API "
                               "while building the training set, to limit runtime. Default 300.")
     args = parser.parse_args()
-
     try:
         test_sizes = [float(t) for t in args.test_sizes.split(",") if t.strip()]
     except ValueError:
         print(f"Error: --test-sizes must be a comma-separated list of numbers, got '{args.test_sizes}'")
         sys.exit(1)
-
     print(f"Using data directory: {args.data_dir}")
     offerings_df = load_all_offerings(args.data_dir)
     if offerings_df.empty:
@@ -749,7 +671,6 @@ def main():
         sys.exit(1)
     print(f"Loaded {len(offerings_df)} historical (date, section) snapshots "
           f"across terms: {sorted(offerings_df['term_code'].unique().tolist())}")
-
     fill_df = load_course_fill_by_week(args.data_dir)
     if fill_df.empty:
         print(f"Warning: No files found under {args.data_dir}/courseFillByWeek/ — "
@@ -757,18 +678,15 @@ def main():
     else:
         print(f"Loaded {len(fill_df)} courseFillByWeek snapshots "
               f"across terms: {sorted(fill_df['term_code'].unique().tolist())}")
-
     X, y, _ = build_training_set(offerings_df, fill_df, args.data_dir, lookback_terms=args.lookback_terms,
                                   use_instructor_api=not args.skip_instructor_api,
                                   max_instructor_lookups=args.max_instructor_lookups)
     print(f"Built {len(X)} training rows with features {FEATURE_NAMES}")
-
-    bestTs, _, _ = compare_test_splits(X, y, test_sizes)
-
-    print(f"Training final model on split {bestTs:.0%}/{1 - bestTs:.0%} and saving to {args.model_path}...")
-    X_train, _, y_train, _ = train_test_split(X, y, test_size=bestTs, random_state=42)
+    # Save best test size
+    best_ts, best_mse, best_r2 = compare_test_splits(X, y, test_sizes)
+    print(f"Training final model on split {best_ts:.0%}/{1 - best_ts:.0%} and saving to {args.model_path}...")
+    X_train, _, y_train, _ = train_test_split(X, y, test_size=best_ts, random_state=42)
     model = build_and_train_decision_tree(X_train, y_train)
-
     bundle = {
         "model": model,
         "offerings_df": offerings_df,
@@ -783,7 +701,5 @@ def main():
     joblib.dump(bundle, args.model_path, compress=3)
     print(f"Saved trained model bundle to {args.model_path}")
     print(f"Run predictions with: python decisionTree.py <course> <section> <enrollment_date>")
-
-
 if __name__ == "__main__":
     main()

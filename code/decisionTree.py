@@ -37,20 +37,16 @@ def main():
     parser.add_argument("--skip-instructor-api", action="store_true",
                          help="Skip the live SFU course-outlines API call for this prediction.")
     args = parser.parse_args()
-
     try:
         bundle = joblib.load(args.model_path)
     except FileNotFoundError:
         print(f"ERROR: No trained model found at {args.model_path}.")
         print("Train one first with: python decisionTreeModel.py")
         sys.exit(1)
-
     print(f"Running Prediction for {args.course} {args.section} on {args.enrollment_date} ---")
     print(f"Using model trained at {bundle.get('trained_at', 'unknown time')} ({args.model_path})")
-
     data_dir = args.data_dir if args.data_dir is not None else bundle["data_dir"]
     use_instructor_api = bundle["use_instructor_api"] and not args.skip_instructor_api
-
     predict_fullness(
         bundle["model"],
         bundle["offerings_df"],
@@ -62,7 +58,5 @@ def main():
         lookback_terms=bundle["lookback_terms"],
         use_instructor_api=use_instructor_api,
     )
-
-
 if __name__ == "__main__":
     main()
