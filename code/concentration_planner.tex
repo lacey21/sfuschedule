@@ -1,0 +1,452 @@
+% ============================================================================
+%  SFU COMPUTING SCIENCE B.SC. CONCENTRATION PLANNER — MASTER TEMPLATE
+% ============================================================================
+%  HOW TO USE THIS FILE
+%  ---------------------------------------------------------------------------
+%  1. Edit the "CONFIGURATION" section below: set the concentration name,
+%     the planner year/version, the description paragraph, and the
+%     Year 3 / Year 4 course lists.
+%  2. Year 1 and Year 2 are IDENTICAL for every concentration (they are the
+%     common lower-division CS core), so they are hard-coded in the template
+%     body.
+%  3. Scroll to the bottom of this file for ready-made Year 3 / Year 4
+%     course blocks for all six concentrations (Artificial Intelligence,
+%     Visual & Interactive Computing, Computing Systems, Information
+%     Systems, Programming Languages & Software, Theoretical Computing
+%     Science), pulled from Table I of the Honours planner. Copy the block
+%     you want into the CONFIGURATION section and comment out the rest.
+%  4. Compile with: pdflatex concentration_planner.tex
+% ============================================================================
+
+\documentclass[11pt]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wasysym}      % gives \Square for checkboxes
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\definecolor{sfured}{HTML}{A6192E}
+\definecolor{sfugray}{HTML}{F2F2F2}
+
+\hypersetup{colorlinks=true, urlcolor=sfured, linkcolor=sfured}
+\pagestyle{empty}
+\setlist{nosep, leftmargin=*}
+
+% --- checkbox helper: \course{CMPT 120}{Programming 1} -----------------
+\newcommand{\course}[2]{\Square~#1 #2\par}
+\newcommand{\courseonly}[1]{\Square~#1\par}
+
+% ============================================================================
+% ================================ CONFIGURATION ============================
+% ============================================================================
+
+% ---- Concentration identity -------------------------------------------
+\newcommand{\ConcentrationName}{Artificial Intelligence Concentration}
+\newcommand{\PlannerYear}{Fall 2024}
+\newcommand{\PlannerVersionDate}{July 25, 2026}
+
+% ---- Description paragraph (shown under the header) -------------------
+\newcommand{\ConcentrationDescription}{%
+Artificial Intelligence is the study of the design of intelligent agents and
+systems, and spans areas such as machine learning, natural language
+processing, computer vision and robotics.%
+}
+
+% ---- Year 3, Left column and Right column ------------------------------
+% (Replace with one of the ready-made blocks near the end of this file.)
+\newcommand{\YearThreeLeft}{%
+  \course{CMPT 310}{Introduction to AI}
+  \course{CMPT 307}{Data Structures and Algorithms}
+  \course{MACM 316}{Numerical Analysis}
+  \course{CMPT 376W}{CS Writing II}
+  \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+}
+\newcommand{\YearThreeRight}{%
+  \course{CMPT 300}{Operating Systems}
+  \course{CMPT 419}{Machine Learning (410 from Fall 2022)}
+  \course{CMPT 353}{Computational Data Science}
+  \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+  \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+}
+
+% ---- Year 4, Left column and Right column ------------------------------
+\newcommand{\YearFourLeft}{%
+  \course{CMPT 413}{Computational Linguistics*}
+  \course{CMPT 354}{Database Systems}
+  \course{CMPT 363}{User Interface Design}
+  \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+  \courseonly{General Elective: \underline{\hspace{2.2cm}}}
+}
+\newcommand{\YearFourRight}{%
+  \course{CMPT 412}{Computer Vision*}
+  \course{CMPT 420}{Deep Learning (from 2022/2023)*}
+  \course{CMPT 379}{Compilers}
+  \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+  \courseonly{General Elective: \underline{\hspace{2.2cm}}}
+}
+
+% ---- Footnote under Year 4 (400-level elective alternates, etc.) -------
+\newcommand{\ElectiveFootnote}{%
+\footnotesize
+* Or any other 400-level AI Elective: CMPT 410 Machine Learning, CMPT 411
+Knowledge Representation, CMPT 412 Computational Vision, CMPT 413
+Computational Linguistics, CMPT 414 Model-Based Computer Vision, CMPT 417
+Intelligent Systems, CMPT 419 Special Topics in Artificial Intelligence,
+CMPT 420 Deep Learning.\\[2pt]
+Other recommended general electives: CMPT 320 Social Implications, STAT 350
+Linear Models In Applied Statistics, STAT 440 Learning from Big Data
+(requires 90 units \& STAT 350), CMPT 456 Information Retrieval \& Web
+Search.%
+}
+
+% ============================================================================
+% ============================== END CONFIGURATION ===========================
+% ============================================================================
+
+\begin{document}
+
+% -------------------------- HEADER -----------------------------------------
+\noindent
+\begin{tabularx}{\textwidth}{|p{4.2cm}|X|}
+\hline
+\centering
+{\color{sfured}\Huge\bfseries SFU}\par
+{\scriptsize SIMON FRASER\\UNIVERSITY}
+&
+\vspace{2pt}
+{\itshape\bfseries COMPUTING SCIENCE B.SC. MAJOR --- \\ \ConcentrationName}\\[6pt]
+{\itshape\bfseries \PlannerYear\ GRADUATION PLANNER}
+\\[4pt]
+\hline
+\end{tabularx}
+
+\vspace{10pt}
+\noindent Name: \underline{\hspace{5.5cm}} \hfill
+Student ID: \underline{\hspace{4.5cm}} \hfill
+Date: \underline{\hspace{3cm}}
+
+\vspace{10pt}
+\noindent \ConcentrationDescription
+
+\vspace{10pt}
+
+% -------------------------- YEAR 1 (fixed, common core) ---------------------
+\begin{tcolorbox}[colback=white, colframe=black, boxrule=0.8pt, title=Year 1,
+  fonttitle=\bfseries, coltitle=black, colbacktitle=sfugray, left=6pt, right=6pt]
+\begin{minipage}[t]{0.48\textwidth}
+\course{CMPT 120}{Programming 1}
+\course{MACM 101}{Discrete Math 1}
+\course{MATH 151}{Calculus 1}
+OR \course{MATH 150}{Calculus 1 with Review}
+\course{CMPT 105W}{CS Writing I (or in 2nd term)}
+\courseonly{WQB Breadth: \underline{\hspace{2.5cm}}}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\course{CMPT 125}{Programming 2}
+\course{MATH 152}{Calculus 2}
+\course{MATH 240}{Algebra I: Linear Algebra}
+OR \course{MATH 232}{Applied Linear Algebra}
+\courseonly{WQB Breadth: \underline{\hspace{2.5cm}}}
+\courseonly{General Elective: \underline{\hspace{2.2cm}}}
+\end{minipage}
+\end{tcolorbox}
+
+% -------------------------- YEAR 2 (fixed, common core) ---------------------
+% NOTE: CMPT 201 added here -- it is a required lower-division course for
+% ALL Computing Science majors and was missing from the sample AI planner.
+\begin{tcolorbox}[colback=white, colframe=black, boxrule=0.8pt, title=Year 2,
+  fonttitle=\bfseries, coltitle=black, colbacktitle=sfugray, left=6pt, right=6pt]
+\begin{minipage}[t]{0.48\textwidth}
+\course{CMPT 225}{Data Structures and Programming}
+\course{CMPT 201}{Introduction to Computer Science and Programming for Engineers / CS core}
+\course{CMPT 295}{Intro to Computer Systems}
+\course{CMPT 210}{Probability and Computing}
+OR \course{MACM 201}{Discrete Mathematics II}
+\courseonly{WQB Breadth: \underline{\hspace{2.5cm}}}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\course{CMPT 276}{Software Engineering}
+\course{STAT 271}{Probability and Statistics for CS}
+OR \course{STAT 270}{Introduction to Probability \& Statistics}
+\courseonly{WQB Breadth: \underline{\hspace{2.5cm}}}
+\courseonly{WQB Breadth: \underline{\hspace{2.5cm}}}
+\courseonly{General Elective: \underline{\hspace{2.2cm}}}
+\end{minipage}
+\end{tcolorbox}
+
+% -------------------------- YEAR 3 ------------------------------------------
+\begin{tcolorbox}[colback=white, colframe=black, boxrule=0.8pt, title=Year 3,
+  fonttitle=\bfseries, coltitle=black, colbacktitle=sfugray, left=6pt, right=6pt]
+\begin{minipage}[t]{0.48\textwidth}
+\YearThreeLeft
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\YearThreeRight
+\end{minipage}
+\end{tcolorbox}
+
+% -------------------------- YEAR 4 ------------------------------------------
+\begin{tcolorbox}[colback=white, colframe=black, boxrule=0.8pt, title=Year 4,
+  fonttitle=\bfseries, coltitle=black, colbacktitle=sfugray, left=6pt, right=6pt]
+\begin{minipage}[t]{0.48\textwidth}
+\YearFourLeft
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\YearFourRight
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{4pt}
+\ElectiveFootnote
+
+\vspace{10pt}
+
+% -------------------------- WQB + disclaimer text ---------------------------
+\begin{tcolorbox}[colback=sfugray, colframe=sfured, boxrule=0.8pt,
+  title=WQB Breadth Requirements, fonttitle=\bfseries\color{white},
+  colbacktitle=sfured, left=6pt, right=6pt]
+\begin{itemize}
+\item 6 units of Breadth Social (B-SOC)
+\item 6 units of Breadth Humanities (B-HUM)
+\item 3 units of Breadth Science (B-SCI)
+\end{itemize}
+Refer to \url{http://www.sfu.ca/ugcr/for_students/wqb_requirements/breadth.html}
+for courses that fulfill these requirements.
+\end{tcolorbox}
+
+\vspace{8pt}
+\footnotesize
+This Concentration Planning Form contains a recommended course plan for
+Computing Science major BSc students to obtain a concentration designation,
+along with course suggestions to optimize the knowledge and skills upon
+completion of this concentration, while distributing the difficulty of the
+course load per term. Other course plans may be possible. This form is not a
+substitute for the official degree regulations found at
+\url{www.sfu.ca/students/calendar.html}. If there is a question of
+interpretation or discrepancy, the University Calendar always takes
+precedence. For assistance or queries on possible substitutions, ask a FAS
+advisor to help. The student is ultimately responsible for ensuring that they
+have met their degree requirements.
+
+\vspace{6pt}
+\textbf{CO-OPERATIVE EDUCATION} Combines work experience with academic
+studies---all students are encouraged to apply once they have completed 30
+units. Co-op does not count towards academic credits. Co-op is not
+mandatory; however, three work terms must be successfully completed in order
+to obtain an undergraduate degree with a co-op designation. For more
+information about Co-op, please see:
+\url{https://www.sfu.ca/coop/programs/cmpt/prospective.html}.
+
+\vspace{6pt}
+\textbf{CMPT 415/416 SPECIAL RESEARCH PROJECTS} are courses that may be used
+for upper division credit. See:
+\url{https://www.sfu.ca/computing/current-students/undergraduate-students/research.html}
+
+\vspace{6pt}
+\textbf{FACULTY OF APPLIED SCIENCE RESIDENCY REQUIREMENTS} At least two
+thirds of the total Upper Division (UD) units in the program must have been
+completed at Simon Fraser University. Please refer to the current SFU
+calendar for details.
+
+\vspace{6pt}
+\textbf{CONTINUATION REQUIREMENTS} Students who do not maintain at least a
+2.40 CGPA, will be placed on probation by the School of Computing Science.
+Courses available to probationary students may be limited. Each term, these
+students must consult an advisor prior to enrollment and must achieve either
+a term 2.40 GPA or an improved CGPA. Students who fail to do so may be
+removed from the program.
+
+\vspace{6pt}
+\textbf{ADVISING} View drop-in advising times here
+\url{https://booking.cs.sfu.ca/adbooking/calendar.cgi} or email
+asadvise@sfu.ca. Please bring a copy of your advising transcript (download at
+go.sfu.ca) with you to the advising session.
+
+\vspace{10pt}
+\ConcentrationName\ Planner\\
+Version: \PlannerVersionDate\ (1)
+
+\end{document}
+
+% ============================================================================
+% ================  READY-MADE YEAR 3 / YEAR 4 DATA BLOCKS  ==================
+% ============================================================================
+% Below are the upper-division "Table I" course pools for each of the six
+% CS concentrations (from the Honours Fall 2024 planner). Pick ~4 courses
+% per concentration (at least two at the 400-level, per the Area of
+% Concentration rule) and paste them into \YearThreeLeft/\YearThreeRight and
+% \YearFourLeft/\YearFourRight in the CONFIGURATION section above, replacing
+% the AI example. Update \ConcentrationName and \ConcentrationDescription too.
+%
+% ---- 1. ARTIFICIAL INTELLIGENCE ------------------------------------------
+%   CMPT 310, 340, 410, 411, 413, 417, 419, 420
+%   (already used as the worked example above)
+%
+% ---- 2. VISUAL & INTERACTIVE COMPUTING -----------------------------------
+%   CMPT 361, 363, 365, 412, 461, 464, 466, 467, 469
+%   \newcommand{\ConcentrationName}{Visual \& Interactive Computing Concentration}
+%   \newcommand{\ConcentrationDescription}{%
+%     Visual \& Interactive Computing covers computer graphics, human-computer
+%     interaction, visualization, and related areas of interactive media.}
+%   \newcommand{\YearThreeLeft}{%
+%     \course{CMPT 361}{Introduction to Computer Graphics}
+%     \course{CMPT 307}{Data Structures and Algorithms}
+%     \course{MACM 316}{Numerical Analysis}
+%     \course{CMPT 376W}{CS Writing II}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearThreeRight}{%
+%     \course{CMPT 300}{Operating Systems}
+%     \course{CMPT 363}{User Interface Design}
+%     \course{CMPT 365}{Multimedia Systems}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearFourLeft}{%
+%     \course{CMPT 461}{Advanced Computer Graphics*}
+%     \course{CMPT 354}{Database Systems}
+%     \course{CMPT 379}{Compilers}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%   \newcommand{\YearFourRight}{%
+%     \course{CMPT 466}{Computer Animation*}
+%     \course{CMPT 467}{Survey of Image Synthesis Techniques*}
+%     \course{CMPT 469}{Sensor Technology and Its Applications*}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%   % * or any other course from the Visual & Interactive Computing list above.
+%
+% ---- 3. COMPUTING SYSTEMS -------------------------------------------------
+%   CMPT 303, 305, 371, 379, 403, 431, 433, 450, 471, 474, 479, 499
+%   \newcommand{\ConcentrationName}{Computing Systems Concentration}
+%   \newcommand{\ConcentrationDescription}{%
+%     Computing Systems covers operating systems, networks, distributed
+%     systems, and the design of large-scale software infrastructure.}
+%   \newcommand{\YearThreeLeft}{%
+%     \course{CMPT 300}{Operating Systems}
+%     \course{CMPT 307}{Data Structures and Algorithms}
+%     \course{MACM 316}{Numerical Analysis}
+%     \course{CMPT 376W}{CS Writing II}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearThreeRight}{%
+%     \course{CMPT 303}{Operating Systems II}
+%     \course{CMPT 371}{Data Communications and Networking}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearFourLeft}{%
+%     \course{CMPT 401}{Computer Networks II*}
+%     \course{CMPT 354}{Database Systems}
+%     \course{CMPT 379}{Compilers}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%   \newcommand{\YearFourRight}{%
+%     \course{CMPT 431}{Distributed Systems*}
+%     \course{CMPT 433}{Embedded Systems*}
+%     \course{CMPT 450}{Rapid Prototyping*}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%
+% ---- 4. INFORMATION SYSTEMS -----------------------------------------------
+%   CMPT 353, 354(bold), 362, 372, 441, 454, 456, 459, 474
+%   Note: CMPT 354 is a REQUIRED (bold) breadth course for all concentrations.
+%   \newcommand{\ConcentrationName}{Information Systems Concentration}
+%   \newcommand{\ConcentrationDescription}{%
+%     Information Systems covers databases, data management, information
+%     retrieval, and large-scale data processing.}
+%   \newcommand{\YearThreeLeft}{%
+%     \course{CMPT 354}{Database Systems}
+%     \course{CMPT 307}{Data Structures and Algorithms}
+%     \course{MACM 316}{Numerical Analysis}
+%     \course{CMPT 376W}{CS Writing II}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearThreeRight}{%
+%     \course{CMPT 300}{Operating Systems}
+%     \course{CMPT 353}{Computational Data Science}
+%     \course{CMPT 362}{Data Management}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearFourLeft}{%
+%     \course{CMPT 372}{Data Management Systems*}
+%     \course{CMPT 363}{User Interface Design}
+%     \course{CMPT 379}{Compilers}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%   \newcommand{\YearFourRight}{%
+%     \course{CMPT 441}{Database Management Systems II*}
+%     \course{CMPT 454}{Database Systems II*}
+%     \course{CMPT 456}{Information Retrieval \& Web Search*}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%
+% ---- 5. PROGRAMMING LANGUAGES & SOFTWARE ----------------------------------
+%   CMPT 373, 383, 384, 473, 475, 477, 489
+%   \newcommand{\ConcentrationName}{Programming Languages \& Software Concentration}
+%   \newcommand{\ConcentrationDescription}{%
+%     Programming Languages \& Software covers the design, implementation,
+%     and analysis of programming languages and large software systems.}
+%   \newcommand{\YearThreeLeft}{%
+%     \course{CMPT 379}{Compilers}
+%     \course{CMPT 307}{Data Structures and Algorithms}
+%     \course{MACM 316}{Numerical Analysis}
+%     \course{CMPT 376W}{CS Writing II}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearThreeRight}{%
+%     \course{CMPT 300}{Operating Systems}
+%     \course{CMPT 373}{Software Development Methods}
+%     \course{CMPT 383}{Comparative Programming Languages}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearFourLeft}{%
+%     \course{CMPT 384}{Programming Language Design*}
+%     \course{CMPT 354}{Database Systems}
+%     \course{CMPT 363}{User Interface Design}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%   \newcommand{\YearFourRight}{%
+%     \course{CMPT 473}{Software Architecture*}
+%     \course{CMPT 475}{Software Testing, Reliability and Quality*}
+%     \course{CMPT 489}{Software Systems Design and Object-Oriented Programming*}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%
+% ---- 6. THEORETICAL COMPUTING SCIENCE -------------------------------------
+%   CMPT 307(bold), 308, 404, 405(bold), 406, 407, 409, 476, MACM 300
+%   Note: CMPT 307 and 354 are REQUIRED (bold) breadth courses for everyone;
+%   CMPT 405 is REQUIRED for the Depth requirement.
+%   \newcommand{\ConcentrationName}{Theoretical Computing Science Concentration}
+%   \newcommand{\ConcentrationDescription}{%
+%     Theoretical Computing Science covers algorithms, computability,
+%     complexity theory, and the mathematical foundations of computing.}
+%   \newcommand{\YearThreeLeft}{%
+%     \course{CMPT 307}{Data Structures and Algorithms}
+%     \course{CMPT 308}{Computability and Undecidability}
+%     \course{MACM 316}{Numerical Analysis}
+%     \course{CMPT 376W}{CS Writing II}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearThreeRight}{%
+%     \course{CMPT 300}{Operating Systems}
+%     \course{MACM 300}{Introduction to Complex Systems}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.7cm}}}}
+%   \newcommand{\YearFourLeft}{%
+%     \course{CMPT 405}{Design and Analysis of Algorithms I}
+%     \course{CMPT 354}{Database Systems}
+%     \course{CMPT 379}{Compilers}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+%   \newcommand{\YearFourRight}{%
+%     \course{CMPT 404}{Design and Analysis of Algorithms II*}
+%     \course{CMPT 406}{Computational Complexity*}
+%     \course{CMPT 407}{Computational Geometry*}
+%     \courseonly{UD General Elective: \underline{\hspace{2cm}}}
+%     \courseonly{General Elective: \underline{\hspace{2.2cm}}}}
+% ============================================================================
