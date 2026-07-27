@@ -14,10 +14,12 @@ from datetime import datetime
 import pandas as pd
 
 from parse_transcript import parse_sfu_transcript
+import professor_ratings
 
 # resolve data/ relative to this file's location rather than assuming the caller's cwd so that `python3 scheduler.py ...` works whether run from sfuschedule/ or code/
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_DATA_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "courseOfferings")
+DEFAULT_UNITS = 3.0  # typical SFU course weight, used when a section's units aren't known
 
 
 def parse_enrollment_date(date_str):
@@ -113,6 +115,24 @@ def load_data(transcript_result, data_dir=DEFAULT_DATA_DIR, year=None, term=None
         lambda s: ast.literal_eval(s) if isinstance(s, str) and s else []
     )
 
+    # older scrapes won't have this column yet - fall back to "no instructor known"
+    # for every section rather than erroring, so rating-based scheduling just
+    # degrades to picking any valid schedule.
+    if 'instructors' in df.columns:
+        df['instructors'] = df['instructors'].fillna('').apply(
+            lambda s: [n.strip() for n in s.split(';') if n.strip()] if isinstance(s, str) and s else []
+        )
+    else:
+        df['instructors'] = [[] for _ in range(len(df))]
+
+    # same fallback idea for units - unscraped-yet terms get the typical SFU
+    # course weight instead of erroring, so load-balancing just degrades to
+    # treating every course as equally heavy.
+    if 'units' in df.columns:
+        df['units'] = pd.to_numeric(df['units'], errors='coerce').fillna(DEFAULT_UNITS)
+    else:
+        df['units'] = DEFAULT_UNITS
+
     courses_taken = {c['course'] for c in transcript_result['courses']}
 
     return {
@@ -192,7 +212,7 @@ def check_schedule(term_schedule):
     return True, None
 
 
-def term_schedule_generator(eligible_courses, min_courses=3, max_courses=5):
+def term_schedule_generator(eligible_courses, min_courses=3, max_courses=5, preset=None):
     """
     Basically the main Constraint Satisfaction Logic.
 
@@ -201,11 +221,19 @@ def term_schedule_generator(eligible_courses, min_courses=3, max_courses=5):
     trying each section in turn and backtracking on conflict, to find a
     combination of min_courses-max_courses with no time conflicts.
 
+    `preset` (optional) is a list of already-chosen section rows (e.g. the
+    highly-rated "core" picked by `term_schedule_generator_maximize_ratings`)
+    to keep and build the rest of the schedule around. Their course codes are
+    excluded from the search so nothing gets picked twice.
+
     Returns the first valid schedule found (list of section rows as dicts),
     or None if no valid combination exists.
     """
+    preset = list(preset) if preset else []
+    preset_codes = {s['course'] for s in preset}
+
     grouped = eligible_courses.groupby('course')
-    course_codes = list(grouped.groups.keys())
+    course_codes = [c for c in grouped.groups.keys() if c not in preset_codes]
     sections_by_course = {code: grouped.get_group(code).to_dict('records')
                            for code in course_codes}
 
@@ -236,7 +264,158 @@ def term_schedule_generator(eligible_courses, min_courses=3, max_courses=5):
 
         return backtrack(index + 1, chosen)
 
-    return backtrack(0, [])
+    return backtrack(0, list(preset))
+
+
+def _section_rating(section, rating_lookup):
+    """Average RMP rating of a section's instructor(s), or None if none are rated."""
+    ratings = [r for r in (rating_lookup(name) for name in section.get('instructors', [])) if r is not None]
+    if not ratings:
+        return None
+    return sum(ratings) / len(ratings)
+
+
+def _section_units(section):
+    """A section's course weight, falling back to DEFAULT_UNITS if unknown."""
+    units = section.get('units')
+    return float(units) if units is not None and not pd.isna(units) else DEFAULT_UNITS
+
+
+def _optimal_subset(candidates, k, maximize, anchor=None, tie_break=None):
+    """
+    Generic branch-and-bound over `candidates` (list of (course_code, section,
+    value), pre-sorted best-first for the requested direction: descending for
+    maximize, ascending for minimize).
+
+    Picks exactly `k` sections (at most one per course_code) that don't
+    conflict with each other or with any section in `anchor`, optimizing
+    total `value`. Ties on total value are broken by the lowest total
+    `tie_break(section)`, if given.
+
+    Pruned using the next `need` values in the presorted list as an upper (or
+    lower) bound on what's still achievable - always at least as good as the
+    true optimum since it ignores per-course-dupe/conflict restrictions, so
+    it's admissible for pruning. Ties are allowed through the bound check (not
+    strictly pruned) so a tie-breaking improvement isn't cut off.
+
+    Returns the winning list of sections, or None if no size-k combination exists.
+    """
+    anchor = anchor or []
+    sign = 1 if maximize else -1
+    n = len(candidates)
+    values = [c[2] for c in candidates]
+    best = {'schedule': None, 'score': float('-inf'), 'tie': float('inf')}
+
+    def bound(i, need):
+        return sign * sum(values[i:i + need])
+
+    def conflicts_with(section, chosen):
+        return any(
+            _slots_overlap(s_a, s_b)
+            for other in list(chosen) + anchor
+            for s_a in other['schedule'] for s_b in section['schedule']
+        )
+
+    def backtrack(i, chosen, used_codes, score):
+        need = k - len(chosen)
+        if need == 0:
+            tie = sum(tie_break(s) for s in chosen) if tie_break else 0.0
+            if score > best['score'] + 1e-9 or (abs(score - best['score']) <= 1e-9 and tie < best['tie']):
+                best['score'] = score
+                best['tie'] = tie
+                best['schedule'] = list(chosen)
+            return
+        if i >= n or (n - i) < need:
+            return
+        if score + bound(i, need) < best['score'] - 1e-9:
+            return
+
+        code, section, value = candidates[i]
+        if code not in used_codes and not conflicts_with(section, chosen):
+            chosen.append(section)
+            used_codes.add(code)
+            backtrack(i + 1, chosen, used_codes, score + sign * value)
+            used_codes.discard(code)
+            chosen.pop()
+        backtrack(i + 1, chosen, used_codes, score)
+
+    backtrack(0, [], set(), 0.0)
+    return best['schedule']
+
+
+def _best_rated_core(eligible_courses, rating_lookup, max_k):
+    """
+    Find the largest non-conflicting set (up to max_k, one section per
+    course) of sections whose instructor has a known RMP rating, breaking
+    ties on rating by lowest total units, then arbitrarily. Returns [] if no
+    section has a rated instructor.
+    """
+    grouped = eligible_courses.groupby('course')
+    candidates = []
+    for code, group in grouped:
+        for section in group.to_dict('records'):
+            rating = _section_rating(section, rating_lookup)
+            if rating is not None:
+                candidates.append((code, section, rating))
+    candidates.sort(key=lambda c: c[2], reverse=True)
+
+    for k in range(min(max_k, len(candidates)), 0, -1):
+        result = _optimal_subset(candidates, k, maximize=True, tie_break=_section_units)
+        if result:
+            return result
+    return []
+
+
+def _lightest_completion(eligible_courses, anchor, need):
+    """
+    Find `need` additional non-conflicting sections (at most one per course,
+    excluding courses already in `anchor`) that minimize total units - the
+    lightest way to round the schedule out to the minimum course count.
+    Returns None if no such combination exists.
+    """
+    anchor_codes = {s['course'] for s in anchor}
+    grouped = eligible_courses.groupby('course')
+    candidates = [
+        (code, section, _section_units(section))
+        for code, group in grouped if code not in anchor_codes
+        for section in group.to_dict('records')
+    ]
+    candidates.sort(key=lambda c: c[2])
+
+    return _optimal_subset(candidates, need, maximize=False, anchor=anchor)
+
+
+def term_schedule_generator_maximize_ratings(eligible_courses, rating_lookup,
+                                              min_courses=3, max_courses=5):
+    """
+    Same CSP as term_schedule_generator, but prefers professors with strong
+    RateMyProfessor ratings: it first fills as many of the min_courses-max_courses
+    slots as possible with well-rated, non-conflicting sections (more rated
+    professors beats a single stand-out one padded with unknowns), tie-breaking
+    by highest average rating, then lowest total units, among sections of
+    equal count.
+
+    If that "rated core" doesn't reach min_courses, it's padded with whichever
+    other eligible courses (rated or not) add up to the fewest total units -
+    i.e. the lightest course load - to meet the minimum, since a lighter load
+    is treated as a proxy for lower overall difficulty.
+
+    Falls back to the behavior of `term_schedule_generator` (first valid
+    schedule) when no section's instructor is found in the RMP data - e.g.
+    before the scraper has been re-run to capture instructor names.
+    """
+    rated_core = _best_rated_core(eligible_courses, rating_lookup, max_courses)
+
+    if len(rated_core) >= min_courses:
+        return rated_core
+
+    padding = _lightest_completion(eligible_courses, rated_core, min_courses - len(rated_core))
+    if padding is None:
+        # No exact-size lightest completion found (e.g. very few eligible
+        # courses remain) - fall back to any valid completion.
+        return term_schedule_generator(eligible_courses, min_courses=min_courses,
+                                        max_courses=max_courses, preset=rated_core)
+    return rated_core + padding
 
 
 def main(transcript_pdf, enrollment_date=None, data_dir=DEFAULT_DATA_DIR):
@@ -276,18 +455,26 @@ def main(transcript_pdf, enrollment_date=None, data_dir=DEFAULT_DATA_DIR):
         print("No eligible courses found - cannot generate a schedule.")
         return None
 
-    print("Searching for a valid schedule...")
-    schedule = term_schedule_generator(eligible)
+    print("Loading professor ratings...")
+    rating_lookup = professor_ratings.make_rating_lookup()
+
+    print("Searching for a schedule with the best-rated professors...")
+    schedule = term_schedule_generator_maximize_ratings(eligible, rating_lookup)
 
     if schedule is None:
         print("No valid 3-5 course schedule found with the given eligible courses.")
         return None
 
-    print(f"\nValid schedule found ({len(schedule)} courses):")
+    total_units = sum(_section_units(section) for section in schedule)
+    print(f"\nValid schedule found ({len(schedule)} courses, {total_units:g} total units):")
     for section in schedule:
-        print(f"  {section['course']} {section['section']}:")
+        print(f"  {section['course']} {section['section']} ({_section_units(section):g} units):")
         for slot in section['schedule']:
             print(f"      {slot['days']} {slot['startTime']}-{slot['endTime']} ({slot['campus']})")
+        if section['instructors']:
+            rating = _section_rating(section, rating_lookup)
+            rating_str = f"{rating:.1f}" if rating is not None else "no RMP rating"
+            print(f"      Instructor(s): {', '.join(section['instructors'])} ({rating_str})")
 
     return schedule
 
