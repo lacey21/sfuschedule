@@ -33,6 +33,17 @@ def get_section_details(dept, course_num, section, year, term):
         return None
 
 
+def parse_instructors(instructor_list):
+    """Extract deduped instructor display names from the API's 'instructor' list."""
+    names = []
+    for entry in instructor_list or []:
+        name = entry.get('name') or f"{entry.get('firstName', '')} {entry.get('lastName', '')}".strip()
+        if name:
+            names.append(name)
+    seen = set()
+    return [n for n in names if not (n in seen or seen.add(n))]
+
+
 def parse_schedule(course_schedule):
     seen = set()
     slots = []
@@ -69,6 +80,7 @@ def get_prerequisites_and_schedule(enrollment_csv, year, term, output_csv):
         prereq_text = info.get('prerequisites', '')
         prereq_codes, unparseable = extract_prereq_codes(prereq_text)
         schedule = parse_schedule(details.get('courseSchedule', []))
+        instructors = parse_instructors(details.get('instructor', []))
 
         rows.append({
             'course': f"{dept} {course_num}",
@@ -79,6 +91,7 @@ def get_prerequisites_and_schedule(enrollment_csv, year, term, output_csv):
             'prereq_codes': ';'.join(prereq_codes),
             'prereq_unparseable': unparseable,
             'schedule': schedule,
+            'instructors': ';'.join(instructors),
         })
         time.sleep(0.05)
 
