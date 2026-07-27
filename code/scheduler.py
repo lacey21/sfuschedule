@@ -14,10 +14,25 @@ from datetime import datetime
 import pandas as pd
 
 from parse_transcript import parse_sfu_transcript
+#note that the following functions are imported from degree_progress.py to be used in this file, this was previously count_towards major -ad
+from degree_progress import (
+    load_degree_requirements,
+    extract_completed_courses,
+    calculate_degree_progress
+)
+
 
 # resolve data/ relative to this file's location rather than assuming the caller's cwd so that `python3 scheduler.py ...` works whether run from sfuschedule/ or code/
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_DATA_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "courseOfferings")
+#adding for degree_progress - ad
+DEFAULT_PLANNER_DIR = os.path.join(
+    _SCRIPT_DIR,
+    "..",
+    "data",
+    "coursePlanners"
+)
+
 
 
 def parse_enrollment_date(date_str):
@@ -251,7 +266,27 @@ def main(transcript_pdf, enrollment_date=None, data_dir=DEFAULT_DATA_DIR):
     transcript_result = parse_sfu_transcript(transcript_pdf)
     print(f"  Major: {transcript_result['major']}")
     print(f"  Completed courses: {len(transcript_result['courses'])}")
+    print("\nCalculating degree progress...")
 
+    planner_file = os.path.join(
+        DEFAULT_PLANNER_DIR,
+        "ENSC PLANNER.txt"    #please change this to the correct planner file for the student's major if needed - ad
+    )
+
+    required_courses = load_degree_requirements(planner_file)
+
+    student_courses = extract_completed_courses(transcript_result)
+
+    progress = calculate_degree_progress(
+        student_courses,
+        required_courses
+    )
+
+    print(f"  Major courses completed: {len(progress['completed_courses'])}")
+    print(f"  Credits completed: {progress['credits_completed']}/120")
+    print(f"  Credits remaining: {progress['credits_remaining']}")
+    print(f"  Degree completion: {progress['completion_percentage']:.2f}%")
+    
     if enrollment_date is None:
         while True:
             raw = input("\nWhen do you plan to enroll? (e.g. 2024-09-15): ")
