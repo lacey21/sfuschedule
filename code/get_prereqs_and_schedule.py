@@ -7,7 +7,9 @@ BASE_URL = "http://www.sfu.ca/bin/wcm/course-outlines"
 
 def load_offered_courses(enrollment_csv):
     df = pd.read_csv(enrollment_csv)
-    combos = df[['Subject', 'CatNbr', 'Section']].drop_duplicates()
+    combos = df[['Subject', 'CatNbr', 'Section', 'Units']].drop_duplicates(
+        subset=['Subject', 'CatNbr', 'Section']
+    )
     return combos.to_dict('records')
 
 
@@ -92,6 +94,7 @@ def get_prerequisites_and_schedule(enrollment_csv, year, term, output_csv):
             'prereq_unparseable': unparseable,
             'schedule': schedule,
             'instructors': ';'.join(instructors),
+            'units': combo['Units'],
         })
         time.sleep(0.05)
 
