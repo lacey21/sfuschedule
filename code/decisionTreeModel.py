@@ -305,7 +305,7 @@ def _load_offerings_folder(data_dir, subfolder):
         return pd.DataFrame()
     for fname in os.listdir(folder):
         #ignore the prerequisites file and the database.xsls files file
-        if fname.startswith("sfu_prerequisites"):
+        if fname.startswith("sfu_prereq"):
             continue
         if fname.startswith("database") and fname.lower().endswith(".xlsx"):
             continue
