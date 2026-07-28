@@ -21,9 +21,10 @@ To run the scheduler, decision tree, and other helper files ensure you've instal
 ```pip install ast re sys os datetime pandas openpyxl scikit-learn joblib requests pdfplumber```
 
 ## Running the CSP
-``cd code
+```
+  cd code
   python scheduler.py <transcript.pdf>
-``
+```
 *To test you can use the transcripts under `data/synthetic transcript/`
 
 
