@@ -1,0 +1,4 @@
+engineering science - biomedical option -> ENSC_BIOMED_PLANNER
+engineering science - computer option -> ENSC_CMPT_PLANNER
+engineering science - systems option -> ENSC_SYST_PLANNER
+engineering science - electronics option -> ENSC_ELEC_PLANNER
