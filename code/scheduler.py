@@ -8,6 +8,7 @@ Check the MVS flow diagram I(Dora) have in the Google Docs to see the flow!
 
 import ast
 import re
+from sched import scheduler
 import sys
 import os
 from datetime import datetime
@@ -21,6 +22,9 @@ from degree_progress import (
     extract_completed_courses,
     calculate_degree_progress
 )
+#starting decision tree model integration - ad
+from decisionTreeModel import predict_fullness, MODEL_PATH
+import joblib
 
 
 # resolve data/ relative to this file's location rather than assuming the caller's cwd so that `python3 scheduler.py ...` works whether run from sfuschedule/ or code/
@@ -432,7 +436,73 @@ def term_schedule_generator_maximize_ratings(eligible_courses, rating_lookup,
                                         max_courses=max_courses, preset=rated_core)
     return rated_core + padding
 
+#helper function to predict how full each recommended course section will be, using the decision tree model. It loads the model and its associated data, then iterates over the recommended schedule to predict the fullness of each section based on the enrollment date.
+def predict_schedule_fullness(schedule, enrollment_date):
+    """
+    Predict how full each recommended course section will be.
+    """
 
+    model_bundle_path = os.path.join(
+        _SCRIPT_DIR,
+        "decisionTree_model.joblib"
+    )
+
+    bundle = joblib.load(model_bundle_path)
+
+    predictions = []
+
+    print("\n=== Predicted Course Fullness ===")
+
+    for section in schedule:
+        predicted = predict_fullness(
+            bundle["model"],
+            bundle["offerings_df"],
+            bundle["fill_df"],
+            section["course"],
+            section["section"],
+            enrollment_date.strftime("%Y-%m-%d"),
+            data_dir=bundle["data_dir"],
+            lookback_terms=bundle["lookback_terms"],
+            use_instructor_api=bundle["use_instructor_api"]
+        )
+
+        percent = predicted * 100
+
+        if percent >= 90:
+            risk = "High"
+        elif percent >= 75:
+            risk = "Moderate"
+        else:
+            risk = "Low"
+
+        predictions.append({
+            "course": section["course"],
+            "section": section["section"],
+            "fullness": percent,
+            "risk": risk
+        })
+
+        print(f"\n{section['course']} {section['section']}")
+        print(f"    Predicted enrollment: {percent:.1f}%")
+        print(f"    Risk level: {risk}")
+
+    return predictions
+def get_planner_for_major(major):  
+    if "Engineering Science - Biomedical Option" in major: #this can be better but needs planner -> major mapping
+        return "ENSC_BIOMED_PLANNER.txt"
+
+    elif "Engineering Science - Electronics Option" in major:
+        return "ENSC_ELECTRONICS_PLANNER.txt"
+
+    elif "Engineering Science - Computer Option" in major:
+        return "ENSC_COMPUTER_PLANNER.txt"
+
+    elif "Computing Science - Software Option" in major:
+        return "CMPT_SOSY_PLANNER.txt"
+
+    else:
+        raise ValueError("Unsupported major")
+    
 def main(transcript_pdf, enrollment_date=None, data_dir=DEFAULT_DATA_DIR):
     """
     Full pipeline: transcript -> eligible courses -> CSP Logic -> valid schedule.
@@ -447,9 +517,10 @@ def main(transcript_pdf, enrollment_date=None, data_dir=DEFAULT_DATA_DIR):
     print(f"  Completed courses: {len(transcript_result['courses'])}")
     print("\nCalculating degree progress...")
 
+
     planner_file = os.path.join(
         DEFAULT_PLANNER_DIR,
-        "ENSC PLANNER.txt"    #please change this to the correct planner file for the student's major if needed - ad
+        get_planner_for_major(transcript_result['major'])
     )
 
     required_courses = load_degree_requirements(planner_file)
@@ -510,6 +581,36 @@ def main(transcript_pdf, enrollment_date=None, data_dir=DEFAULT_DATA_DIR):
             rating = _section_rating(section, rating_lookup)
             rating_str = f"{rating:.1f}" if rating is not None else "no RMP rating"
             print(f"      Instructor(s): {', '.join(section['instructors'])} ({rating_str})")
+# NEW: decision tree fullness prediction
+    predict_schedule_fullness(schedule, enrollment_date)
+#This shows the current degree progress of the student before taking the recommended schedule, and then calculates and shows the degree progress after taking the recommended schedule. It uses the calculate_degree_progress function to compute the progress based on the courses taken and the required courses for the major.
+    print("\n=== Current Degree Progress ===")
+    print(f"Credits completed: {progress['credits_completed']}")
+    print(f"Credits remaining: {progress['credits_remaining']}")
+    print(f"Completion: {progress['completion_percentage']:.1f}%")
+
+    print("\nCompleted required courses:")
+    for course in sorted(progress["completed_courses"]):
+        print(f"  {course}")
+
+
+    # Calculate degree progress after taking recommended schedule
+    recommended_courses = {
+        section['course']
+        for section in schedule
+    }
+
+    future_courses = student_courses.union(recommended_courses)
+
+    future_progress = calculate_degree_progress(
+        future_courses,
+        required_courses
+    )
+
+    print("\n=== Degree Progress After Recommended Schedule ===")
+    print(f"Credits completed: {future_progress['credits_completed']}")
+    print(f"Credits remaining: {future_progress['credits_remaining']}")
+    print(f"Completion: {future_progress['completion_percentage']:.1f}%")
 
     return schedule
 
