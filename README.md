@@ -4,7 +4,7 @@ Our projects takes in your transcript and enrollment date to help generate a com
 
 | Path | Purpose |
 |------|---------|
-| `code` | Python code to run the models & parser files|
+| `code/` | Python code to run the models & parser files|
 | `code/scheduler.py` | Main application to run the CSP |
 | `code/decisionTreeModel.py` | Train/validate class fullness decision tree |
 | `code/decisionTree.py` | Quick prediction for specific course |
