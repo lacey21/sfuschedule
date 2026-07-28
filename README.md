@@ -15,7 +15,7 @@ Our projects takes in your transcript and enrollment date to help generate a com
 | `data/sfu_rmp/` | Rate my Professors ratings for SFU courses/profs |
 | `data/synthetic transcript/` | Generate transcripts for testing |
 
-* There are additional files to create different modules and parsers 
+*There are additional files to create different modules and parsers 
 ## Required Modules
 To run the scheduler, decision tree, and other helper files ensure you've installed:
 ```pip install ast re sys os datetime pandas openpyxl scikit-learn joblib requests pdfplumber```
@@ -24,7 +24,7 @@ To run the scheduler, decision tree, and other helper files ensure you've instal
 ``cd code
   python scheduler.py <transcript.pdf>
 ``
-* To test you can use the transcripts under `data/synthetic transcript/`
+*To test you can use the transcripts under `data/synthetic transcript/`
 
 
 
