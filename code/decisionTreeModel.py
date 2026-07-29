@@ -646,7 +646,8 @@ def predict_fullness(model, offerings_df, fill_df, course, section, enrollment_d
                                 prof_rating, is_major, historic_fill]])
     predicted = model.predict(feature_vector)[0]
     # Match prediction output clipping with target training range
-    predicted = min(max(predicted, 0.0), TARGET_CLIP_MAX)
+    # Strictly bounds end-user display predictions between 0% and 100%
+    predicted = min(max(predicted, 0.0), 1.0)
     print(f"5. PREDICTED CLASS FULLNESS: {predicted * 100:.1f}%")
     return predicted
 
