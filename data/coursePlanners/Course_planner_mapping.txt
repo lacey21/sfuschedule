@@ -1,0 +1,12 @@
+engineering science - biomedical option -> ENSC_BIOMED_PLANNER
+engineering science - computer option -> ENSC_CMPT_PLANNER
+engineering science - systems option -> ENSC_SYST_PLANNER
+engineering science - electronics option -> ENSC_ELEC_PLANNER
+computing science - AI option -> CMPT_AI_PLANNER
+computing science - computer systems option -> CMPT_CS_PLANNER
+computing science - information systems option -> CMPT_IS_PLANNER
+computing science - Theoretical Computing Science option -> CMPT_TCS_PLANNER
+computing science - Programming languages and software option -> CMPT_PLS_PLANNER
+computing science - visual and interactive computing option -> CMPT_VIC_PLANNER
+computing science - general -> CMPT_PLANNER
+software systems engineering - general -> SOSY_PLANNER

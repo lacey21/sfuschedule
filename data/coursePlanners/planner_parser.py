@@ -26,21 +26,39 @@ for (pdf_file) in coursePlanners:
     sem=pdf_file[pdf_file.find("Fall"):pdf_file.find("Fall")+4] or pdf_file[pdf_file.find("Spring"):pdf_file.find("Spring")+6] or pdf_file[pdf_file.find("Summer"):pdf_file.find("Summer")+6]
     print(year)
     print(sem)
-    courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1247.csv"
-    # Check if no year is found in the title
+    # courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1247.csv"
+    # # Check if no year is found in the title
+    # if year=="2022" and sem=="Fall":
+    #     courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1227.csv"
+    # elif year=="2023" and sem=="Spring":
+    #     courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1231.csv"
+    # elif year=="2023" and sem=="Fall":
+    #     courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1237.csv"
+    # elif year=="2024" and sem=="Fall":
+    #     courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1247.csv"
+    # elif year=="2024":
+    #     courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1237.csv"
+
+    courseOffering="C:\\Users\\DELL\\OneDrive\\Desktop\\SFU\\Courses\\Summer 2026\\CMPT 310\\sfuschedule\\data\\courseOfferings\\database.1247.csv"
+        # Check if no year is found in the title
     if year=="2022" and sem=="Fall":
-        courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1227.csv"
+            courseOffering="C:\\Users\\DELL\\OneDrive\\Desktop\\SFU\\Courses\\Summer 2026\\CMPT 310\\sfuschedule\\data\\courseOfferings\\database.1227.csv"
     elif year=="2023" and sem=="Spring":
-        courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1231.csv"
+            courseOffering="C:\\Users\\DELL\\OneDrive\\Desktop\\SFU\\Courses\\Summer 2026\\CMPT 310\\sfuschedule\\data\\courseOfferings\\database.1231.csv"
     elif year=="2023" and sem=="Fall":
-        courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1237.csv"
+            courseOffering="C:\\Users\\DELL\\OneDrive\\Desktop\\SFU\\Courses\\Summer 2026\\CMPT 310\\sfuschedule\\data\\courseOfferings\\database.1237.csv"
     elif year=="2024" and sem=="Fall":
-        courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1247.csv"
+            courseOffering="C:\\Users\\DELL\\OneDrive\\Desktop\\SFU\\Courses\\Summer 2026\\CMPT 310\\sfuschedule\\data\\courseOfferings\\database.1247.csv"
     elif year=="2024":
-        courseOffering="C:\\Users\\User\\OneDrive - Simon Fraser University (1sfu)\\CMPT 310-DESKTOP-0SREQNB\\sfuschedule\\data\\courseOfferings\\database.1237.csv"
+            courseOffering="C:\\Users\\DELL\\OneDrive\\Desktop\\SFU\\Courses\\Summer 2026\\CMPT 310\\sfuschedule\\data\\courseOfferings\\database.1237.csv"
 
     #Extract courseofferings into lists
-    df = pd.read_csv(courseOffering)
+    # df = pd.read_csv(courseOffering)
+    if courseOffering.endswith('.xlsx'):
+        df = pd.read_excel(courseOffering)
+    else:
+        df = pd.read_csv(courseOffering)
+    # print(df.columns.tolist())  #comment out after checking the column names
     subject = df['Subject']
     code = df['CatNbr']
     courseCodes=subject+" "+code.astype(str)
@@ -50,7 +68,7 @@ for (pdf_file) in coursePlanners:
 
     #Extract all course codes from the text ex. ENGL 300W or CMPT 210 
     courseCodesInText = re.findall(r'[A-Z]{4} \d{3}[A-Z]?', text)
-    courseCodesInText += re.findall(r'[A-Z]{4} \d{1,2,3,4,5,6,7,8,9}[X]{2}', text)
+    courseCodesInText += re.findall(r'[A-Z]{4} \d{1,9}[X]{2}', text)
     courseCodesInText = list(set(courseCodesInText))
     
     #Write the course codes in the text to a file
