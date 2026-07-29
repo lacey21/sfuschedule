@@ -488,18 +488,32 @@ def predict_schedule_fullness(schedule, enrollment_date):
 
     return predictions
 def get_planner_for_major(major):  
-    if "Engineering Science - Biomedical Option" in major: #this can be better but needs planner -> major mapping
+    if "Engineering Science - Biomedical Option" in major: #this can be better but needs planner -> major mapping (DONE)
         return "ENSC_BIOMED_PLANNER.txt"
 
     elif "Engineering Science - Electronics Option" in major:
-        return "ENSC_ELECTRONICS_PLANNER.txt"
+        return "ENSC_ELEC_PLANNER.txt"
 
     elif "Engineering Science - Computer Option" in major:
-        return "ENSC_COMPUTER_PLANNER.txt"
-
-    elif "Computing Science - Software Option" in major:
-        return "CMPT_SOSY_PLANNER.txt"
-
+        return "ENSC_CMPT_PLANNER.txt"
+    elif "Engineering Science - Systems Option" in major:
+        return "ENSC_SYST_PLANNER.txt"
+    elif "Computing Science - AI Option" in major:
+        return "CMPT_AI_PLANNER.txt"
+    elif "Computing Science - Computer Systems Option" in major:
+        return "CMPT_CS_PLANNER.txt"
+    elif "Computing Science - Information Systems Option" in major:
+        return "CMPT_IS_PLANNER.txt"
+    elif "Computing Science - Theoretical Computing Science Option" in major:
+        return "CMPT_TCS_PLANNER.txt"
+    elif "Computing Science - Programming Languages and Software Option" in major:
+        return "CMPT_PLS_PLANNER.txt"
+    elif "Computing Science - Visual and Interactive Computing Option" in major:
+        return "CMPT_VIC_PLANNER.txt"
+    elif "Computing Science - General" in major:
+        return "CMPT_PLANNER.txt"
+    elif "Software Systems Engineering - General" in major:
+        return "SOSY_PLANNER.txt"
     else:
         raise ValueError("Unsupported major")
     
